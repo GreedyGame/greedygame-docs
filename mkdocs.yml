@@ -1,0 +1,47 @@
+# Project information
+site_name: 'Documentation - GreedyGame'
+site_author: 'Mathan raj'
+site_url: 'https://documentation.greedygame.com'
+
+# Copyright
+copyright: 'Copyright &copy; 2019 GreedyGame Media Pvt Ltd'
+
+# Navigations
+nav:
+  - Docs: 
+    - Getting Started: index.md
+    - Android: android.md
+    - iOS: ios.md
+    - Unity: unity.md
+    - Cocos: cocos.md
+  - Resources:
+    - Best Practices: best_practices.md
+    - Sample: sample.md
+    - Compliance with GDPR: gdpr.md
+    - Compliance with COPPA: coppa.md
+
+# configuration
+theme: 
+  name: material
+  palette:
+    primary: 'Teal'
+    accent: 'Amber'
+  logo:
+    icon: 'cloud'
+  feature:
+    tabs: true
+
+extra_css:
+  - extra.css
+
+repo_name: 'greedygame/android-sdk'
+repo_url: 'https://github.com/GreedyGame/android-native-plugin'
+
+# extensions
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
