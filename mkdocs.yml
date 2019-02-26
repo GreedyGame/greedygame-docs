@@ -14,11 +14,14 @@ nav:
     - iOS: ios.md
     - Unity: unity.md
     - Cocos: cocos.md
-  - Resources:
     - Best Practices: best_practices.md
-    - Sample: sample.md
-    - Compliance with GDPR: gdpr.md
-    - Compliance with COPPA: coppa.md
+  - FAQs:
+    - Android: android-faq.md
+    - iOS: ios-faq.md
+    - Unity: unity-faq.md
+    - Cocos: cocos-faq.md
+  - Sample:
+    - sample.md
 
 # configuration
 theme: 
