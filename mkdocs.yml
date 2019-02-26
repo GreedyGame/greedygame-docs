@@ -22,6 +22,12 @@ nav:
     - Cocos: cocos-faq.md
   - Sample:
     - sample.md
+  - Advanced:
+    - Getting Started: getting-started-advanced.md
+    - Android Advanced: android-advanced.md
+    - iOS Advanced: ios-advanced.md
+    - Unity Advanced: unity-advanced.md
+    - Cocos Advanced: cocos-advanced.md
 
 # configuration
 theme: 
