@@ -3,7 +3,7 @@
 This guide is for publishers who wants to add GreedyGame Native Ads as a monetization strategy. 
 
 <iframe width="640" height="400"
-src="http://www.youtube.com/embed/o5OHeQCyT4A">
+src="https://www.youtube.com/embed/o5OHeQCyT4A">
 </iframe>
 
 ## Prerequisites
