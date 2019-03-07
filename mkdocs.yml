@@ -14,7 +14,11 @@ nav:
     - iOS: ios.md
     - Unity: unity.md
     - Cocos: cocos.md
+    - Compliance with GDPR: gdpr.md
+    - Compliance with COPPA: coppa.md
     - Best Practices: best_practices.md
+    - Test Ads: test-ads.md
+    - Release Notes: release-notes.md
   - FAQs:
     - Android: android-faq.md
     - iOS: ios-faq.md
@@ -40,11 +44,14 @@ theme:
   feature:
     tabs: true
 
-extra_css:
-  - extra.css
+extra_css: 
+  [
+    css/extra.css,
+    css/material-button.css
+  ]
 
-repo_name: 'greedygame/android-sdk'
-repo_url: 'https://github.com/GreedyGame/android-native-plugin'
+#repo_name: 'greedygame/android-sdk'
+#repo_url: 'https://github.com/GreedyGame/android-native-plugin'
 
 # extensions
 markdown_extensions:

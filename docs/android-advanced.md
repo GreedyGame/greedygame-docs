@@ -1,5 +1,3 @@
-# Android Advanced (Beta)
-
 In this section we are going to see how to integrate GreedyGame Native Ads in Android native projects.
 
 ### **Importing GreedyGame Native Ads SDK**
@@ -10,11 +8,11 @@ Games built with Android Studio can easily integrate with [Gradle](https://gradl
 
 ```gradle hl_lines="6"
 dependencies {
-	implementation fileTree(dir: 'libs', include: ['*.jar'])
-	implementation 'com.android.support:appcompat-v7:26.1.0'
-	...............
-	//greedygame sdk
-	implementation 'com.greedygame:core:9.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    ...............
+    //greedygame sdk
+    implementation 'com.greedygame:core:9.0.0'
 }
 ```
 
@@ -237,6 +235,8 @@ greedyGame.load()
 !!! tip "When to load the GreedyGame's Native Ad?"
     Load the ads by calling `GreedyGameAds.load()` as early as possible to get the benefits of getting an Ad early. An ideal place would be to call this on `onCreate()` method of `Splash screen` of the game or `Menu screen` of the game.
 
+Once `load()` method called GreedyGame SDK will fetch ads from directly from GreedyGame's demand or it will fetch from any of the Mediation's enabled.
+
 ## **Destroy Ads**
 
 When you are done with the ads and do not want to display it call `destroy()` on `GreedyGameAds` instance.
@@ -267,3 +267,34 @@ greedyGame.setAdDestroyListener(object: AdDestroyListener() {
     }
 });
 ```
+
+## **Admob Mediation support**
+GreedyGame SDK can source Ads from GreedyGame directly or it can also fetch demand from `Admob` also.
+
+To enable `Admob Mediation` call `enableAdmob(true)` on the `GreedyGameAds.Builder` instance.
+
+```Java tab= hl_lines="4"
+GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .enableAdmob(true)
+     ---"other builder methods"---
+    .build();
+greedyGame.load()
+```
+
+```Java tab="Kotlin" hl_lines="4"
+val greedyGame = GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .enableAdmob(true)
+     ---"other builder methods"---
+    .build()
+greedyGame.load()
+```
+
+## **Test Ads**
+
+Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration. 
+
+GreedyGame recommends an easy way to test the ads by following the step in [Test Ads](/test-ads).
