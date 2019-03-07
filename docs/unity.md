@@ -1,2 +1,320 @@
-
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
+=======
+We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin
+
+
+
+## **Getting started**
+### **Update your AndroidManifest.xml**
+
+Add the following `<activity>` declaration inside `<application>` tag of the Manifest.
+```xml hl_lines="6"
+<activity
+    android:name="com.greedygame.android.core.campaign.uii.GreedyGameActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
+    android:hardwareAccelerated="true"
+    android:launchMode="singleTask"
+    android:screenOrientation="portrait"
+    android:theme="@style/Theme.GGTransparent">
+</activity>
+```
+
+Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. All the allowed values can be found in [Android Documentation](https://developer.android.com/guide/topics/manifest/activity-element#screen).
+
+### **Adding Permissions**
+
+GreedyGame SDK needs the following permissions to work with.
+
+**Mandatory permissions**
+
+```xml
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
+**Optional permissions**
+
+```xml
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+```
+
+!!! tip
+    `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of doing better ad targetting.
+
+### **Creating Game ID**
+Game ID is an unique identifier for your game.
+
+**Follow the below steps to create a Game ID.**
+
+* Goto [https://integration.greedygame.com](https://integration.greedygame.com).
+* Login with your GreedyGame's Publisher account.
+* Click on **`Games`** menu from the side nav.
+* Click on the **`Add Game`** button from the popup model.
+* Select the **`Android`** Platform.
+* Enter **`Game name`** and **`Package name`** of the game.
+* Click on **`SAVE`**.
+
+![Image](img/android/android-game-creation.png)
+
+Once the game is successfully created you will be taken to `Game Details` page where you can see the game related metrics like `Ad requests`, `Impression` and `Clicks`. 
+
+### **Import Google Mobile Ads SDK for Unity**
+If you don't have Google Mobile Ads SDK for Unity already integrated download it [here](https://github.com/googleads/googleads-mobile-unity/releases/latest).
+Import the package **Assets > Import > Import Custom Package**.
+Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK.
+
+
+## **Importing GreedyGame Native Ads SDK For Unity**
+
+Download the GreedyGame Unity SDK [here](https://github.com/GreedyGame/unity-plugin/releases/latest)
+
+**Import Unity Package Inside current-sdk folder** 
+Open the downloaded SDK folder from github. Go to 'current-sdk' folder and import the package to unity. 
+Assets > Import > Import Custom Package
+
+!!! note ""
+    Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
+
+
+### **Login to GreedyGame Panel**
+After importing the package you should be able to see GreedyGame menu in the top menu bar. 
+Go to **GreedyGame > Account**
+![Image](img/unity/LoginWindow.png)
+
+Enter the credentials and press login. You'll be prompted with a dialog box as shown below if the game is identified from the package details given while creating the game.
+
+![Image](img/unity/AutoGameDetection.png)
+
+!!! note ""
+    If in case you don't get the above popup select the game from the drop down menu and press confirm.
+
+Once you select the game, the details would be fetched and you will see a pop-up as shown below.
+
+![Image](img/unity/LoginSuccessfull.png)
+
+
+### **Creating Ad Units**
+Adunits are ad assets that are rendered as native components inside the game. 
+There are two kinds of unit that you can create
+GameObject : These are the units that are added to the 3d-world of your game.
+UI Object : These units are UI componenets which are always rendered at a certain position on the screen.
+
+Go to **GreedyGame > Ad Units > Create** menu in the top bar.
+
+![Image](img/unity/CreateUnit.png)
+
+**Furnish the details**
+
+* Choose Scene : Select the scene in which you want to create the unit.
+* Name : A unique name to identify the ad unit. eg. MainMenuSquareAd, race_scene_wall_unit etc
+* Aspect Ratio : Aspect in which you want the unit to be created.
+* Dimension : Based on aspect you can choose 3 different sizes for your unit. Small, Optimum, Large.
+* Type of Ad : GameObject / UI Object
+* Default Texture : In case no ads are available this is the texture that would be shown on the game object. You can choose any default texture you like. Just make sure that the dimensions/ ratios are matching else the image will appear stretched
+
+!!! tip
+    **Dimension** : Try to keep the pixel size less than 600 in either dimensions as larger dimensions can result in performance issues.
+
+Once you click on **Create**, a unit will be created and added to the scene. You will be shown a popup as shown below.
+
+![Image](img/unity/CreateUnitSuccessfull.png)
+
+In your scene heirarchy you can see the unit created as shown below. 
+!!! note ""
+    The name given at the time of unit creation is the game object name as well.
+
+![Image](img/unity/CreateUnitInGame.png)
+
+You can now adjust the size rotation etc of the created game object to place it at the exact position you want. Follow the same procedure to add multiple ad units.
+
+
+### **Generate Initialization Code**
+Once you have completed creating the ad units go to **GreedyGame > Build** 
+
+![Image](img/unity/BuildScreen.png)
+
+If the scene is not saved yet it will prompt you to save the scene. Click on Generate Initialization again and the initialization code will be generated for you and you will get a popup as shown below.
+
+![Image](img/unity/BuildScreenSuccessfull.png)
+
+You can see the generated initialization prefab (**GGInitializationPrefab**) in the scene heirarchy as shown below.
+
+![Image](img/unity/BuildScreenInGame.png)
+
+!!! tip
+    The Initialization prefab is always attached to the very first scene in your game's build settings. In case you want to add it to another scene copy the prefab and use it in whichever scene you wish to initialize the sdk. Also make sure that you don't add multiple initialization prefabs inside your game. 
+
+
+
+### **Initializing GreedyGameAds**
+
+`GreedyGameAds` is the entry point to fetching Native Ads from GreedyGame SDK. Create `GreedyGameAds` instance in the `onCreate` of the Activity.
+
+```Java tab=
+GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1002
+    .withAdListener(new AdListener() {
+        @Override
+        public void onUnavailable() {
+            
+        }
+
+        @Override
+        public void onAvailable(@NotNull String adId) {
+            
+        }
+
+        @Override
+        public void onError(@NotNull String error) {
+            
+        }
+    })
+    .build();
+```                        
+
+```Java tab="Kotlin"
+val greedyGameAds = GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1002
+    .withAdListener(object: AdListener() {
+
+        override fun onUnavailable() {
+            
+        }
+
+        override fun onAvailable(advId: String) {
+            
+        }
+
+        override fun onError(error: String) {
+            
+        }
+    })
+    .build()
+```
+
+### **AdListener methods**
+
+| Methods      | Definition                                      |
+| ------------ | ----------------------------------------------- |
+| `onAvailable(adId)`  | SDK fetched an ad|
+| `onUnavailable()`    | Failed to fetch next ad                          |
+| `onError(error)`     | SDK not able to initialize. Check the `error` message.|
+
+### **Rendering Native Ads**
+To render Native Ads add the 'NativeAdView' inside any of the activity in which you want to show Native Ads.
+
+```XML tab=
+<RelativeLayout>
+    ----------
+    other views
+    ----------
+    <com.greedygame.android.adview.NativeAdView
+            android:id="@+id/ggad"
+            app:unitId="ADUNIT_CREATED"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+    ----------
+    other views
+    ----------
+</RelativeLayout>
+```
+
+```Java tab=
+NativeAdView nativeAdView = new NativeAdView(this, ADUNIT_CREATED);
+LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, AD_UNIT_SIZE_IN_PIXELS);
+LinearLayout linearLayout = (LinearLayout) findViewById(R.id.parent);
+linearLayout.addView(nativeAdView, params);
+```
+
+```Java tab="Kotlin"
+val nativeAdView = NativeAdView(this, ADUNIT_CREATED)
+val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, AD_UNIT_SIZE_IN_PIXELS)
+val linearLayout = findViewById(R.id.parent) as? LinearLayout
+linearLayout?.addView(nativeAdView, params)
+```
+
+!!! info
+    The advantage of integrating GreedyGame Native Ads is that we handle Ads refresh based on the value **`Refresh time`** set in the Integration Panels **`Edit Game`** section. Also, by integrating via `NativeAdView` GreedyGame sdk handles `Click` and `Applying Ads` itself.
+
+## **NativeAdView events**
+To get NativeAdView events register for `AdViewListener` by the following way.
+
+```Java tab=
+final NativeAdView nativeAdView = (NativeAdView) findViewById(R.id.ggad);
+nativeAdView.setAdViewListener(new NativeAdView.AdViewListener() {
+    @Override
+    public void onImpression() {
+        Log.d(TAG, "Impression fired for unit id: " + nativeAdView.getUnitId());
+    }
+});
+```
+
+```java tab="Kotlin"
+val nativeAdView = findViewById(R.id.ggad) as NativeAdView
+nativeAdView.adViewListener = object: NativeAdView.AdViewListener() {
+    override fun onImpression() {
+        Log.d(TAG, "Impression fired for unit id: " + nativeAdView.unitId);
+    }
+}
+```
+
+## **Load an Ad**
+To load Native Ads call the `load()` method from `GreedyGameAds` instance created before.
+
+```Java tab= hl_lines="6"
+GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+     ---"other builder methods"---
+    .build();
+greedyGame.load();
+```
+
+```Java tab="Kotlin" hl_lines="6"
+val greedyGame = GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+     ---"other builder methods"---
+    .build()
+greedyGame.load()
+```
+
+!!! tip "When to load the GreedyGame's Native Ad?"
+    Load the ads by calling `GreedyGameAds.load()` as early as possible to get the benefits of getting an Ad early. An ideal place would be to call this on `onCreate()` method of `Splash screen` of the game or `Menu screen` of the game.
+
+## **Destroy Ads**
+
+When you are done with the ads and do not want to display it call `destroy()` on `GreedyGameAds` instance.
+
+```Java tab=
+greedyGame.destroy();
+```
+
+```java tab="Kotlin"
+greedyGame.destroy()
+```
+
+Detroying ads will automatically remove the Ads created with `NativeAdView`. You can also register for Ad destroy events by the following way.
+
+```Java tab=
+greedyGame.setAdDestroyListener(new AdDestroyListener() {
+    @Override
+    public void onDestroy() {
+        
+    }
+});
+```
+
+```java tab="Kotlin"
+greedyGame.setAdDestroyListener(object: AdDestroyListener() {
+    override fun onDestroy() {
+        
+    }
+});
+```
