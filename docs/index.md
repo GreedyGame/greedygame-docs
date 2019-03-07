@@ -2,8 +2,9 @@
 
 This guide is for publishers who wants to add GreedyGame Native Ads as a monetization strategy. 
 
-
-[![GreedyGame Native Ads](http://img.youtube.com/vi/ON1MTJAsqps/0.jpg)](http://www.youtube.com/watch?v=ON1MTJAsqps "GreedyGame Native Ads")
+<iframe width="640" height="400"
+src="https://www.youtube.com/embed/o5OHeQCyT4A">
+</iframe>
 
 ## Prerequisites
 * Creating a Publisher account in [GreedyGame's Publisher Panel](https://publisher.greedygame.com).

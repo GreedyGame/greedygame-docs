@@ -1,0 +1,316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"uni",
+				"unitID"
+			],
+			[
+				"Greed",
+				"GreedyGameWrapper"
+			],
+			[
+				"cont",
+				"continue"
+			],
+			[
+				"Fr",
+				"FRAMEWORK_NAME"
+			],
+			[
+				"fra",
+				"framework1"
+			],
+			[
+				"FRAM",
+				"FRAMEWORK_NAME"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/apple/Desktop/UnityProjects/DummyUnity5.5/Assets/GGStarter.cs",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/GreedyGame.VersionAdapter/GreedyGame.VersionAdapter.csproj",
+		"/Users/apple/Desktop/configlexander",
+		"/Users/apple/Desktop/UnityProjects/untitled.xml",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/android-advanced.md",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/android.md",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/sample.md",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/ios.md",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/ios-faq.md",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/ios-advanced.md",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/index.md",
+		"/Users/apple/Desktop/gitrepo/greedygame-docs/docs/about.md",
+		"/Users/apple/Desktop/IosAlexanderNew",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/Runtime/AssemblyInfo.cs",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/Platform/AssemblyInfo.cs",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/GreedyGame.NativeBridge/Properties/AssemblyInfo.cs",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/GGCPMono/Properties/AssemblyInfo.cs",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/GGControlPanel/Properties/AssemblyInfo.cs",
+		"/Users/apple/Desktop/SpeedStreetPlugin/Assets/Plugins/iOS/GreedyiOSWrapper.framework/Headers/GreedyiOSWrapper-Swift.h",
+		"/Users/apple/Desktop/SpeedStreetPlugin/Assets/Plugins/iOS/GreedyiOSWrapper.framework/Headers/UnityWrapper.h",
+		"/Users/apple/Desktop/SpeedStreetPlugin/Assets/Plugins/iOS/GreedyiOSWrapper.framework/Headers/GreedyiOSWrapper.h",
+		"/Users/apple/Desktop/SpeedStreetPlugin/Assets/Plugins/iOS/GreedyGameWrapper.mm",
+		"/Users/apple/Desktop/SpeedStreetPlugin/Assets/adUnit.cs",
+		"/Users/apple/Desktop/NewAlexanderAPI",
+		"/Users/apple/Desktop/DivisionModelNewApi",
+		"/Users/apple/Desktop/LoginResponse",
+		"/Users/apple/Desktop/init_multiple_ads.json",
+		"/Users/apple/Desktop/config_assets1c_1n.json",
+		"/Users/apple/Desktop/config_admob.json",
+		"/Users/apple/Desktop/config_1c1n.json",
+		"/Users/apple/Desktop/SpeedStreetPlugin/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/SpeedStreetPlugin/Assets/Plugins/Android/AndroidManifest.xml",
+		"/Users/apple/Downloads/22_Feb_19_Wrapper_xcode9.4.1 2/GreedyiOSWrapper.framework/Headers/GreedyiOSWrapper-Swift.h",
+		"/Users/apple/Downloads/22_Feb_19_Wrapper_xcode9.4.1 2/GreedyiOSWrapper.framework/Headers/GreedyiOSWrapper-Bridging-Header.h",
+		"/Users/apple/Downloads/22_Feb_19_Wrapper_xcode9.4.1 2/GreedyiOSWrapper.framework/Headers/GreedyiOSWrapper.h",
+		"/Users/apple/Downloads/22_Feb_19_Wrapper_xcode9.4.1 2/GreedyiOSWrapper.framework/Headers/UnityWrapper.h",
+		"/Users/apple/Downloads/22_Feb_19_Wrapper_xcode9.4.1 2/GreedyiOSWrapper.framework/Headers/UnityWrapper.mm",
+		"/Users/apple/Desktop/MyPrivateRepo/FirebaseFunctions/MessiVsRonaldo/functions/index.js",
+		"/Users/apple/Desktop/ios/UnitySampleGame/PluginAlpha4/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/MyPrivateRepo/FanFightClub/MessiVsRonaldo/google-services.json",
+		"/Users/apple/Desktop/ios/UnitySampleGame/PluginAlpha4/Assets/SwitchScene.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/PluginAlpha4/Assets/NiksCustomRenderer.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/PluginAlpha4/Assets/Plugins/GreedyGame/GreedyCampaignLoader.cs",
+		"/Users/apple/Desktop/Responses/JumboRadar/new/all_activities",
+		"/Users/apple/Desktop/Responses/JumboRadar/ActivitiesResponse",
+		"/Users/apple/Desktop/Responses/JumboRadar/new/loginsuccess",
+		"/Users/apple/Downloads/error",
+		"/Users/apple/Downloads/okio-1.8.0.pom",
+		"/Users/apple/Desktop/Responses/NormalResponse",
+		"/Users/apple/Desktop/ios/UnitySampleGame/Plugin Alpha 4/Assets/Plugins/Android/GreedyAndroidWrapper/GreedyGame Integration completed :D",
+		"/Users/apple/Desktop/ios/UnitySampleGame/Plugin Alpha 4/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/ios/UnitySampleGame/PluginAlpha3/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/ios/UnitySampleGame/PluginAlpha/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.xml",
+		"/Users/apple/Desktop/ios/UnitySampleGame/GreedyGameDemo12/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/ios/UnitySampleGame/AdMobPluginNative/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml",
+		"/Users/apple/Desktop/ios/UnitySampleGame/CheckReflection/Assets/Plugins/GreedyGame/GreedyCampaignLoader.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/Plugins/GreedyGame/GreedyCampaignLoader.cs",
+		"/Users/apple/Desktop/JumboRadar/ActivitiesResponse",
+		"/Users/apple/Desktop/JumboRadar/DivisionsResponse1.json",
+		"/Users/apple/Desktop/JumboRadar/{",
+		"/Users/apple/Desktop/JumboRadar/DivisionsResponse",
+		"/Users/apple/Desktop/JumboRadar/LoginResponse",
+		"/Users/apple/Desktop/NormalResponse",
+		"/Users/apple/Downloads/SpeedStreet8.8.13.1/Assets/Mixpanel/MopubFirstScreen.cs",
+		"/Users/apple/Downloads/SpeedStreet8.8.13.1/Assets/Mixpanel/MopubInterstitial.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/DemoV1Plugin/Assets/ClickGG.cs",
+		"/Users/apple/Desktop/AdmobResponseForDemo",
+		"/Users/apple/Desktop/ios/UnitySampleGame/DemoV1Plugin/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/Plugins/GreedyGame/GGRawImageRenderer.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/Plugins/GreedyGame/GGClickHandler.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/GGRawImageRenderer.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/GGClickHandler.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/ClearBar.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/GGClickHandlerScript.cs",
+		"/Users/apple/Desktop/JumboLoginResponse",
+		"/Users/apple/Desktop/UnitCreationResponse.json",
+		"/Users/apple/Downloads/GGAndroidVersionCheck.cs",
+		"/Users/apple/Desktop/Gyro-Sample/Assets/Scripts/-.cs",
+		"/Users/apple/Desktop/AdmobTest8.8.13.1",
+		"/Users/apple/Downloads/SpeedStreetMoPub/Assets/Plugins/Android/AndroidManifest.xml",
+		"/Users/apple/Desktop/Gyro-Sample/Temp/StagingArea/AndroidManifest.xml",
+		"/Users/apple/Desktop/Gyro-Sample/Temp/StagingArea/AndroidManifest-main.xml",
+		"/Users/apple/Desktop/Gyro-Sample/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/<manifest ... xmlns:tools=\"http:::schemas.android.",
+		"/Users/apple/Desktop/Gyro-Sample/Assets/Plugins/Android/AndroidManifest.xml",
+		"/Users/apple/Desktop/AndroidManifest.xml",
+		"/Users/apple/Downloads/SpeedStreet8.8.13.1/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/GreedyGameAndroidWrapper.mm",
+		"/Users/apple/Desktop/GreedyGameAndroidWrapper.c",
+		"/Users/apple/Desktop/ios/UnitySampleGame/SampleCheck/Assets/Plugins/iOS/GreedyGameWrapper.mm",
+		"/Users/apple/Downloads/AndroidNativePlugin 4/08dd418d661d1fe4b8755ba0520a94c8/pathname",
+		"/Users/apple/Desktop/ios/UnitySampleGame/SampleCheck/Assets/Plugins/iOS/GreedyGameAndroidWrapper.mm",
+		"/Users/apple/Desktop/ios/UnitySampleGame/WccGyroCheck/Assets/Plugins/iOS/GreedyGameWrapper.mm",
+		"/Users/apple/Downloads/SpeedStreetMoPub/Assets/AdMobBannerRectangle.cs",
+		"/Users/apple/Desktop/gitrepo/mock-response-unityplugin/LoginResponse.json",
+		"/Users/apple/Desktop/ios/Pod_Test_Xcode10/Podfile",
+		"/Users/apple/Desktop/Cocoapods/ReleaseUsingThis/1.0.0-xcode10/GreedyGameSDK.podspec",
+		"/Users/apple/Desktop/gitrepo/greedyioswrapper/Podfile",
+		"/Users/apple/Desktop/gitrepo/greedyioswrapper/GreedyiOSWrapper.xcodeproj/project.pbxproj",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/ClearPrefs.cs",
+		"/Users/apple/Desktop/JumpScript.cs",
+		"/Users/apple/Downloads/iOS-Proximity-SDK-1.1.0-swift4.2/EstimoteProximitySDK/EstimoteProximitySDK.framework/Info.plist",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/GGCPMonoScripts/GGCPMonoScripts.csproj",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/GreedyGameControlPanel/GreedyGameControlPanel.csproj",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/Commons/GreedyGame.Commons.csproj",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/OpenScripts/GGRenderer.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/Editor/UnitScanner.cs",
+		"/Users/apple/Desktop/AdmobResponse Sample Game",
+		"/Users/apple/Documents/Edit release · GreedyGame_unity-plugin_files/github-4c3a68124ec3c7e884cb392d5e0556b9.js",
+		"/Users/apple/Desktop/FUNCTION.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/SampleGameUnityiOS/Assets/untitled.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/SampleGameUnityiOS/Assets/GGShowUII.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/SampleGameUnityiOS/Assets/Plugins/GreedyGame/GreedyCampaignLoader.cs",
+		"/Users/apple/Desktop/ios/UnitySampleGame/SampleGameUnityiOS/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Desktop/gitrepo/greedygame-ios-folio/ggfolio/ggfolio.podspec",
+		"/Users/apple/Downloads/SpeedStreetMoPub/Assets/Plugins/iOS/RemoveSim.sh",
+		"/Users/apple/Downloads/SpeedStreetMoPub/Assets/Plugins/iOS/GreedyGameWrapper.mm",
+		"/Users/apple/Desktop/gitrepo/plugin-greedy-unity/GreedyMonoUnity/SwiftObjcBridge/GreedyGameWrapper.mm",
+		"/Users/apple/Desktop/ios/UnitySampleGame/UnityPlugin/Assets/Editor/GreedyGame Control Panel.cs",
+		"/Users/apple/Desktop/AdmobResponse",
+		"/Users/apple/Downloads/SpeedStreet3D 8.8.12 IOS/Traffic Racer 3D - Asset Store/Assets/Plugins/Android/GreedyAndroidWrapper/AndroidManifest.xml",
+		"/Users/apple/Downloads/SpeedStreet3D 8.8.12 IOS/Traffic Racer 3D - Asset Store/Assets/Plugins/iOS/GreedyGameWrapper.mm",
+		"/Users/apple/Downloads/SpeedStreet3D 8.8.12 IOS/Traffic Racer 3D - Asset Store/Assets/Plugins/Android/AndroidManifest.xml",
+		"/Users/apple/Desktop/ios/greedy-ios-beta/greedygame/Podfile",
+		"/Users/apple/Desktop/gitrepo/ios-native-plugin/ggiosnative.podspec",
+		"/Users/apple/Desktop/gitrepo/ios-native-plugin/ggiosnative/Example/Podfile",
+		"/Users/apple/Desktop/ios/greedygame-sdk-ios/greedygame.podspec"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "about.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
