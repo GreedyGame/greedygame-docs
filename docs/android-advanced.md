@@ -2,7 +2,7 @@ In this section we are going to see how to integrate GreedyGame Native Ads Adven
 
 ### **Importing GreedyGame Native Ads SDK**
 
-Games built with Android Studio can easily integrate with [Gradle](https://gradle.org).
+Apps built with Android Studio can easily integrate with [Gradle](https://gradle.org).
 
 **Add the following to the app level** `build.gradle`. (excerpt)
 
@@ -68,10 +68,10 @@ Game ID is an unique identifier for your game.
 
 * Goto [https://integration.greedygame.com](https://integration.greedygame.com).
 * Login with your GreedyGame's Publisher account.
-* Click on **`Games`** menu from the side nav.
-* Click on the **`Add Game`** button from the popup model.
+* Click on **`Apps`** menu from the side nav.
+* Click on the **`Create new app`** button from the popup model.
 * Select the **`Android`** Platform.
-* Enter **`Game name`** and **`Package name`** of the game.
+* Enter **`App name`** and **`Package name`** of the game.
 * Click on **`SAVE`**.
 
 ![Image](img/android/android-game-creation.png)

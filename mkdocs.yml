@@ -13,7 +13,6 @@ nav:
     - Android: android.md
     - iOS: ios.md
     - Unity: unity.md
-    - Cocos: cocos.md
     - GDPR: gdpr.md
     - COPPA: coppa.md
     - Best Practices: best_practices.md
@@ -23,14 +22,10 @@ nav:
     - iOS: ios-faq.md
     - Unity: unity-faq.md
     - Cocos: cocos-faq.md
-  #- Sample:
-   # - sample.md
   - Advanced:
     - Getting Started: getting-started-advanced.md
     - Android Advanced: android-advanced.md
-    - iOS Advanced: ios-advanced.md
     - Unity Advanced: unity-advanced.md
-    - Cocos Advanced: cocos-advanced.md
 
 # configuration
 theme: 
