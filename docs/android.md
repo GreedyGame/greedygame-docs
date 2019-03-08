@@ -237,7 +237,7 @@ greedyGame.load()
 
 Once `load()` method called GreedyGame SDK will fetch ads from directly from GreedyGame's demand or it will fetch from any of the Mediation's enabled.
 
-## **Destroy Ads**
+## **Destroy Ad**
 
 When you are done with the ads and do not want to display it call `destroy()` on `GreedyGameAds` instance.
 
@@ -293,8 +293,52 @@ val greedyGame = GreedyGameAds.Builder(activity)
 greedyGame.load()
 ```
 
+## **Compliance with GDPR**
+To enable GDPR privacy settings for GreedyGame's Native Android SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAds` insance before calling `load()`.
+
+```Java tab=
+// User has given a consent to protect their privacy
+PrivacyOptions privacyOptions = new PrivacyOptions(true); // By passing true means that the User has given consent to protect their privacy.
+greedyGame.withPrivacyOptions(privacyOptions);
+greedyGame.load();
+```
+
+```Java tab="Kotlin"
+// User has given a consent to protect their privacy
+val privacyOptions = PrivacyOptions(true) // By passing true means that the User has given consent to protect their privacy.
+greedyGame.withPrivacyOptions(privacyOptions)
+greedyGame.load()
+```
+
+!!! note
+    Load GreedyGameAds only after the user has given the consent. If `load()` is called before receiving the consent then the current app session will be considered with the consent of using privacy information. 
+
+    Admob's SDK will also receive the Consent passed from you in case if you are using `Admob Mediation`.
+
+## **Compliance with COPPA**
+
+To enable COPPA filter in GreedyGame's Native Android SDK you can call the method `enableCoppa(true)` in `GreedyGameAds.Builder` instance.
+
+```Java tab=
+GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .enableCoppa(true)
+     ---"other builder methods"---
+    .build();
+```
+
+```Java tab="Kotlin"
+val greedyGame = GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .enableCoppa(true)
+     ---"other builder methods"---
+    .build()
+```
+
 ## **Test Ads**
 
 Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
 
-GreedyGame recommends an easy way to test the ads by following the step in [Test Ads](/test-ads).
+GreedyGame recommends an easy way to test the ads by following the steps in [Test Ads]("https://integration-v2.greedylab.com/test-ads").
