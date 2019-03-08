@@ -37,7 +37,8 @@ Add the following `<activity>` declaration inside `<application>` tag of the Man
 </activity>
 ```
 
-Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. All the allowed values can be found in [Android Documentation](https://developer.android.com/guide/topics/manifest/activity-element#screen).
+Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. Allowed values can be found in [Android Documentation](https://developer.android.com/guide/topics/manifest/activity-element#screen).
+
 
 ### **Adding Permissions**
 
@@ -53,7 +54,7 @@ GreedyGame SDK needs the following permissions to work with.
 ```
 
 !!! tip
-    `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of doing better ad targetting.
+    `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of better ad targeting.
 
 ### **Creating App ID**
 App ID is an unique identifier for your app.

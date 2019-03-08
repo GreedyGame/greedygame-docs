@@ -26,6 +26,9 @@ nav:
     - Getting Started: getting-started-advanced.md
     - Android Advanced: android-advanced.md
     - Unity Advanced: unity-advanced.md
+    - Cocos Advanced: cocos-advanced.md
+  - Migration:
+    - Unity : unity-migration.md 
 
 # configuration
 theme: 
