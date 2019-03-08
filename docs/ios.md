@@ -261,7 +261,7 @@ To enable `Admob Mediation` call `enableAdmob(true)` on the `GreedyGameAds.Build
 ```
 
 ## **Compliance with GDPR**
-To enable GDPR privacy settings for GreedyGame's Native Android SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAds` instance before calling `load()`.
+To enable GDPR privacy settings for GreedyGame's Native iOS SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAds` instance before calling `load()`.
 
 ```Swift tab=
   // User has given a consent to protect their privacy
@@ -287,7 +287,7 @@ To enable GDPR privacy settings for GreedyGame's Native Android SDK you can crea
 
 ## **Compliance with COPPA**
 
-To enable COPPA filter in GreedyGame's Native Android SDK you can call the method `enableCoppa(true)` in `GreedyGameAds.Builder` instance.
+To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `enableCoppa(true)` in `GreedyGameAds.Builder` instance.
 
 ```Swift tab= hl_lines="4"
   let greedyGameAds = GreedyGameAds.Builder()
