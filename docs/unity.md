@@ -1,3 +1,5 @@
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
+=======
 We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin
 
 
@@ -48,10 +50,10 @@ Game ID is an unique identifier for your game.
 
 * Goto [https://integration.greedygame.com](https://integration.greedygame.com).
 * Login with your GreedyGame's Publisher account.
-* Click on **`Games`** menu from the side nav.
-* Click on the **`Add Game`** button from the popup model.
-* Select the **`Android`** Platform.
-* Enter **`Game name`** and **`Package name`** of the game.
+* Click on **`Apps`** menu from the side nav.
+* Click on the **`Create new app`** button from the popup model.
+* Select the **`Unity`** Platform.
+* Enter **`App name`** and **`Package name`** of the game.
 * Click on **`SAVE`**.
 
 ![Image](img/android/android-game-creation.png)

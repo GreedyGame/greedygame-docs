@@ -1,20 +1,18 @@
-# Android Advanced (Beta)
-
-In this section we are going to see how to integrate GreedyGame Native Ads in Android native projects.
+In this section we are going to see how to integrate GreedyGame Native Ads Advenced in Android native projects.
 
 ### **Importing GreedyGame Native Ads SDK**
 
-Games built with Android Studio can easily integrate with [Gradle](https://gradle.org).
+Apps built with Android Studio can easily integrate with [Gradle](https://gradle.org).
 
 **Add the following to the app level** `build.gradle`. (excerpt)
 
 ```gradle hl_lines="6"
 dependencies {
-	implementation fileTree(dir: 'libs', include: ['*.jar'])
-	implementation 'com.android.support:appcompat-v7:26.1.0'
-	...............
-	//greedygame sdk
-	implementation 'com.greedygame:core:9.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    ...............
+    //greedygame sdk
+    implementation 'com.greedygame:core:9.0.0'
 }
 ```
 
@@ -70,10 +68,10 @@ Game ID is an unique identifier for your game.
 
 * Goto [https://integration.greedygame.com](https://integration.greedygame.com).
 * Login with your GreedyGame's Publisher account.
-* Click on **`Games`** menu from the side nav.
-* Click on the **`Add Game`** button from the popup model.
+* Click on **`Apps`** menu from the side nav.
+* Click on the **`Create new app`** button from the popup model.
 * Select the **`Android`** Platform.
-* Enter **`Game name`** and **`Package name`** of the game.
+* Enter **`App name`** and **`Package name`** of the game.
 * Click on **`SAVE`**.
 
 ![Image](img/android/android-game-creation.png)
@@ -155,8 +153,43 @@ val greedyGameAds = GreedyGameAds.Builder(activity)
 | `onUnavailable()`    | Failed to fetch next ad                          |
 | `onError(error)`     | SDK not able to initialize. Check the `error` message.|
 
-### **Rendering Native Ads**
-To render Native Ads add the 'NativeAdView' inside any of the activity in which you want to show Native Ads.
+### **Custom Rendering Native Ads**
+Custom rendering allows you to render Native Ads by fetching the image's local path and rendering it with your own `ImageView`.
+Follow the example to do the same.
+
+**To fetch the Ad**
+
+To fetch the Ad for a unit you need to call `getPath(uniId)` in `GreedyGameAds` instance.
+
+```Java tab=
+ImageView adUnitIV = new ImageView(context) // AdUnit ImageView to render ad
+// Game logics
+String unitPath = greedyGame.getPath(ADUNIT_CREATED);
+if(!TextUtils.isEmpty(unitPath)) {
+    // GreedyGameAds has an ad that can be rendered for this Unit id.
+    String adBitmap = BitmapHelper.getBitmap(unitPath); // getBitmap() can be of any method which you use to create a Bitmap object out of image file path.
+    adUnitIV.setBitmap(adBitmap);
+} else {
+    // GreedyGame does not have a valid Ad for this Unit id at the moment
+}
+```
+
+```Java tab="Kotlin"
+val adUnitIV = ImageView(context) // AdUnit ImageView to render ad
+// Game logics
+val unitPath = greedyGame.getPath(ADUNIT_CREATED)
+if(unitPath.isNotEmpty()) {
+    // GreedyGameAds has an ad that can be rendered for this Unit id.
+    val adBitmap = BitmapHelper.getBitmap(unitPath)
+    adUnitIV.bitmap = adBitmap
+} else {
+    // GreedyGame does not have a valid Ad for this Unit id at the moment
+}
+```
+
+!!! warning
+    
+    It's the publisher responsibility to call `getPath(unitId)` at relevant places to render the ads. For example, in `onAvailable()` callback of the `AdListener` and when you are changing the `Activity` or `Scene` calling `getPath(unitId)` at the start of the scene will help you resolve
 
 ```XML tab=
 <RelativeLayout>
@@ -237,6 +270,8 @@ greedyGame.load()
 !!! tip "When to load the GreedyGame's Native Ad?"
     Load the ads by calling `GreedyGameAds.load()` as early as possible to get the benefits of getting an Ad early. An ideal place would be to call this on `onCreate()` method of `Splash screen` of the game or `Menu screen` of the game.
 
+Once `load()` method called GreedyGame SDK will fetch ads from directly from GreedyGame's demand or it will fetch from any of the Mediation's enabled.
+
 ## **Destroy Ads**
 
 When you are done with the ads and do not want to display it call `destroy()` on `GreedyGameAds` instance.
@@ -267,3 +302,34 @@ greedyGame.setAdDestroyListener(object: AdDestroyListener() {
     }
 });
 ```
+
+## **Admob Mediation support**
+GreedyGame SDK can source Ads from GreedyGame directly or it can also fetch demand from `Admob` also.
+
+To enable `Admob Mediation` call `enableAdmob(true)` on the `GreedyGameAds.Builder` instance.
+
+```Java tab= hl_lines="4"
+GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .enableAdmob(true)
+     ---"other builder methods"---
+    .build();
+greedyGame.load()
+```
+
+```Java tab="Kotlin" hl_lines="4"
+val greedyGame = GreedyGameAds.Builder(activity)
+    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+    .enableAdmob(true)
+     ---"other builder methods"---
+    .build()
+greedyGame.load()
+```
+
+## **Test Ads**
+
+Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration. 
+
+GreedyGame recommends an easy way to test the ads by following the steps in [Test Ads](/test-ads).
