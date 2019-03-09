@@ -6,7 +6,7 @@ To enable COPPA filter in GreedyGame's Native Android SDK you can enable it by c
 
 ```Java tab=
 GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
-    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000
     .enableCoppa(true)
      ---"other builder methods"---
@@ -15,7 +15,7 @@ GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
 
 ```Java tab="Kotlin"
 val greedyGame = GreedyGameAds.Builder(activity)
-    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000
     .enableCoppa(true)
      ---"other builder methods"---

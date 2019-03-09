@@ -1,3 +1,5 @@
+### Android
+
 To enable GDPR privacy settings for GreedyGame's Native Android SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAds` insance before calling `load()`.
 
 ```Java tab=
