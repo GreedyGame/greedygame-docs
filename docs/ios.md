@@ -3,11 +3,11 @@ In this section we are going to see how to integrate GreedyGame Native Ads in iO
 
 ### **Importing GreedyGame Native Ads SDK**
 
-Games built with Xcode can easily integrate with Cocoapod or Manually.
+Games built with Xcode can easily integrate with [Cocoapods](https://cocoapods.org/) or Manually.
 
 **CocoaPod:**
 
-To integrate GreedyGame SDK into your Xcode project using CocoaPods, specify it in your Podfile:
+To integrate GreedyGame SDK into your Xcode project using [CocoaPods](https://cocoapods.org/), specify it in your Podfile:
 
 ```
   source 'https://github.com/GreedyGame/cocoapod-folio.git'   
@@ -144,7 +144,7 @@ Extend the `AdListener` to the corresponding viewcontroller which receives callb
 
 ### **Rendering Native Ads**
 
-To render Native Ads set the the `NativeAdView` class in  any of the view in Viewcontroller in which you want to show Native Ads.
+To render Native Ads set the the `NativeAdView` class in  any of the view in ViewController in which you want to show Native Ads.
 
 ```Swift tab=
   let nativeAdView = NativeAdView(frame: <View Size>)
@@ -194,7 +194,7 @@ To load Native Ads call the `load()` method from `GreedyGameAds` instance create
 ```
 
 !!! tip "When to load the GreedyGame's Native Ad?"
-    Load the ads by calling `greedyGameAds.load()` as early as possible to get the benefits of getting an Ad early. An ideal place would be to call this on `ViewDidLoad()` method of the first viewcontroller of the game.
+    Load the ads by calling `greedyGameAds.load()` as early as possible to get the benefits of getting an Ad early. An ideal place would be to call this on `ViewDidLoad()` method of the first `ViewController` of the game.
 
 Once `load()` method called GreedyGame SDK will fetch ads directly from GreedyGame's demand or it will fetch from any of the Mediation's enabled.
 
@@ -203,14 +203,14 @@ Once `load()` method called GreedyGame SDK will fetch ads directly from GreedyGa
 When you are done with the ads and do not want to display it call `destroy()` on `GreedyGameAds` instance.
 
 ```Swift tab=
-  self.greedyGameAds.destroy()
+  greedyGameAds.destroy()
 ```
 
 ```Objective-C tab="Objective-C"
   [self.greedyGameAds destroy];
 ```
 
-Detroying ads will automatically remove the Ads created with `NativeAdView`. You can also register for Ad destroy events by extending the `AdDestroyListener`
+Detroying ads will automatically remove the Ads created with `NativeAdView`. You can also register for Ad destroy events by extending the `AdDestroyListener` and register the `AdDestroyListener` before `load()` the SDK like below
 
 ```Swift tab=
   greedyGameAds.setAdDestroyListener(self)
@@ -220,7 +220,7 @@ Detroying ads will automatically remove the Ads created with `NativeAdView`. You
   [self.greedyGameAds setAdDestroyListener:self];
 ```
 
-You can get the destroy callback by conforming `destroy()` method in the corresponding viewController which extends the `AdDestroyListener`
+You can get the destroy callback by conforming `destroy()` method in the corresponding `ViewController` which extends the `AdDestroyListener`
 
 ```Swift tab=
   func Destroy() {
