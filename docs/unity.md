@@ -50,10 +50,10 @@ Game ID is an unique identifier for your game.
 
 * Goto [https://integration.greedygame.com](https://integration.greedygame.com).
 * Login with your GreedyGame's Publisher account.
-* Click on **`Games`** menu from the side nav.
-* Click on the **`Add Game`** button from the popup model.
-* Select the **`Android`** Platform.
-* Enter **`Game name`** and **`Package name`** of the game.
+* Click on **`Apps`** menu from the side nav.
+* Click on the **`Create new app`** button from the popup model.
+* Select the **`Unity`** Platform.
+* Enter **`App name`** and **`Package name`** of the game.
 * Click on **`SAVE`**.
 
 ![Image](img/android/android-game-creation.png)
@@ -154,7 +154,7 @@ You can see the generated initialization prefab (**GGInitializationPrefab**) in 
 
 ```Java tab=
 GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
-    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000
     .addUnitId(ADUNIT_CREATED) //e.g slot-1002
     .withAdListener(new AdListener() {
@@ -178,7 +178,7 @@ GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
 
 ```Java tab="Kotlin"
 val greedyGameAds = GreedyGameAds.Builder(activity)
-    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000
     .addUnitId(ADUNIT_CREATED) //e.g slot-1002
     .withAdListener(object: AdListener() {
@@ -269,7 +269,7 @@ To load Native Ads call the `load()` method from `GreedyGameAds` instance create
 
 ```Java tab= hl_lines="6"
 GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
-    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000
      ---"other builder methods"---
     .build();
@@ -278,7 +278,7 @@ greedyGame.load();
 
 ```Java tab="Kotlin" hl_lines="6"
 val greedyGame = GreedyGameAds.Builder(activity)
-    .gameId(GAME_ID_CREATED) //e.g 00100100
+    .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000
      ---"other builder methods"---
     .build()

@@ -13,25 +13,22 @@ nav:
     - Android: android.md
     - iOS: ios.md
     - Unity: unity.md
-    - Cocos: cocos.md
-    - Compliance with GDPR: gdpr.md
-    - Compliance with COPPA: coppa.md
+    - GDPR: gdpr.md
+    - COPPA: coppa.md
     - Best Practices: best_practices.md
-    - Test Ads: test-ads.md
     - Release Notes: release-notes.md
   - FAQs:
     - Android: android-faq.md
     - iOS: ios-faq.md
     - Unity: unity-faq.md
     - Cocos: cocos-faq.md
-  - Sample:
-    - sample.md
   - Advanced:
     - Getting Started: getting-started-advanced.md
     - Android Advanced: android-advanced.md
-    - iOS Advanced: ios-advanced.md
     - Unity Advanced: unity-advanced.md
     - Cocos Advanced: cocos-advanced.md
+  - Migration:
+    - Unity : unity-migration.md 
 
 # configuration
 theme: 
