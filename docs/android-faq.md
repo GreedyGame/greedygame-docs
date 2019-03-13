@@ -42,6 +42,4 @@ GreedyGame provides you with flexibility to create Ad Experiences that are tailo
 Ad Unit performance has direct co-relation to the revenue being generated. Ad Campaigns can be run by Advertisers in different modes but CPM(Cost Per Mille) and CPC(Cost Per Click) are the most common. If clickability is turned off, your Ad Unit will still be monetized on the CPM campaigns but will stop generating revenues from CPC ones. This may result in a loss in revenue. We recommend fine tuning this setting only when you have had enough data on the Ad Unit performance to make viable recommendations
 
 
-### **Why can't I set the height and width attributes to wrap_content?
-
-### **
+### **Why can't I set the height and width attributes to wrap_content?**
