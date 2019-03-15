@@ -64,14 +64,14 @@ App ID is an unique identifier for your app.
 * Goto [https://integration.greedygame.com](https://integration.greedygame.com).
 * Login with your GreedyGame's Publisher account.
 * Click on **`Apps`** menu from the side nav.
-* Click on the **`Add new app`** button from the popup model.
+* Click on the **`Create new app`** button from the popup model.
 * Select the **`Android`** Platform.
 * Enter **`App name`** and **`Package name`** of the app.
 * Click on **`SAVE`**.
 
 Once created copy the **App id** from the App details card.
 
-![Image](img/android/android-game-creation.png)
+![Image](img/android/game-creation.png)
 
 Once the app is successfully created you will be taken to `App Details` page where you can see the app related metrics like `Ad requests`, `Impression` and `Clicks`.
 
@@ -85,7 +85,7 @@ Adunits are ad assets that are rendered as a native component to the app.
 * Click on **`Create Unit`** inside the **`Ad units in app`** Card.
 * Enter all the fields and click **`Save`**.
 
-![Image](img/unit-creation.png)
+![Image](img/android/unit-creation.png)
 
 Follow the same procedure to create multiple Ad Units inside the app.
 
