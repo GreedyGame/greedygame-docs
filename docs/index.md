@@ -2,24 +2,12 @@
 
 This guide is for publishers who wants to add GreedyGame Native Ads as a monetization strategy. 
 
+GreedyGame help you to monetize your App with **Native Ads** that peoples love. Checkout the video below which shows one of the best integrations of GreedGame Ads.
+
 <iframe width="640" height="400"
 src="https://www.youtube.com/embed/o5OHeQCyT4A">
 </iframe>
 
 ## Prerequisites
 * Creating a Publisher account in [GreedyGame's Publisher Panel](https://publisher.greedygame.com).
-* Logging in with the same accont details in [GreedyGame's Integration Panel](https://integration.greedygame.com).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-	mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* Logging in with the same accont details in [GreedyGame's Integration Panel](https://integration-v2.greedygame.com).
