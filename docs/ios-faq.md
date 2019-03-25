@@ -1,8 +1,15 @@
 
-### **What is the minimum supported X Code version?**
+### **What is the minimum supported XCode version?**
+XCode-10
 
 ### **What is the size of the iOS SDK?**
+57 MB
 
+### **What is the minimum swift version?**
+swift-4
+
+
+## **Common Errors**
 
 `
 dyld: Library not loaded: @rpath/commons.framework/commons 
