@@ -70,7 +70,7 @@ App ID is an unique identifier for your app.
 
 Once created copy the **App id** from the App details card.
 
-![Image](img/android/android-game-creation.png)
+![Image](img/android/game-creation.png)
 
 Once the app is successfully created you will be taken to `App Details` page where you can see the app related metrics like `Ad requests`, `Impression` and `Clicks`.
 
@@ -84,7 +84,7 @@ Adunits are ad assets that are rendered as a native component to the app.
 * Click on **`Create Unit`** inside the **`Ad units in app`** Card.
 * Enter all the fields and click **`Save`**.
 
-![Image](img/unit-creation.png)
+![Image](img/android/unit-creation.png)
 
 Follow the same procedure to create multiple Ad Units inside the app.
 
@@ -318,7 +318,7 @@ greedyGame.load()
 
 To enable COPPA filter in GreedyGame's Native Android SDK you can enable it by calling the method `enableCoppa(true)` in `GreedyGameAds.Builder` instance.
 
-```Java tab=
+```Java tab= hl_lines="4"
 GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
     .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000
@@ -327,7 +327,7 @@ GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
     .build();
 ```
 
-```Java tab="Kotlin"
+```Java tab="Kotlin" hl_lines="4"
 val greedyGame = GreedyGameAds.Builder(activity)
     .appId(APP_ID_CREATED) //e.g 00100100
     .addUnitId(ADUNIT_CREATED) //e.g slot-1000

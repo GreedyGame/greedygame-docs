@@ -22,12 +22,10 @@ nav:
     - Android: android-faq.md
     - iOS: ios-faq.md
     - Unity: unity-faq.md
-    - Cocos: cocos-faq.md
   - Advanced:
     - Getting Started: getting-started-advanced.md
     - Android Advanced: android-advanced.md
     - Unity Advanced: unity-advanced.md
-    - Cocos Advanced: cocos-advanced.md
   - Migration:
     - Unity : unity-migration.md 
 

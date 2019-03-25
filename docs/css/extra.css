@@ -2,6 +2,18 @@ h1 {
 	color: red;
 }
 
+.codehilite .hll {
+    display: block;
+    margin: 0 -.6rem;
+    padding: 0 .6rem;
+    background-color: rgba(78, 12, 183, 0.7);
+    color: white;
+}
+
+.codehilite .hll * {
+    color: white;
+}
+
 .download-button {
   background-color: #009688; /* Green */
   border: none;
