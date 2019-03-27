@@ -1,5 +1,3 @@
-This section deals with the commonly asked questions regarding the Android SDK 
-
 ### **I unable to see ads in my app. How do I troubleshoot?**
 This question deals with Android troubleshooting. For Unity, Cocos, iOS platforms, please visit their respective pages
 
