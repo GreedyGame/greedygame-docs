@@ -55,7 +55,7 @@ Game ID is an unique identifier for your game.
 
 **Follow the below steps to create a Game ID.**
 
-* Goto [https://integration.greedygame.com](https://integration.greedygame.com).
+* Goto [https://integration-v2.greedylab.com](https://integration-v2.greedylab.com).
 * Login with your GreedyGame's Publisher account.
 * Click on **`Games`** menu from the side nav.
 * Click on the **`Add Game`** button from the popup model.
@@ -73,7 +73,7 @@ Adunits are ad assets that are rendered as a native component to the game.
 
 **Follow the below steps to create an Ad Unit ID.**
 
-* Goto **[Integration panel](https://integration.greedygame.com)**.
+* Goto **[Integration panel](https://integration-v2.greedylab.com)**.
 * Select a Game you have created previously.
 * Click on **`Create Unit`** inside the **`Ad units in game`** Card.
 * Enter all the fields and click **`Save`**.
