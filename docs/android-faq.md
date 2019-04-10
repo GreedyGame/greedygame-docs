@@ -9,6 +9,9 @@ This question deals with Android troubleshooting. For Unity, Cocos, iOS platform
 
 If you are still unable to see ads, then send out an emails to <Insert Support Email here> stating your problem.
 
+### **What is the** `minimumSdkVersion` **version supported by GreedyGame sdk?**
+GreedyGame SDK supports from Android version `17` or Android Version `4.2` and above.
+
 ### **I can see some ads but not all of them. What could be the problem?**
 If you are able to see some ads in the Game, then the basic integration is working fine. A general cause of this behaviour is when developers accidentally forget to add the relevant Ad Unit Id in the Ad Request Builder call. Please check [this](/android-advanced/#initializing-greedygameads) section for more information
 
@@ -40,4 +43,5 @@ GreedyGame provides you with flexibility to create Ad Experiences that are tailo
 Ad Unit performance has direct co-relation to the revenue being generated. Ad Campaigns can be run by Advertisers in different modes but CPM(Cost Per Mille) and CPC(Cost Per Click) are the most common. If clickability is turned off, your Ad Unit will still be monetized on the CPM campaigns but will stop generating revenues from CPC ones. This may result in a loss in revenue. We recommend fine tuning this setting only when you have had enough data on the Ad Unit performance to make viable recommendations
 
 
-### **Why can't I set the height and width attributes to wrap_content?**
+### **Why can't I set the height and width attributes to** `wrap_content` **in** `NativeAdView`?
+`NativeAdView` does not render the Ad based on size of the Ad content. The advantage is for example, if the Ad is too big to render it shouldn't affect the app's UI by using more space than required. So `NativeAdView` will try to render the Ad based on it's manual size provided. Also, you can wrap `NativeAdView` into another `ViewGroup` and make the `NativeAdView`'s dimensions as `match_parent`.
