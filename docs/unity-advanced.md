@@ -1,8 +1,7 @@
-# Unity Advanced (Beta)
+# Unity Advanced 
 
-This guide will walk you through detailed GreedyGame SDK integration without using plugin. In case you want to know more on plugin integration please go to the following link.
+We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin.
 
-### **Getting started**
 ### **Update your AndroidManifest.xml**
 
 Add the following `<activity>` declaration inside `<application>` tag of the Manifest.
@@ -17,7 +16,7 @@ Add the following `<activity>` declaration inside `<application>` tag of the Man
 </activity>
 ```
 
-Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. All the allowed values can be found in [Android Documentation](https://developer.android.com/guide/topics/manifest/activity-element#screen).
+Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. All the allowed values can be found in <a target="_blank" rel="noopener noreferrer" href="https://developer.android.com/guide/topics/manifest/activity-element#screen">Android Documentation</a>
 
 ### **Adding Permissions**
 
@@ -46,7 +45,7 @@ Game ID is an unique identifier for your game.
 
 **Follow the below steps to create a Game ID.**
 
-* Goto [https://integration.greedygame.com](https://integration.greedygame.com).
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Login with your GreedyGame's Publisher account.
 * Click on **`Games`** menu from the side nav.
 * Click on the **`Add Game`** button from the popup model.
@@ -58,15 +57,11 @@ Game ID is an unique identifier for your game.
 
 Once the game is successfully created you will be taken to `Game Details` page where you can see the game related metrics like `Ad requests`, `Impression` and `Clicks`. 
 
-### **Import Google Mobile Ads SDK for Unity**
-If you don't have Google Mobile Ads SDK for Unity already integrated download it [here](https://github.com/googleads/googleads-mobile-unity/releases/latest).
-Import the package **Assets > Import > Import Custom Package**.
-Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK.
-
-
 ### **Importing GreedyGame Native Ads SDK For Unity**
 
-Download the GreedyGame Unity SDK [here](https://github.com/GreedyGame/unity-plugin/releases/latest)
+Download the GreedyGame Unity SDK  
+
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
 
 **Import Unity Package Inside current-sdk folder** 
 Open the downloaded SDK folder from github. Go to 'current-sdk' folder and import the package to unity. 
@@ -75,7 +70,10 @@ Assets > Import > Import Custom Package
 !!! note ""
     Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
 
-
+### **Import Google Mobile Ads SDK for Unity**
+If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
+Import the package **Assets > Import > Import Custom Package**.
+Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK
 
 
 ### **Creating Ad Units**
@@ -83,7 +81,7 @@ Adunits are ad assets that are rendered as a native component to the game.
 
 **Follow the below steps to create an Ad Unit ID.**
 
-* Goto **[Integration panel](https://integration.greedygame.com)**.
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Select a Game you have created previously.
 * Click on **`Create Unit`** inside the **`Ad units in game`** Card.
 * Enter all the fields and click **`Save`**.
@@ -93,39 +91,21 @@ Adunits are ad assets that are rendered as a native component to the game.
 Follow the same procedure to create multiple Ad Units inside the game.
 
 !!! note ""
-    Best practices about the Unit Dimensions can be found under **[Best Practices](http://127.0.0.1:8000/best_practices/)** section.
-
-
-### **Creating Ad Units**
-Adunits are ad assets that are rendered as a native component to the game.
-
-**Follow the below steps to create an Ad Unit ID.**
-
-* Goto **[Integration panel](https://integration.greedygame.com)**.
-* Select a Game you have created previously.
-* Click on **`Create Unit`** inside the **`Ad units in game`** Card.
-* Enter all the fields and click **`Save`**.
-
-![Image](img/unit-creation.png)
-
-Follow the same procedure to create multiple Ad Units inside the game.
-
-!!! note ""
-    Best practices about the Unit Dimensions can be found under **[Best Practices](http://127.0.0.1:8000/best_practices/)** section.
+    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
 
 ### **Initializing GreedyGame SDK**
 Create a new C# Script and add the following code snippet inside Start() method
 ``` c
-		DontDestroyOnLoad (this.gameObject);
-        if (RuntimePlatform.Android == Application.platform || RuntimePlatform.IPhonePlayer == Application.platform) {
-            GGConfig adConfig = new GGConfig ();
-            adConfig.setGameId (AppId);
-            adConfig.setListener (new GreedyAgentListener ());
-            GGUnitConfig adUnitConfig = new GGUnitConfig ("slot-123", defaultTexture, true, false);
-            adConfig.addUnit (adUnitConfig);
-            adConfig.enableCoppa (enableCoppa);
-            GreedyGameAgent.Instance.Init (adConfig);
-        }
+DontDestroyOnLoad (this.gameObject);
+if (RuntimePlatform.Android == Application.platform || RuntimePlatform.IPhonePlayer == Application.platform) {
+    GGConfig adConfig = new GGConfig ();
+    adConfig.setGameId (AppId);
+    adConfig.setListener (new GreedyAgentListener ());
+    GGUnitConfig adUnitConfig = new GGUnitConfig ("slot-123", defaultTexture, true, false);
+    adConfig.addUnit (adUnitConfig);
+    adConfig.enableCoppa (enableCoppa);
+    GreedyGameAgent.Instance.Init (adConfig);
+}
 ```
 ### Create a GGConfig object
 * adConfig.setGameId (AppId) : AppId (string) is the id of the app that was created.
@@ -144,7 +124,7 @@ Create a class implementing GGAdListener and set it using the setListener API.
 
 ### Initialize GreedyGame using the following API
 ```
-* GreedyGameAgent.Instance.Init (adConfig);
+ GreedyGameAgent.Instance.Init(adConfig);
 ```
 
 ### Rendering Ads
