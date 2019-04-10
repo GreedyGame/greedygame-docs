@@ -1,5 +1,5 @@
 # Project information
-site_name: 'Documentation - GreedyGame'
+site_name: 'Documentation - GreedyGame - SDK 9.0'
 site_author: 'Mathan raj'
 site_url: 'https://documentation.greedygame.com'
 
@@ -25,6 +25,7 @@ nav:
   - Advanced:
     - Getting Started: getting-started-advanced.md
     - Android Advanced: android-advanced.md
+    - iOS Advanced: ios-advanced.md
     - Unity Advanced: unity-advanced.md
   - Migration:
     - Unity : unity-migration.md 

@@ -1,8 +1,8 @@
 ### **What should I do if I hit the 64K method limit?**  
-This is a common scenario with larger apps in Android. The simplest solution would be to [enable MultiDex](https://developer.android.com/studio/build/multidex) in your application.  
+This is a common scenario with larger apps in Android. The simplest solution would be to <a target="_blank" rel="noopener noreferrer" href="https://developer.android.com/studio/build/multidex">enable MultiDex</a> in your application.  
 Sometimes, developers also try to shrink libraries to reduce down the method count. You can read up more about them here:  
-1. [Contentful Blog post](https://www.contentful.com/blog/2014/10/30/android-and-the-dex-64k-methods-limit/)  
-2. [Stackoverflow post on reducing Google Play Modules](https://stackoverflow.com/questions/26891208/shrink-google-play-services-library-for-use-with-google-analytics-only)  
+1. <a target="_blank" rel="noopener noreferrer" href="https://www.contentful.com/blog/2014/10/30/android-and-the-dex-64k-methods-limit/">Contentful Blog post</a>  
+2. <a target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/questions/26891208/shrink-google-play-services-library-for-use-with-google-analytics-only">Stackoverflow post on reducing Google Play Modules</a>.  
 
 ### **What is your payment cycle? Is there a minimum threshold for payments?**  
 We follow a 60 day payment cycle. The payment will be processed 60 days after an invoice has been raised by the Publisher.  

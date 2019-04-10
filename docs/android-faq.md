@@ -1,22 +1,22 @@
-### **I unable to see ads in my app. How do I troubleshoot?**
+### **I am unable to see ads in my app. How do I troubleshoot?**
 This question deals with Android troubleshooting. For Unity, Cocos, iOS platforms, please visit their respective pages
 
 1. Check Android Logs to see relevant information on misconfiguration. All GreedyGame logs start with a 'GG' prefix
 2. Check your internet connection and disable proxies, if any  
-3. Check if the [GreedyGame Activity](/android/#update-your-androidmanifestxml) is present in the manifest file  
-4. Did the [GreedyGame Panel App](https://play.google.com/store/apps/details?id=com.greedygame.androididfinder) throw an error message? Follow the steps in the app for troubleshooting
-5. Make sure that you have correctly configured the [Game Id](/android/#creating-game-id) and the [Ad Unit(s)](/android/#creating-ad-units) as a part of the integration steps
+3. Check if the <a target="_blank" rel="noopener noreferrer" href="/android/#update-your-androidmanifestxml">GreedyGame Activity</a> is present in the manifest file  
+4. Did the <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.greedygame.androididfinder">GreedyGame Panel App</a> throw an error message? Follow the steps in the app for troubleshooting
+5. Make sure that you have correctly configured the <a target="_blank" rel="noopener noreferrer" href="/android/#creating-app-id">Game Id</a> and the <a target="_blank" rel="noopener noreferrer" href="/android/#creating-ad-units">Ad Unit(s)</a> as a part of the integration steps
 
-If you are still unable to see ads, then send out an emails to <Insert Support Email here> stating your problem.
+If you are still unable to see ads, then send out an e-mail to <Insert Support Email here> stating your problem.
 
 ### **I can see some ads but not all of them. What could be the problem?**
-If you are able to see some ads in the Game, then the basic integration is working fine. A general cause of this behaviour is when developers accidentally forget to add the relevant Ad Unit Id in the Ad Request Builder call. Please check [this](/android-advanced/#initializing-greedygameads) section for more information
+If you are able to see some ads in the Game, then the basic integration is working fine. A general cause of this behaviour is when developers accidentally forget to add the relevant Ad Unit Id in the Ad Request Builder call. Please check <a target="_blank" rel="noopener noreferrer" href="/android-advanced/#initializing-greedygameads">this</a> section for more information
 
 ### **Why do I need Google PlayServices to be integrated? Which is the minimum supported version?**
 In order to comply with Google's Advertising Guidelines, there are certain dependencies on Google Play Services. Also, Google AdMob launched a complete Native Advanced Ad support from version 11.0.4 and hence that is the minimum required supported version
 
 ### **Which Activities do I need to declare as a part of my manifest?**
-You need to include a GreedyGame activity for completing the integration process. The same is mentioned in the integration step [here](/android/#update-your-androidmanifestxml). Do not forget to change the orientation to match your app's orientation. 
+You need to include a GreedyGame activity for completing the integration process. The same is mentioned in the integration step <a target="_blank" rel="noopener noreferrer" href="/android/#update-your-androidmanifestxml">here</a>. Do not forget to change the orientation to match your app's orientation. 
 ```xml hl_lines="6"
 <activity
     android:name="com.greedygame.android.core.campaign.uii.GreedyGameActivity"

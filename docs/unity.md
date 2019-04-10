@@ -1,10 +1,5 @@
-We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin
 
-## **Getting started**
-
-GreedyGame SDK supports swift way of integrating Unity sdk by use of Unity Native Plugin. You can download the plugin by clicking on the button.
-
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
+We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin.
 
 ### **Update your AndroidManifest.xml**
 
@@ -20,7 +15,7 @@ Add the following `<activity>` declaration inside `<application>` tag of the Man
 </activity>
 ```
 
-Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. All the allowed values can be found in [Android Documentation](https://developer.android.com/guide/topics/manifest/activity-element#screen).
+Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. All the allowed values can be found in <a target="_blank" rel="noopener noreferrer" href="https://developer.android.com/guide/topics/manifest/activity-element#screen">Android Documentation</a>.
 
 ### **Adding Permissions**
 
@@ -49,7 +44,7 @@ Game ID is an unique identifier for your game.
 
 **Follow the below steps to create a Game ID.**
 
-* Goto [https://integration.greedygame.com](https://integration.greedygame.com).
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Login with your GreedyGame's Publisher account.
 * Click on **`Apps`** menu from the side nav.
 * Click on the **`Create new app`** button from the popup model.
@@ -57,19 +52,15 @@ Game ID is an unique identifier for your game.
 * Enter **`App name`** and **`Package name`** of the game.
 * Click on **`SAVE`**.
 
-![Image](img/android/android-game-creation.png)
+![Image](img/unity/game-creation.png)
 
 Once the game is successfully created you will be taken to `Game Details` page where you can see the game related metrics like `Ad requests`, `Impression` and `Clicks`. 
 
-### **Import Google Mobile Ads SDK for Unity**
-If you don't have Google Mobile Ads SDK for Unity already integrated download it [here](https://github.com/googleads/googleads-mobile-unity/releases/latest).
-Import the package **Assets > Import > Import Custom Package**.
-Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK.
+### **Importing GreedyGame Native Ads SDK For Unity**
 
+Download the GreedyGame Unity SDK  
 
-## **Importing GreedyGame Native Ads SDK For Unity**
-
-Download the GreedyGame Unity SDK [here](https://github.com/GreedyGame/unity-plugin/releases/latest)
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
 
 **Import Unity Package Inside current-sdk folder** 
 Open the downloaded SDK folder from github. Go to 'current-sdk' folder and import the package to unity. 
@@ -77,6 +68,12 @@ Assets > Import > Import Custom Package
 
 !!! note ""
     Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
+
+
+### **Import Google Mobile Ads SDK for Unity**
+If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
+Import the package **Assets > Import > Import Custom Package**.
+Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK.
 
 
 ### **Login to GreedyGame Panel**
@@ -151,4 +148,4 @@ You can see the generated initialization prefab (**GGInitializationPrefab**) in 
 
 Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
 
-GreedyGame recommends an easy way to test the ads by following the steps in [Test Ads]("https://integration-v2.greedylab.com/test-ads").
+GreedyGame recommends an easy way to test the ads by following the steps in <a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com/verify">Test Ads</a>.

@@ -9,5 +9,4 @@ src="https://www.youtube.com/embed/o5OHeQCyT4A">
 </iframe>
 
 ## Prerequisites
-* Creating a Publisher account in [GreedyGame's Publisher Panel](https://publisher.greedygame.com).
-* Logging in with the same accont details in [GreedyGame's Integration Panel](https://integration-v2.greedygame.com).
+To start the integration process create a Publisher account in <a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">GreedyGame's Integration Panel</a> and login.

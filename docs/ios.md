@@ -3,11 +3,11 @@ In this section we are going to see how to integrate GreedyGame Native Ads in iO
 
 ### **Importing GreedyGame Native Ads SDK**
 
-Games built with Xcode can easily integrate with [Cocoapods](https://cocoapods.org/) or Manually.
+Apps built with Xcode can easily integrate with <a target="_blank" rel="noopener noreferrer" href="https://cocoapods.org/">Cocoapods</a> or Manually.
 
 **CocoaPod:**
 
-To integrate GreedyGame SDK into your Xcode project using [CocoaPods](https://cocoapods.org/), specify it in your Podfile:
+To integrate GreedyGame SDK into your Xcode project using <a target="_blank" rel="noopener noreferrer" href="https://cocoapods.org/">Cocoapods</a>, specify it in your Podfile:
 
 ```
   source 'https://github.com/GreedyGame/cocoapod-folio.git'   
@@ -50,40 +50,40 @@ GreedyGame SDK needs the following permissions to work with.
 !!! tip
     Location permission will help improving the revenue because of better ad targeting.
 
-### **Creating Game ID**
-Game ID is an unique identifier for your game.
+### **Creating App ID**
+App ID is an unique identifier for your app.
 
-**Follow the below steps to create a Game ID.**
+**Follow the below steps to create a App ID.**
 
-* Goto [https://integration-v2.greedylab.com](https://integration-v2.greedylab.com).
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Login with your GreedyGame's Publisher account.
-* Click on **`Games`** menu from the side nav.
-* Click on the **`Add Game`** button from the popup model.
+* Click on **`Apps`** menu from the side nav.
+* Click on the **`Create new app`** button from the popup model.
 * Select the **`iOS`** Platform.
-* Enter **`Game name`** and **`Bundle Id`** of the game.
+* Enter **`App name`** and **`Bundle Id`** of the app.
 * Click on **`SAVE`**.
 
 
 ![Image](img/iOS/iOS-Game-creation.png)
 
-Once the game is successfully created you will be taken to `Game Details` page where you can see the game related metrics like `Ad requests`, `Impression` and `Clicks`.
+Once the app is successfully created you will be taken to `App Details` page where you can see the app related metrics like `Ad requests`, `Impression` and `Clicks`.
 
 ### **Creating Ad Units**
-Adunits are ad assets that are rendered as a native component to the game.
+Adunits are ad assets that are rendered as a native component to the app.
 
 **Follow the below steps to create an Ad Unit ID.**
 
-* Goto **[Integration panel](https://integration-v2.greedylab.com)**.
-* Select a Game you have created previously.
-* Click on **`Create Unit`** inside the **`Ad units in game`** Card.
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
+* Select a app you have created previously.
+* Click on **`Create Unit`** inside the **`Ad units in app`** Card.
 * Enter all the fields and click **`Save`**.
 
 ![Image](img/iOS/iOS-Unit-Creation.png)
 
-Follow the same procedure to create multiple Ad Units inside the game.
+Follow the same procedure to create multiple Ad Units inside the app.
 
 !!! note ""
-    Best practices about the Unit Dimensions can be found under **[Best Practices](http://127.0.0.1:8000/best_practices/)** section.
+    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
 
 ### **Import GreedyGame Framework**
 
@@ -116,7 +116,7 @@ Extend the `AdListener` to the corresponding viewcontroller which receives callb
 
 ```Swift tab=
   let greedyGameAds = GreedyGameAds.Builder()
-                       	.appId(GAME_ID_CREATED) //e.g 00100100
+                       	.appId(App_ID_CREATED) //e.g 00100100
                         .addUnitId(ADUNIT_CREATED) //e.g slot-1000
                       	.addUnitId(ADUNIT_CREATED) //e.g slot-1000
                         .withAdListener(self)
@@ -133,7 +133,7 @@ Extend the `AdListener` to the corresponding viewcontroller which receives callb
  // Add the below code under ViewDidLoad function in .m file
 
   Builder *builder = [[Builder alloc]init];
-  [builder appId:GAME_ID_CREATED]; //e.g 00100100
+  [builder appId:APP_ID_CREATED]; //e.g 00100100
   [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
   [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
   [builder withAdListener:self];
@@ -144,17 +144,18 @@ Extend the `AdListener` to the corresponding viewcontroller which receives callb
 
 ### **Rendering Native Ads**
 
-To render Native Ads set the the `NativeAdView` class in  any of the view in ViewController in which you want to show Native Ads.
+To render Native Ads add the the `NativeAdView` as a subview of any of the view in ViewController to show Native Ads.
+Add the below code in `ViewDidAppear` method.
 
 ```Swift tab=
   let nativeAdView = NativeAdView(frame: <View Size>)
-  nativeAdView.adUnit = ADUNIT_CREATED
+  nativeAdView.unitId = ADUNIT_CREATED
   self.view.addSubview(nativeAdView)
 ```
 
 ```Objective-C tab="Objective-c"
   NativeAdView *nativeAdView = [[NativeAdView alloc]initWithFrame:<View Size>];
-  nativeAdView.adUnit = ADUNIT_CREATED;
+  nativeAdView.unitId = ADUNIT_CREATED;
   [self.view addSubview:nativeAdView];
 ```
 
@@ -179,7 +180,7 @@ To load Native Ads call the `load()` method from `GreedyGameAds` instance create
 
 ```Swift tab= hl_lines="6"
   let greedyGameAds = GreedyGameAds.Builder()
-                       	.appId(GAME_ID_CREATED) //e.g 00100100
+                       	.appId(App_ID_CREATED) //e.g 00100100
                         .addUnitId(ADUNIT_CREATED) //e.g slot-1000
                         ---"other builder methods"---
                       	.build()
@@ -317,4 +318,8 @@ To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `e
 
 Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
 
-GreedyGame recommends an easy way to test the ads by following the steps in [Test Ads]("https://integration-v2.greedylab.com/test-ads").
+GreedyGame recommends an easy way to test the ads by following the steps in <a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com/verify">Test Ads</a>.
+
+
+!!! Important "Remove simulator architecture from greedygame SDK"
+    Greedygame SDK has simulator architecture.You need to remove this architecture by <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin">add the script</a> under `Note` section as run script in build phases.
