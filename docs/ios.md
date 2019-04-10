@@ -158,7 +158,10 @@ To render Native Ads set the the `NativeAdView` class in  any of the view in Vie
   [self.view addSubview:nativeAdView];
 ```
 
-Also you can add NativeAdView directly to the UIView in storyBoard.By simply assign the NativeAdView Class in Identitiy Inspector instead of UIView.
+!!! Note
+    Instead of `self.view` you can use your respective view to show the ad.
+     
+<!-- Also you can add NativeAdView directly to the UIView in storyBoard.By simply assign the NativeAdView Class in Identitiy Inspector instead of UIView.
 
 * Add the UIView into the storyBoard.
 
@@ -166,7 +169,7 @@ Also you can add NativeAdView directly to the UIView in storyBoard.By simply ass
 	 	![image](img/iOS/NativeAdView-class-creation.png)
 
 * Go to Attributes inspector enter the unit for the view and add the adUnitId in the unit Id box.
-		![image](img/iOS/UnitId-Creation.png)	
+		![image](img/iOS/UnitId-Creation.png)	 -->
 
 !!! info
     The advantage of integrating GreedyGame Native Ads is that we handle Ads refresh based on the value **`Refresh time`** set in the Integration Panels **`Edit Game`** section. Also, by integrating via `NativeAdView` GreedyGame sdk handles `Click` and `Applying Ads` itself. 	
