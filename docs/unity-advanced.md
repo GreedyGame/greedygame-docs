@@ -54,7 +54,7 @@ Game ID is an unique identifier for your game.
 * Enter **`Game name`** and **`Package name`** of the game.
 * Click on **`SAVE`**.
 
-![Image](img/android/android-game-creation.png)
+![Image](img/unity/game-creation.png)
 
 Once the game is successfully created you will be taken to `Game Details` page where you can see the game related metrics like `Ad requests`, `Impression` and `Clicks`. 
 
@@ -88,7 +88,7 @@ Adunits are ad assets that are rendered as a native component to the game.
 * Click on **`Create Unit`** inside the **`Ad units in game`** Card.
 * Enter all the fields and click **`Save`**.
 
-![Image](img/unit-creation.png)
+![Image](img/unity/Unit-Creation.png)
 
 Follow the same procedure to create multiple Ad Units inside the game.
 
