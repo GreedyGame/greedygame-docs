@@ -55,7 +55,7 @@ Game ID is an unique identifier for your game.
 
 **Follow the below steps to create a Game ID.**
 
-* Goto [https://integration.greedygame.com](https://integration.greedygame.com).
+* Goto [https://integration-v2.greedylab.com](https://integration-v2.greedylab.com).
 * Login with your GreedyGame's Publisher account.
 * Click on **`Games`** menu from the side nav.
 * Click on the **`Add Game`** button from the popup model.
@@ -73,7 +73,7 @@ Adunits are ad assets that are rendered as a native component to the game.
 
 **Follow the below steps to create an Ad Unit ID.**
 
-* Goto **[Integration panel](https://integration.greedygame.com)**.
+* Goto **[Integration panel](https://integration-v2.greedylab.com)**.
 * Select a Game you have created previously.
 * Click on **`Create Unit`** inside the **`Ad units in game`** Card.
 * Enter all the fields and click **`Save`**.
@@ -158,7 +158,10 @@ To render Native Ads set the the `NativeAdView` class in  any of the view in Vie
   [self.view addSubview:nativeAdView];
 ```
 
-Also you can add NativeAdView directly to the UIView in storyBoard.By simply assign the NativeAdView Class in Identitiy Inspector instead of UIView.
+!!! Note
+    Instead of `self.view` you can use your respective view to show the ad.
+     
+<!-- Also you can add NativeAdView directly to the UIView in storyBoard.By simply assign the NativeAdView Class in Identitiy Inspector instead of UIView.
 
 * Add the UIView into the storyBoard.
 
@@ -166,7 +169,7 @@ Also you can add NativeAdView directly to the UIView in storyBoard.By simply ass
 	 	![image](img/iOS/NativeAdView-class-creation.png)
 
 * Go to Attributes inspector enter the unit for the view and add the adUnitId in the unit Id box.
-		![image](img/iOS/UnitId-Creation.png)	
+		![image](img/iOS/UnitId-Creation.png)	 -->
 
 !!! info
     The advantage of integrating GreedyGame Native Ads is that we handle Ads refresh based on the value **`Refresh time`** set in the Integration Panels **`Edit Game`** section. Also, by integrating via `NativeAdView` GreedyGame sdk handles `Click` and `Applying Ads` itself. 	

@@ -22,11 +22,11 @@ val greedyGame = GreedyGameAds.Builder(activity)
     .build()
 ```
 
-## **iOS**
+### iOS
 
 To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `enableCoppa(true)` in `GreedyGameAds.Builder` instance.
 
-```Swift tab= 
+```Swift tab= hl_lines="4"
   let greedyGameAds = GreedyGameAds.Builder()
                         .appId(GAME_ID_CREATED) //e.g 00100100
                         .addUnitId(ADUNIT_CREATED) //e.g slot-1000
@@ -36,7 +36,7 @@ To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `e
   greedyGameAds.load()
 ```
 
-```Objective-C tab="Objective-C"
+```Objective-C tab="Objective-C" hl_lines="4"
   Builder *builder = [[Builder alloc]init];
   [builder appId:GAME_ID_CREATED]; //e.g 00100100
   [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
