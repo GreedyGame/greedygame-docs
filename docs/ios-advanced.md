@@ -50,40 +50,23 @@ GreedyGame SDK needs the following permissions to work with.
 !!! tip
     Location permission will help improving the revenue because of better ad targeting.
 
-### **Creating App ID**
-App ID is an unique identifier for your app.
-
-**Follow the below steps to create a App ID.**
-
-* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Login with your GreedyGame's Publisher account.
-* Click on **`Apps`** menu from the side nav.
-* Click on the **`Create new app`** button from the popup model.
-* Select the **`iOS`** Platform.
-* Enter **`App name`** and **`Bundle Id`** of the app.
-* Click on **`SAVE`**.
-
-
-![Image](img/iOS/iOS-Game-creation.png)
-
-Once the app is successfully created you will be taken to `App Details` page where you can see the app related metrics like `Ad requests`, `Impression` and `Clicks`.
-
 ### **Creating Ad Units**
 Adunits are ad assets that are rendered as a native component to the app.
 
 **Follow the below steps to create an Ad Unit ID.**
 
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Select a app you have created previously.
+* Select an App you have created previously.
 * Click on **`Create Unit`** inside the **`Ad units in app`** Card.
 * Enter all the fields and click **`Save`**.
 
-![Image](img/iOS/iOS-Unit-Creation.png)
+![Image](img/android/unit-creation.png)
 
 Follow the same procedure to create multiple Ad Units inside the app.
 
 !!! note ""
     Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
+    
 
 ### **Import GreedyGame Framework**
 
@@ -338,7 +321,11 @@ To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `e
 
 Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
 
-GreedyGame recommends an easy way to test the ads by following the steps in <a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com/verify">Test Ads</a>.
+GreedyGame recommends an easy way to test the ads by following the below steps
+
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
+* Select an App in which you want to check the test ads.
+* Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.
 
 
 !!! Important "Remove simulator architecture from greedygame SDK"

@@ -39,22 +39,23 @@ GreedyGame SDK needs the following permissions to work with.
 !!! tip
     `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of doing better ad targetting.
 
-### **Creating Game ID**
-Game ID is an unique identifier for your game.
+### **Creating Ad Units**
+Adunits are ad assets that are rendered as a native component to the app.
 
-**Follow the below steps to create a Game ID.**
+**Follow the below steps to create an Ad Unit ID.**
 
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Login with your GreedyGame's Publisher account.
-* Click on **`Apps`** menu from the side nav.
-* Click on the **`Create new app`** button from the popup model.
-* Select the **`Unity`** Platform.
-* Enter **`App name`** and **`Package name`** of the game.
-* Click on **`SAVE`**.
+* Select an App you have created previously.
+* Click on **`Create Unit`** inside the **`Ad units in app`** Card.
+* Enter all the fields and click **`Save`**.
 
-![Image](img/unity/game-creation.png)
+![Image](img/android/unit-creation.png)
 
-Once the game is successfully created you will be taken to `Game Details` page where you can see the game related metrics like `Ad requests`, `Impression` and `Clicks`. 
+Follow the same procedure to create multiple Ad Units inside the app.
+
+!!! note ""
+    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
+    
 
 ### **Importing GreedyGame Native Ads SDK For Unity**
 
@@ -148,4 +149,8 @@ You can see the generated initialization prefab (**GGInitializationPrefab**) in 
 
 Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
 
-GreedyGame recommends an easy way to test the ads by following the steps in <a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com/verify">Test Ads</a>.
+GreedyGame recommends an easy way to test the ads by following the below steps
+
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
+* Select an App in which you want to check the test ads.
+* Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.

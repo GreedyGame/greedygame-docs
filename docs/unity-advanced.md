@@ -38,24 +38,26 @@ GreedyGame SDK needs the following permissions to work with.
 ```
 
 !!! tip
-    `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of doing better ad targetting.
+    `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of doing better ad targetting. 
 
-### **Creating Game ID**
-Game ID is an unique identifier for your game.
+### **Creating Ad Units**
+Adunits are ad assets that are rendered as a native component to the app.
 
-**Follow the below steps to create a Game ID.**
+**Follow the below steps to create an Ad Unit ID.**
 
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Login with your GreedyGame's Publisher account.
-* Click on **`Games`** menu from the side nav.
-* Click on the **`Add Game`** button from the popup model.
-* Select the **`Android`** Platform.
-* Enter **`Game name`** and **`Package name`** of the game.
-* Click on **`SAVE`**.
+* Select an App you have created previously.
+* Click on **`Create Unit`** inside the **`Ad units in app`** Card.
+* Enter all the fields and click **`Save`**.
 
-![Image](img/unity/game-creation.png)
+![Image](img/android/unit-creation.png)
 
-Once the game is successfully created you will be taken to `Game Details` page where you can see the game related metrics like `Ad requests`, `Impression` and `Clicks`. 
+Follow the same procedure to create multiple Ad Units inside the app.
+
+!!! note ""
+    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
+
+        
 
 ### **Importing GreedyGame Native Ads SDK For Unity**
 
@@ -74,24 +76,6 @@ Assets > Import > Import Custom Package
 If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
 Import the package **Assets > Import > Import Custom Package**.
 Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK
-
-
-### **Creating Ad Units**
-Adunits are ad assets that are rendered as a native component to the game.
-
-**Follow the below steps to create an Ad Unit ID.**
-
-* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Select a Game you have created previously.
-* Click on **`Create Unit`** inside the **`Ad units in game`** Card.
-* Enter all the fields and click **`Save`**.
-
-![Image](img/unity/Unit-Creation.png)
-
-Follow the same procedure to create multiple Ad Units inside the game.
-
-!!! note ""
-    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
 
 ### **Initializing GreedyGame SDK**
 Create a new C# Script and add the following code snippet inside Start() method
@@ -148,4 +132,12 @@ GreedyGameAgent.RegisterGameObject("slot-123", this.gameObject);
 ```
 GreedyGameAgent.UnregisterGameObject(this.gameObject);
 ```
+## **Test Ads**
 
+Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
+
+GreedyGame recommends an easy way to test the ads by following the below steps
+
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
+* Select an App in which you want to check the test ads.
+* Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.

@@ -56,25 +56,6 @@ GreedyGame SDK needs the following permissions to work with.
 !!! tip
     `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of better ad targeting.
 
-### **Creating App ID**
-App ID is an unique identifier for your app.
-
-**Follow the below steps to create a App ID.**
-
-* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Login with your GreedyGame's Publisher account.
-* Click on **`Apps`** menu from the side nav.
-* Click on the **`Create new app`** button from the popup model.
-* Select the **`Android`** Platform.
-* Enter **`App name`** and **`Package name`** of the app.
-* Click on **`SAVE`**.
-
-Once created copy the **App id** from the App details card.
-
-![Image](img/android/game-creation.png)
-
-Once the app is successfully created you will be taken to `App Details` page where you can see the app related metrics like `Ad requests`, `Impression` and `Clicks`.
-
 ### **Creating Ad Units**
 Adunits are ad assets that are rendered as a native component to the app.
 
@@ -336,6 +317,24 @@ val greedyGame = GreedyGameAds.Builder(activity)
 
 ## **Test Ads**
 
-Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
+Now you have successfully integrated with GreedyGame Native Ads.Now is the time to test the integration.
 
-GreedyGame recommends an easy way to test the ads by following the steps in <a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com/verify">Test Ads</a>.
+GreedyGame recommends an easy way to test the ads by following the below steps
+
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
+* Select the App in which you want to check the test ads.
+* Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.
+
+## **Going Live**
+
+You have successfully integrated GreedyGame SDK and verified the testing flow with Test Ads section. Now follow the below steps to start earning revenue.
+
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
+* Select the App in which you want to check the status of the app.
+* Click  `GO LIVE` under Publish section and will get the message  `Your request has been received and live traffic will be started in 48 hours`
+* Check the status `APP IS LIVE` under the publish section then only the revenue will be counted.
+
+!!! warning
+    you have gone live do not click on the production ads for testing. Always go to the **Test Ads** section and Test your integration.
+
+
