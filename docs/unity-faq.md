@@ -17,7 +17,7 @@ config.EnableCoppa (true);
 ```
 
 ### **How do I pass relevant GDPR information to GreedyGame's SDK?**
-The GGConfig object that you pass during initialization contains an API for setting Non personalized ads to conform to GDPR. So if you detect a user who hasnt given consent then during initialization of the SDK you should pass config after setting the NPA flag. Setting it to true will serve non personalized ads only.
+The GGConfig object that you pass during initialization contains an API for setting Non personalized ads to conform to GDPR. So if you detect a user who hasn't given consent then during initialization of the SDK you should pass config after setting the NPA flag. Setting it to true will serve non-personalized ads only.
 ```
 GGConfig config = new GGConfig();
 config.EnableNpa (true);
