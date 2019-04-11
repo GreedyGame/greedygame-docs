@@ -330,9 +330,9 @@ GreedyGame recommends an easy way to test the ads by following the below steps
 You have successfully integrated GreedyGame SDK and verified the testing flow with Test Ads section. Now follow the below steps to start earning revenue.
 
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Select the App in which you want to check the status of the app.
-* Click  `GO LIVE` under Publish section and will get the message  `Your request has been received and live traffic will be started in 48 hours`
-* Check the status `APP IS LIVE` under the publish section then only the revenue will be counted.
+* Select the App which you want to make `Live`.
+* Click  `GO LIVE` under Publish section and you will get a message  `Your request has been received and live traffic will be started in 48 hours`.
+* You will start making money once the status changes to `APP IS LIVE` under publish section.
 
 !!! warning
     you have gone live do not click on the production ads for testing. Always go to the **Test Ads** section and Test your integration.
