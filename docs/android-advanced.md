@@ -71,7 +71,7 @@ Follow the same procedure to create multiple Ad Units inside the app.
 
 !!! note ""
     Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
-    
+
 
 ### **Initializing GreedyGameAds**
 
@@ -304,15 +304,3 @@ GreedyGame recommends an easy way to test the ads by following the below steps
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Select an App in which you want to check the test ads.
 * Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.
-
-## **Going Live**
-
-You have successfully integrated GreedyGame SDK and verified the testing flow with Test Ads section. Now follow the below steps to start earning revenue.
-
-* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Select the App which you want to make `Live`.
-* Click  `GO LIVE` under Publish section and you will get a message  `Your request has been received and live traffic will be started in 48 hours`.
-* You will start making money once the status changes to `APP IS LIVE` under publish section.
-
-!!! warning
-    you have gone live do not click on the production ads for testing. Always go to the **Test Ads** section and Test your integration.

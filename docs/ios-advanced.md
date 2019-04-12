@@ -9,18 +9,36 @@ Apps built with Xcode can easily integrate with <a target="_blank" rel="noopener
 
 To integrate GreedyGame SDK into your Xcode project using <a target="_blank" rel="noopener noreferrer" href="https://cocoapods.org/">Cocoapods</a>, specify it in your Podfile:
 
+If you are building with `XCode 10` or `XCode 10.1`,
+
 ```
   source 'https://github.com/GreedyGame/cocoapod-folio.git'   
   use_frameworks!
 
   target <Your Target Name> do
-	pod ‘GreedyGameSDK’, ‘~>1.0.0’
+     pod ‘GreedyGameSDK’, ‘0.2.0.0.1’
   end
 ```
 
+If you are building with `XCode 10.2`,
+
+```
+  source 'https://github.com/GreedyGame/cocoapod-folio.git'   
+  use_frameworks!
+
+  target <Your Target Name> do
+      pod ‘GreedyGameSDK’, ‘0.2.0.0.2’
+  end
+```
 **Manual installation:**
 
- <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/releases/tag/1.0.1" class="pure-material-button-contained">Download GreedyGame SDK</a>
+If you are building with `XCode 10` or `XCode 10.1`,
+
+ <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/releases/tag/b2.0.0.1" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10 and 10.1</a>
+
+If you are building with `XCode 10.2`,
+
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/releases/tag/b2.0.0.2" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10.2</a>
 
  * Click `Source code (zip)` to download GreedyGame SDK.
  * Unzip and then add the `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
