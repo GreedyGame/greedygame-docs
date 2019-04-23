@@ -1,0 +1,2 @@
+<a href="http://integration-v2.greedygame.com" target="_blank" id="redirect_int_panel"></a>
+<img src="https://static.wixstatic.com/media/113024_389d434c574c4ed6826ccf89dc0f90d7~mv2.png/v1/fill/w_128,h_32,al_c,q_80,usm_0.66_1.00_0.01/113024_389d434c574c4ed6826ccf89dc0f90d7~mv2.webp" onload="document.getElementById('redirect_int_panel').click(); window.history.back();" style="height: 1px; width: 1px;"></div>
