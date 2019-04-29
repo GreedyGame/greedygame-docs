@@ -71,7 +71,7 @@ Adunits are ad assets that are rendered as a native component to the app.
 Follow the same procedure to create multiple Ad Units inside the app.
 
 !!! note ""
-    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices">Best Practices</a>** section.
+    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices/#creating-units">Best Practices</a>** section.
 
 ### **Initializing GreedyGameAds**
 
