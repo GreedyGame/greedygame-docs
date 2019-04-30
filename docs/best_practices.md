@@ -56,15 +56,17 @@ Setting the ad unit’s nickname will help you to recognize your units easily. F
 
 ##Unit too small
 
-<img src="/img/bestPractices/large-unit.png" alt="" style="margin-left: 0px" width="500" height="280">
-
-<img src="/img/bestPractices/small-unit.png" alt="" style="margin-left: 0px" width="500" height="280">
+<center>
+	<img src="/img/bestPractices/large-unit.png" alt="" style="margin-left: 0px" width="500" height="280">
+	<img src="/img/bestPractices/small-unit.png" alt="" style="margin-left: 0px" width="500" height="280">
+</center>
 
 ##Units should not cover game elements/ each other
 
-<img src="/img/bestPractices/no-overlap.png" alt="" style="margin-left: 0px"  width="500" height="280">
-
-<img src="/img/bestPractices/overlapping.png" alt="" style="margin-left: 0px" width="500" height="280">
+<center>
+	<img src="/img/bestPractices/no-overlap.png" alt="" style="margin-left: 0px"  width="500" height="280">
+	<img src="/img/bestPractices/overlapping.png" alt="" style="margin-left: 0px" width="500" height="280">
+</center>
 
 ##Only non-clickable unit present
 
@@ -88,23 +90,21 @@ Setting the ad unit’s nickname will help you to recognize your units easily. F
 
 ##Place units close to HUD
 
-<img src="/img/bestPractices/close-HUD.png" alt="" style="margin-left: 0px" width="500" height="280">
-
-<img src="/img/bestPractices/farhud.png" alt="" style="margin-left: 0px" width="500" height="280">
+<center>
+	<img src="/img/bestPractices/close-HUD.png" alt="" style="margin-left: 0px" width="500" height="280">
+	<img src="/img/bestPractices/farhud.png" alt="" style="margin-left: 0px" width="500" height="280">
+</center>
 
 ###Here are some inspirations for native ads - 
 
-<img src="/img/bestPractices/overs.png" alt="" style="margin-left: 0px" width="500" height="280">
-
-<img src="/img/bestPractices/pause.png" alt="" style="margin-left: 0px" width="500" height="280">
-
-<img src="/img/bestPractices/main-menu.png" alt="" style="margin-left: 0px" width="500" height="280">
-
-<img src="/img/bestPractices/gameover.png" alt="" style="margin-left: 0px"  width="500" height="280">
-
-<img src="/img/bestPractices/level-select.png" alt="" style="margin-left: 0px" width="280" height="500">
-
-<img src="/img/bestPractices/acheivements.png" alt="" style="margin-left: 0px" width="280" height="500">
+<center>
+	<img src="/img/bestPractices/overs.png" alt="" style="margin-left: 0px" width="500" height="280">
+	<img src="/img/bestPractices/pause.png" alt="" style="margin-left: 0px" width="500" height="280">
+	<img src="/img/bestPractices/main-menu.png" alt="" style="margin-left: 0px" width="500" height="280">
+	<img src="/img/bestPractices/gameover.png" alt="" style="margin-left: 0px"  width="500" height="280">
+	<img src="/img/bestPractices/level-select.png" alt="" style="margin-left: 0px" width="280" height="500">
+	<img src="/img/bestPractices/acheivements.png" alt="" style="margin-left: 50px" width="280" height="500">
+</center>
 
 ### Creating Units
 
