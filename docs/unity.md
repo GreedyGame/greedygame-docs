@@ -1,4 +1,11 @@
 
+Watch the 3 minute integration video which details the basic integration using GreedyGame Plugin to get started.
+
+<center>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/8YywFhYfGJE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+### **Getting Started**
 We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin.
 
 ### **Update your AndroidManifest.xml**
