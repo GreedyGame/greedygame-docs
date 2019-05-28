@@ -4,7 +4,7 @@ break the user journey unlike banner ads and interstitial ads. Native ads can be
 
 <img src="/img/bestPractices/screen1.png" alt="" style="margin-left: 200px" width="280" height="500">
 
-<img src="/img/bestPractices/level.png" alt="" style="margin-left: 200px" width="280" height="500">
+<img src="/img/bestPractices/level.png"   alt="" style="margin-left: 200px" width="280" height="500">
 
 
 ###What to keep in mind while integrating?
@@ -64,7 +64,7 @@ Setting the ad unit’s nickname will help you to recognize your units easily. F
 ##Units should not cover game elements/ each other
 
 <center>
-	<img src="/img/bestPractices/no-overlap.png" alt="" style="margin-left: 0px"  width="500" height="280">
+	<img src="/img/bestPractices/no-overlap.png"  alt="" style="margin-left: 0px" width="500" height="280">
 	<img src="/img/bestPractices/overlapping.png" alt="" style="margin-left: 0px" width="500" height="280">
 </center>
 
@@ -92,17 +92,17 @@ Setting the ad unit’s nickname will help you to recognize your units easily. F
 
 <center>
 	<img src="/img/bestPractices/close-HUD.png" alt="" style="margin-left: 0px" width="500" height="280">
-	<img src="/img/bestPractices/farhud.png" alt="" style="margin-left: 0px" width="500" height="280">
+	<img src="/img/bestPractices/farhud.png" 	alt="" style="margin-left: 0px" width="500" height="280">
 </center>
 
 ###Here are some inspirations for native ads - 
 
 <center>
-	<img src="/img/bestPractices/overs.png" alt="" style="margin-left: 0px" width="500" height="280">
-	<img src="/img/bestPractices/pause.png" alt="" style="margin-left: 0px" width="500" height="280">
-	<img src="/img/bestPractices/main-menu.png" alt="" style="margin-left: 0px" width="500" height="280">
-	<img src="/img/bestPractices/gameover.png" alt="" style="margin-left: 0px"  width="500" height="280">
-	<img src="/img/bestPractices/level-select.png" alt="" style="margin-left: 0px" width="280" height="500">
+	<img src="/img/bestPractices/overs.png" 	   alt="" style="margin-left: 0px"  width="500" height="280">
+	<img src="/img/bestPractices/pause.png"		   alt="" style="margin-left: 0px"  width="500" height="280">
+	<img src="/img/bestPractices/main-menu.png"    alt="" style="margin-left: 0px"  width="500" height="280">
+	<img src="/img/bestPractices/gameover.png"     alt="" style="margin-left: 0px"  width="500" height="280">
+	<img src="/img/bestPractices/level-select.png" alt="" style="margin-left: 0px"  width="280" height="500">
 	<img src="/img/bestPractices/acheivements.png" alt="" style="margin-left: 50px" width="280" height="500">
 </center>
 

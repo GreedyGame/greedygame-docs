@@ -17,7 +17,8 @@ nav:
     - COPPA: coppa.md
     - Best Practices: best_practices.md
     - Release Notes: release-notes.md
-    - SDK 8.8.14: sdk8.0.md
+    - SDK 8.8.14: sdk8.8.14.md
+    - SDK 8.8.15: sdk8.8.15.md
   - FAQs:
     - General: general-faq.md
     - Android: android-faq.md
