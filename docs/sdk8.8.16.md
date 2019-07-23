@@ -11,3 +11,5 @@
 
 
 <a target="_blank" rel="noopener noreferrer" href="https://integration-panel.s3.amazonaws.com/documentation/sdk8.8.16/CocosJS-iOS-1.0.4.pdf">Download</a> iOS for CocosJs.
+
+<a target="_blank" rel="noopener noreferrer" href="https://integration-panel.s3.amazonaws.com/documentation/sdk8.8.16/Flutter-1.0.0.pdf">Download</a> Flutter Plugin.
