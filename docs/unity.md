@@ -11,13 +11,25 @@ We will guide you through the steps involved in integrating GreedyGame SDK in Un
 ### **Update your AndroidManifest.xml**
 
 Add the following `<activity>` declaration inside `<application>` tag of the Manifest.
-```xml hl_lines="6"
+
+```xml hl_lines="6" tab="Portrait"
 <activity
     android:name="com.greedygame.android.core.campaign.uii.GreedyGameActivity"
     android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
     android:hardwareAccelerated="true"
     android:launchMode="singleTask"
     android:screenOrientation="portrait"
+    android:theme="@style/Theme.GGTransparent">
+</activity>
+```
+
+```xml hl_lines="6" tab="Landscape"
+<activity
+    android:name="com.greedygame.android.core.campaign.uii.GreedyGameActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
+    android:hardwareAccelerated="true"
+    android:launchMode="singleTask"
+    android:screenOrientation="landscape"
     android:theme="@style/Theme.GGTransparent">
 </activity>
 ```
@@ -40,7 +52,6 @@ GreedyGame SDK needs the following permissions to work with.
 
 ```xml
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
 !!! tip

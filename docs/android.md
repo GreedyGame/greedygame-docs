@@ -26,7 +26,8 @@ implementation 'com.squareup.moshi:moshi:1.8.0'
 ### **Update your AndroidManifest.xml**
 
 Add the following `<activity>` declaration inside `<application>` tag of the Manifest.
-```xml hl_lines="6"
+
+```xml hl_lines="6" tab="Portrait"
 <activity
     android:name="com.greedygame.android.core.campaign.uii.GreedyGameActivity"
     android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
@@ -37,8 +38,18 @@ Add the following `<activity>` declaration inside `<application>` tag of the Man
 </activity>
 ```
 
-Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. Allowed values can be found in <a target="_blank" rel="noopener noreferrer" href="https://developer.android.com/guide/topics/manifest/activity-element#screen">Android Documentation</a>.
+```xml hl_lines="6" tab="Landscape"
+<activity
+    android:name="com.greedygame.android.core.campaign.uii.GreedyGameActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
+    android:hardwareAccelerated="true"
+    android:launchMode="singleTask"
+    android:screenOrientation="landscape"
+    android:theme="@style/Theme.GGTransparent">
+</activity>
+```
 
+Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. The list of allowed values can be found in the <a target="_blank" rel="noopener noreferrer" href="https://developer.android.com/guide/topics/manifest/activity-element#screen">Android Documentation</a>.
 
 ### **Adding Permissions**
 
@@ -54,7 +65,7 @@ GreedyGame SDK needs the following permissions to work with.
 ```
 
 !!! tip
-    `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of better ad targeting.
+    `ACCESS_COARSE_LOCATION` permission will help in improving the revenue by better ad targeting.
 
 ### **Creating Ad Units**
 Adunits are ad assets that are rendered as a native component to the app.
@@ -62,7 +73,7 @@ Adunits are ad assets that are rendered as a native component to the app.
 **Follow the below steps to create an Ad Unit ID.**
 
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
-* Select an App you have created previously.
+* Select an App you want to integrate with.
 * Click on **`Create Unit`** inside the **`Ad units in app`** Card.
 * Enter all the fields and click **`Save`**.
 
