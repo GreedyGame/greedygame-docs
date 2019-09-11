@@ -3,6 +3,7 @@ site_name: 'Documentation - GreedyGame - SDK 9.0'
 site_author: 'Mathan raj'
 site_url: 'https://docs.greedygame.com'
 
+
 # Copyright
 copyright: 'Copyright &copy; 2019 GreedyGame Media Pvt Ltd'
 
@@ -17,6 +18,7 @@ nav:
     - COPPA: coppa.md
     - Best Practices: best_practices.md
     - Release Notes: release-notes.md
+    - Archives: releases.md
   - FAQs:
     - General: general-faq.md
     - Android: android-faq.md
@@ -29,11 +31,6 @@ nav:
     - Unity Advanced: unity-advanced.md
   - Migration:
     - Unity : unity-migration.md 
-  - Releases:
-    - Releases: releases.md
-    - SDK 8.8.16: sdk8.8.16.md
-    - SDK 8.8.15: sdk8.8.15.md
-    - SDK 8.8.14: sdk8.8.14.md
   - Integration Panel: 
     - Panel : integrationPanel.md
 
