@@ -20,6 +20,10 @@ nav:
     - Releases: releases.md
   - FAQs:
     - General: general-faq.md
+    - Financial: financial-faq.md
+    - Legal: legal-faq.md
+    - Dashboard: dashboard-faq.md
+    - Ad Unit Placement: adunit-faq.md
     - Android: android-faq.md
     - iOS: ios-faq.md
     - Unity: unity-faq.md

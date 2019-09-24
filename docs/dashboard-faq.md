@@ -1,0 +1,2 @@
+### **Why is the revenue that I saw yesterday, different today?**
+Advertisers run different types of campaigns on your app's inventory. In some cases, the revenue gets credited after some time due to verification of data. For this reason, the revenue shown on the dashboard for previous days can change. Typically this value changes in the 72 hour time period with more volatility but in some cases takes upto 30 days to consolidate. The actual revenue accrued will be mentioned in the final invoice generated for your account at the end of the month.

@@ -7,13 +7,13 @@ This question deals with Android troubleshooting. For Unity, Cocos, iOS platform
 4. Did the <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.greedygame.androididfinder">GreedyGame Panel App</a> throw an error message? Follow the steps in the app for troubleshooting
 5. Make sure that you have correctly configured the <a target="_blank" rel="noopener noreferrer" href="/android/#creating-app-id">Game Id</a> and the <a target="_blank" rel="noopener noreferrer" href="/android/#creating-ad-units">Ad Unit(s)</a> as a part of the integration steps
 
-If you are still unable to see ads, then send out an e-mail to <Insert Support Email here> stating your problem.
+If you are still unable to see ads, then send out an e-mail to <a href="mailto:monetize@greedygame.com" target="_blank">monetize@greedygame.com</a> stating your problem.
 
 ### **What is the** `minimumSdkVersion` **version supported by GreedyGame sdk?**
 GreedyGame SDK supports from Android version `17` or Android Version `4.2` and above.
 
 ### **I can see some ads but not all of them. What could be the problem?**
-If you are able to see some ads in the Game, then the basic integration is working fine. A general cause of this behaviour is when developers accidentally forget to add the relevant Ad Unit Id in the Ad Request Builder call. Please check <a target="_blank" rel="noopener noreferrer" href="/android-advanced/#initializing-greedygameads">this</a> section for more information
+If you are able to see some ads in the App, then the basic integration is working fine. A general cause of this behaviour is when developers accidentally forget to add the relevant Ad Unit Id in the Ad Request Builder call. Please check <a target="_blank" rel="noopener noreferrer" href="/android-advanced/#initializing-greedygameads">this</a> section for more information
 
 ### **Why do I need Google PlayServices to be integrated? Which is the minimum supported version?**
 In order to comply with Google's Advertising Guidelines, there are certain dependencies on Google Play Services. Also, Google AdMob launched a complete Native Advanced Ad support from version 11.0.4 and hence that is the minimum required supported version
@@ -32,7 +32,7 @@ You need to include a GreedyGame activity for completing the integration process
 ```
 
 ### **What should I keep in mind while creating Ad Units?**
-GreedyGame provides you with flexibility to create Ad Experiences that are tailor made for your game. As a Developer, you have the freedom of creating units of multiple sizes depending on the Activity or Game Scene design. We do have the following guidelines in place:  
+GreedyGame provides you with flexibility to create Ad Experiences that are tailor made for your app. As a Developer, you have the freedom of creating units of multiple sizes depending on the Activity or Game Scene design. We do have the following guidelines in place:  
 
 1. Try to keep the number of units in a game below 10  
 2. Find natural fitting spots for your units which do not hamper the user experience  
