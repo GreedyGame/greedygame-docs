@@ -16,8 +16,8 @@ nav:
     - GDPR: gdpr.md
     - COPPA: coppa.md
     - Best Practices: best_practices.md
-    - Release Notes: release-notes.md
     - Releases: releases.md
+    - Release Notes: release-notes.md
   - FAQs:
     - General: general-faq.md
     - Financial: financial-faq.md
