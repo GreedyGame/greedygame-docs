@@ -30,7 +30,7 @@ We work with all major exchanges and partners including the likes of FAN, Admob,
 ### **What are your fill rates?**
 We have 95%+ fill rates in every country across the globe. This means that your native ad spot will virtually always be filled with an advertisement.
 
-How do I start?
+### **How do I start?**
 Once you decide to integrate, let our team know. Although you can certainly complete the process independently, we recommend you contact us so we can ensure you have a much faster and seamless experience. Upon contacting us and expressing the desire to integrate, here are the next steps.
 
 1. We'll get back to you with placement suggestions for the game/app
