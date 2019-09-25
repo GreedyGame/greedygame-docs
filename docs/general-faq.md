@@ -11,7 +11,7 @@ GreedyGame is a set of tools that allows developers to run native advertisements
 There are a couple 
 We are official channel partners of Google Admob for Native Ads Advanced
 We’ve been working on Native Ads for over 6 years now (for reference, that’s when Facebook introduced native ads in its feed)
-We’ve successfully been able to solve the problem of scalability and fill-rate: 2 big problems previously encountered when native ads.
+We’ve successfully been able to solve the problem of scalability and fill-rate: 2 big problems previously encountered with native ads.
 
 ### **Why shouldn’t I implement Admob Native Ads Advanced directly?**
 You can but you’ll miss on the following benefits which we provide over and above Admob Native Ads Advanced - 
