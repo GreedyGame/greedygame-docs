@@ -16,7 +16,7 @@ If you are building with `XCode 10` or `XCode 10.1`,
   use_frameworks!
 
   target <Your Target Name> do
-     pod ‘GreedyGameSDK’, ‘0.2.0.0.1’
+     pod ‘GreedyGameSDK’, ‘1.0.4’
   end
 ```
 
@@ -27,18 +27,18 @@ If you are building with `XCode 10.2`,
   use_frameworks!
 
   target <Your Target Name> do
-      pod ‘GreedyGameSDK’, ‘0.2.0.0.2’
+      pod ‘GreedyGameSDK’, ‘1.0.4.1’
   end
 ```
 **Manual installation:**
 
 If you are building with `XCode 10` or `XCode 10.1`,
 
- <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/releases/tag/b2.0.0.1" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10 and 10.1</a>
+ <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.zip" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10 and 10.1</a>
 
 If you are building with `XCode 10.2`,
 
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/releases/tag/b2.0.0.2" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10.2</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.1.zip" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10.2</a>
 
  * Click `Source code (zip)` to download GreedyGame SDK.
  * Unzip and then add the `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
@@ -100,46 +100,46 @@ Follow the same procedure to create multiple Ad Units inside the app.
 
 ```
 
-### **AdListener methods**
+### **CampaignStateListener methods**
 
-Extend the `AdListener` to the corresponding viewcontroller which receives callback of the ad.
+Extend the `CampaignStateListener` to the corresponding viewcontroller which receives callback of the ad.
 
 
 | Methods      | Definition                                      |
 | ------------ | ----------------------------------------------- |
-| `onAvailable(adId: String)`  | SDK fetched an ad|
+| `onAvailable(campaignId: String)`  | SDK fetched an ad|
 | `onUnavailable()`    | Failed to fetch next ad                          |
 | `onError(error: String)`     | SDK not able to initialize. Check the `error` message.|
 
-### **Initializing GreedyGameAds**
+### **Initializing GreedyGameAgent**
 
-`GreedyGameAds` is the entry point to fetching Native Ads from GreedyGame SDK. Create `GreedyGameAds` instance in the `viewDidLoad` of the ViewController.
+`GreedyGameAgent` is the entry point to fetching Native Ads from GreedyGame SDK. Create `GreedyGameAgent` instance in the `viewDidLoad` of the ViewController.
 
 ```Swift tab=
-  let greedyGameAds = GreedyGameAds.Builder()
-                       	.appId(App_ID_CREATED) //e.g 00100100
-                        .addUnitId(ADUNIT_CREATED) //e.g slot-1000
-                      	.addUnitId(ADUNIT_CREATED) //e.g slot-1000
-                        .withAdListener(self)
+  let greedyGameAgent = GreedyGameAgent.Builder()
+                       	.setGameId(App_ID_CREATED) //e.g 00100100
+                        .addUnit(ADUNIT_CREATED) //e.g unit-1000
+                      	.addUnit(ADUNIT_CREATED) //e.g float-1000
+                        .stateListener(self)
                       	.build()
 ```
 
 ```Objective-c tab="Objective - C"
 
- // Create GreedyGameAds property in .h file
+ // Create GreedyGameAgent property in .h file
 
-  @property(nonatomic, strong)GreedyGameAds *greedyGameAds;
+  @property(nonatomic, strong)GreedyGameAgent *greedyGameAgent;
 
 
  // Add the below code under ViewDidLoad function in .m file
 
   Builder *builder = [[Builder alloc]init];
-  [builder appId:APP_ID_CREATED]; //e.g 00100100
-  [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
-  [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
-  [builder withAdListener:self];
+  [builder setGameId:APP_ID_CREATED]; //e.g 00100100
+  [builder addUnit:ADUNIT_CREATED]; //e.g unit-1000
+  [builder addUnit:ADUNIT_CREATED]; //e.g float-1000
+  [builder stateListener:self];
 
-  self.greedyGameAds = builder.build;
+  self.greedyGameAgent = builder.build;
 
 ```
 ### **Custom Rendering Native Ads**
@@ -150,15 +150,15 @@ Custom rendering allows you to render Native Ads by fetching the image's local p
 
 **To fetch the Ad**
 
-To fetch the Ad for a unit you need to call `getPath(unitId)` in `GreedyGameAds` instance.
+To fetch the Ad for a unit you need to call `getPath(unitId)` in `GreedyGameAgent` instance.
 
 
 ```Swift tab= 
 //Create imageview in viewDidLoad method if you create an imageView programmatically.
 let imageView = UIImageView(frame: IMAGE_SIZE) 
 
-if let path = greedyGameAds?.getPath(unitId: ADUNIT_CREATED) {  
-	// GreedyGameAds has an ad that can be rendered for this Unit id. 
+if let path = greedyGameAgent?.getPath(unitId: ADUNIT_CREATED) {  
+	// GreedyGameAgent has an ad that can be rendered for this Unit id. 
    imageView1.image = UIImage(contentsOfFile: path)
 } else {
 	// GreedyGame does not have a valid Ad for this Unit id at the moment
@@ -169,10 +169,10 @@ if let path = greedyGameAds?.getPath(unitId: ADUNIT_CREATED) {
 UIImageView *imageView = [[UIImageView alloc]initWithFrame: IMAGE_SIZE]; // AdUnit ImageView to render ad
 // Game logics
 
-NSString *path = [self.greedyGameAds getPathWithUnitId:ADUNIT_CREATED];
+NSString *path = [self.greedyGameAgent getPathWithUnitId:ADUNIT_CREATED];
     
 if (path.length != 0){
-	// GreedyGameAds has an ad that can be rendered for this Unit id. 
+	// GreedyGameAgent has an ad that can be rendered for this Unit id. 
     self.imageView1.image = [UIImage imageWithContentsOfFile:path];
 }else{
 	// GreedyGame does not have a valid Ad for this Unit id at the moment
@@ -181,7 +181,7 @@ if (path.length != 0){
 
 !!! warning
     
-    It's the publisher responsibility to call `getPath(unitId)` at relevant places to render the ads. For example, in `onAvailable()` callback of the `AdListener` and when you are changing the `Activity` or `Scene` calling `getPath(unitId)` at the start of the scene will help you resolve
+    It's the publisher responsibility to call `getPath(unitId)` at relevant places to render the ads. For example, in `onAvailable()` callback of the `CampaignStateListener` and when you are changing the `Activity` or `Scene` calling `getPath(unitId)` at the start of the scene will help you resolve
 
 	
 **Show user initiated interstitial**
@@ -189,60 +189,61 @@ if (path.length != 0){
 call `showUII(unitId:)`  inside the respective tap gesture action method to open the interstitial.
 
 ```Swift tab=
-    greedyGameAds?.showUII(unitId: ADUNIT_CREATED)
+    greedyGameAgent?.showUII(unitId: ADUNIT_CREATED)
 ```
 
 ```Objective-C tab="Objective-c"
-	[self.greedyGameAds showUIIWithUnitId: ADUNIT_CREATED];
+	[self.greedyGameAgent showUIIWithUnitId: ADUNIT_CREATED];
 ```
 
 ## **Load an Ad**
-To load Native Ads call the `load()` method from `GreedyGameAds` instance created before.
+To load Native Ads call the `intialize()` method from `GreedyGameAgent` instance created before.
 
 ```Swift tab= hl_lines="6"
-  let greedyGameAds = GreedyGameAds.Builder()
-                       	.appId(App_ID_CREATED) //e.g 00100100
-                        .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+  let greedyGameAgent = GreedyGameAgent.Builder()
+                       	.setGameId(App_ID_CREATED) //e.g 00100100
+                        .addUnit(ADUNIT_CREATED) //e.g unit-1000
                         ---"other builder methods"---
                       	.build()
-  greedyGameAds.load()
+  greedyGameAgent.initialize()
 ```
 
 ```Objective-C tab="Objective-C" hl_lines="7"
   Builder *builder = [[Builder alloc]init];
-  [builder appId:GAME_ID_CREATED]; //e.g 00100100
-  [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
+  [builder setGameId:GAME_ID_CREATED]; //e.g 00100100
+  [builder addUnit:ADUNIT_CREATED]; //e.g slot-1000
   ---"other builder methods"---
-  self.greedyGameAds = builder.build;
+  self.greedyGameAgent = builder.build;
 
-  [self.greedyGameAds load];
+  [self.greedyGameAgent initialize];
 ```
 
 !!! tip "When to load the GreedyGame's Native Ad?"
-    Load the ads by calling `greedyGameAds.load()` as early as possible to get the benefits of getting an Ad early. An ideal place would be to call this on `ViewDidLoad()` method of the first `ViewController` of the game.
+    Load the ads by calling `greedyGameAgent.initialize()` as early as possible to get the benefits of getting an Ad early. An ideal place would be to call this on `ViewDidLoad()` method of the first `ViewController` of the game.
 
-Once `load()` method called GreedyGame SDK will fetch ads directly from GreedyGame's demand or it will fetch from any of the Mediation's enabled.
+Once `initialize()` method called GreedyGame SDK will fetch ads directly from GreedyGame's demand or it will fetch from any of the Mediation's enabled.
 
+<!-- 
 ## **Destroy Ads**
 
-When you are done with the ads and do not want to display it call `destroy()` on `GreedyGameAds` instance.
+When you are done with the ads and do not want to display it call `destroy()` on `GreedyGameAgent` instance.
 
 ```Swift tab=
-  greedyGameAds.destroy()
+  GreedyGameAgent.destroy()
 ```
 
 ```Objective-C tab="Objective-C"
-  [self.greedyGameAds destroy];
+  [self.GreedyGameAgent destroy];
 ```
 
 Detroying ads will automatically remove the Ads created with `NativeAdView`. You can also register for Ad destroy events by extending the `AdDestroyListener` and register the `AdDestroyListener` before `load()` the SDK like below
 
 ```Swift tab=
-  greedyGameAds.setAdDestroyListener(self)
+  GreedyGameAgent.setAdDestroyListener(self)
 ```
 
 ```Objective-C tab="Objective-C"
-  [self.greedyGameAds setAdDestroyListener:self];
+  [self.GreedyGameAgent setAdDestroyListener:self];
 ```
 
 You can get the destroy callback by conforming `destroy()` method in the corresponding `ViewController` which extends the `AdDestroyListener`
@@ -258,81 +259,99 @@ You can get the destroy callback by conforming `destroy()` method in the corresp
     
   }
 ```
+ -->
+
+
+### **Refresh Ads**
+
+You should refresh the ads that are shown, during natural pauses in your gameflow. Typical examples would include the game pause menu, user trying to restart a level or move to another level, death of a character etc. This will help maximise your revenue and also blend in seamlessly to the gamer. GreedyGame SDK by default doesn’t refresh the ads in between a session. For this you need to call the following API.
+
+```Swift tab=
+greedyGameAgent.refresh()
+```
+
+```Objective-C tab="Objective-C"
+[self.greedyGameAgent refresh];
+```
+
+This will give a callback at the same CampaignStateListener set earlier and the flow would happen as earlier. The units should be properly updated on both `onAvailable()` and `onUnavailable()` callbacks.
+
+!!! warning
+
+    There is a 60 second minimum threshold applied to this API. This means that if this API gets called again within 60 seconds of the previous call, it is ignored.
+
 
 ## **Admob Mediation support**
 GreedyGame SDK can source Ads from GreedyGame directly or it can also fetch demand from `Admob` also.
 
-To enable `Admob Mediation` call `enableAdmob(true)` on the `GreedyGameAds.Builder` instance.
+To enable `Admob Mediation` call `enableAdmob(true)` on the `GreedyGameAgent.Builder` instance.
 
 ```Swift tab= hl_lines="4"
-  let greedyGameAds = GreedyGameAds.Builder()
-                       	.appId(GAME_ID_CREATED) //e.g 00100100
-                        .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+  let greedyGameAgent = GreedyGameAgent.Builder()
+                       	.setGameId(GAME_ID_CREATED) //e.g 00100100
+                        .addUnit(ADUNIT_CREATED) //e.g slot-1000
                         .enableAdmob(true)
                         ---"other builder methods"---
                       	.build()
-  greedyGameAds.load()
+  greedyGameAgent.initialize()
 ```
 
 ```Objective-C tab="Objective-C" hl_lines="4"
   Builder *builder = [[Builder alloc]init];
-  [builder appId:GAME_ID_CREATED]; //e.g 00100100
-  [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
+  [builder setGameId:GAME_ID_CREATED]; //e.g 00100100
+  [builder addUnit:ADUNIT_CREATED]; //e.g unit-1000
   [builder enableAdmob:YES];
   ---"other builder methods"---
-  self.greedyGameAds = builder.build;
+  self.greedyGameAgent = builder.build;
 
-  [self.greedyGameAds load];
+  [self.greedyGameAgent initialize];
 ```
 
 ## **Compliance with GDPR**
-To enable GDPR privacy settings for GreedyGame's Native iOS SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAds` instance before calling `load()`.
+To enable GDPR privacy settings for GreedyGame's Native iOS SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAgent` instance before calling `load()`.
 
 ```Swift tab=
-  // User has given a consent to protect their privacy
-  let privacyOption = PrivacyOptions();
-  privacyOption.setNpa(npa: true) // By passing true means that the User has given consent to protect their privacy.
-  greedyGameAds.withPrivacyOptions(privacyOpt: privacyOption)
-
-  greedyGameAds.load()
+let privacyOptions = PrivacyOptions()
+privacyOptions.setNpa(npa: true)
+greedyGameAgent?.setPrivacyOptions(privacyOpt: privacyOptions)
+greedyGameAgent.initialize()
 ```
 
 ```Objective-C tab="Objective-C"
-  PrivacyOptions *privacyOption = [[PrivacyOptions alloc]init];
-  [privacyOption setNpaWithNpa:YES]; // By passing YES means that the User has given consent to protect their privacy.
-  [self.greedyGameAds setPrivacyOptionsWithPrivacyOpt:privacyOption];
-
-  [self.greedyGameAds load];
+PrivacyOptions *privateOptions = [[PrivacyOptions alloc]init];
+[privateOptions setNpaWithNpa:YES];
+[self.greedyGameAgent setPrivacyOptionsWithPrivacyOpt:privateOptions];
+[self.greedyGameAgent initialize];
 ```
 
 !!! note
-    Load GreedyGameAds only after the user has given the consent. If `load()` is called before receiving the consent then the current app session will be considered with the consent of using privacy information. 
+    Load GreedyGameAgent only after the user has given the consent. If `initialize()` is called before receiving the consent then the current app session will be considered with the consent of using privacy information. 
 
     Admob's SDK will also receive the Consent passed from you in case if you are using `Admob Mediation`.
 
 ## **Compliance with COPPA**
 
-To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `enableCoppa(true)` in `GreedyGameAds.Builder` instance.
+To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `enableCoppa(true)` in `GreedyGameAgent.Builder` instance.
 
 ```Swift tab= hl_lines="4"
-  let greedyGameAds = GreedyGameAds.Builder()
-                       	.appId(GAME_ID_CREATED) //e.g 00100100
-                        .addUnitId(ADUNIT_CREATED) //e.g slot-1000
+  let greedyGameAgent = GreedyGameAgent.Builder()
+                       	.setGameId(GAME_ID_CREATED) //e.g 00100100
+                        .addUnit(ADUNIT_CREATED)    //e.g unit-1000
                         .enableCoppa(true)
                         ---"other builder methods"---
                       	.build()
-  greedyGameAds.load()
+  greedyGameAgent.load()
 ```
 
 ```Objective-C tab="Objective-C" hl_lines="4"
   Builder *builder = [[Builder alloc]init];
-  [builder appId:GAME_ID_CREATED]; //e.g 00100100
-  [builder addUnitId:ADUNIT_CREATED]; //e.g slot-1000
+  [builder setGameId:GAME_ID_CREATED]; //e.g 00100100
+  [builder addUnit:ADUNIT_CREATED]; //e.g slot-1000
   [builder enableCoppa:YES];
   ---"other builder methods"---
-  self.greedyGameAds = builder.build;
+  self.greedyGameAgent = builder.build;
 
-  [self.greedyGameAds load];
+  [self.greedyGameAgent initialize];
 ```
 
 ## **Test Ads**

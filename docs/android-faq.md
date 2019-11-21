@@ -15,8 +15,8 @@ GreedyGame SDK supports from Android version `17` or Android Version `4.2` and a
 ### **I can see some ads but not all of them. What could be the problem?**
 If you are able to see some ads in the App, then the basic integration is working fine. A general cause of this behaviour is when developers accidentally forget to add the relevant Ad Unit Id in the Ad Request Builder call. Please check <a target="_blank" rel="noopener noreferrer" href="/android-advanced/#initializing-greedygameads">this</a> section for more information
 
-### **Why do I need Google PlayServices to be integrated? Which is the minimum supported version?**
-In order to comply with Google's Advertising Guidelines, there are certain dependencies on Google Play Services. Also, Google AdMob launched a complete Native Advanced Ad support from version 11.0.4 and hence that is the minimum required supported version
+### **Why do I need Google PlayServices to be integrated? Which is the minimum and the maximum supported version?**
+In order to comply with Google's Advertising Guidelines, there are certain dependencies on Google Play Services. Also, Google AdMob launched a complete Native Advanced Ad support from version 11.0.4 and hence that is the minimum required supported version. Our SDK has been tested to work correctly with 16.x series. Support for future versions is experimental
 
 ### **Which Activities do I need to declare as a part of my manifest?**
 You need to include a GreedyGame activity for completing the integration process. The same is mentioned in the integration step <a target="_blank" rel="noopener noreferrer" href="/android/#update-your-androidmanifestxml">here</a>. Do not forget to change the orientation to match your app's orientation. 
