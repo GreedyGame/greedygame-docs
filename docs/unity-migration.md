@@ -1,4 +1,4 @@
-If you were on any versions of GreedyGame prior to version 9.0 please follow the steps below 
+If you were on any versions of GreedyGame prior to version 9.0 (Beta-Version!!) please follow the steps below 
 
 
 ## **Removing previous plugin files**

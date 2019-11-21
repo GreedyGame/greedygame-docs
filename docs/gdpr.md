@@ -9,7 +9,7 @@ greedyGame.withPrivacyOptions(privacyOptions);
 greedyGame.load();
 ```
 
-```Java tab="Kotlin" hl_lines="3"
+```Java tab="Kotlin-Beta" hl_lines="3"
 // User has given a consent to protect their privacy
 val privacyOptions = PrivacyOptions(true) // By passing true means that the User has given consent to protect their privacy.
 greedyGame.withPrivacyOptions(privacyOptions)
