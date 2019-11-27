@@ -13,9 +13,10 @@ Download the GreedyGame Unity SDK
 
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
 
-**Import Unity Package Inside current-sdk folder** 
-Open the downloaded SDK folder from github. Go to 'current-sdk' folder and import the package to unity. 
-Assets > Import > Import Custom Package
+
+**Import the Unity Package Inside current-sdk folder** 
+Open the downloaded SDK folder from Github. Go to 'current-sdk' folder and import the package to unity. 
+**Assets > Import > Import Custom Package**
 
 !!! note ""
     Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
@@ -23,7 +24,10 @@ Assets > Import > Import Custom Package
 ### **Import Google Mobile Ads SDK for Unity**
 If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
 Import the package **Assets > Import > Import Custom Package**.
-Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK
+Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK<br/>
+                            **OR**                                 
+Open the downloaded SDK folder from Github(GreedyGameSDK). Go to <br/>**"current-sdk->PlayServicesAAR"** folder.Copy all the **".aar"** files inside this folder and place them under **"Assets->Plugins->Android->libs"**. 
+
 
 ### **Update your AndroidManifest.xml**
 
@@ -100,7 +104,8 @@ Follow the same procedure to create multiple Ad Units inside the app.
 
 
 ### **Initializing GreedyGame SDK**
-Create a new C# Script and add the following code snippet inside Start() method
+Create a new C# Script and add the following code snippet inside Start(). Then add this script to the new "GameObject" in the scene where you want to initialize the SDK(Ideally it should be done in the first scene).
+
 ``` c
 public List<string> unitList = new List<string> {"unit-1234", "unit-1235",
                                                  "float-2345"};
@@ -306,9 +311,7 @@ This will give a callback at the same CampaignStateListener set earlier and the 
 
     There is a 60 second minimum threshold applied to this API. This means that if this API gets called again within 60 seconds of the previous call, it is ignored.
 
-### **Custom Rendering Native Ads**
-Custom rendering allows you to render Native Ads by fetching the image's local path and rendering it with your own `ImageView`.
-Follow the example to do the same.
+
 
 ## **Test Ads**
 
@@ -318,7 +321,7 @@ GreedyGame recommends an easy way to test the ads by following the below steps
 
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration.greedygame.com">Integration Panel</a>**
 * Select an App in which you want to check the test ads.
-* Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.
+* Click `SCAN QR` under the test Ads section and follow the steps mentioned to get the test ads.
 
 
 ## **Going Live**
@@ -332,6 +335,11 @@ You have successfully integrated GreedyGame SDK and verified the testing flow wi
 
 !!! warning
     you have gone live do not click on the production ads for testing. Always go to the **Test Ads** section and Test your integration.
+
+## **FAQ**
+For Unity Specific <a target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/unity-faq/">here</a>.
+<br/>
+For General <a target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/general-faq/">here</a>.
 
 
 
