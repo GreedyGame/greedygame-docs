@@ -20,7 +20,7 @@ If you are building with `XCode 10` or `XCode 10.1`,
   end
 ```
 
-If you are building with `XCode 10.2`,
+If you are building with `XCode 10.2`, `XCode 10.2.1`
 
 ```
   source 'https://github.com/GreedyGame/cocoapod-folio.git'   
@@ -34,11 +34,11 @@ If you are building with `XCode 10.2`,
 
 If you are building with `XCode 10` or `XCode 10.1`,
 
- <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.zip" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10 and 10.1</a>
+ <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.zip" class="pure-material-button-contained">Download SDK For XCode 10 and 10.1</a>
 
-If you are building with `XCode 10.2`,
+If you are building with `XCode 10.2`, `XCode 10.2.1`
 
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.1.zip" class="pure-material-button-contained">Download GreedyGame SDK For XCode 10.2</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.1.zip" class="pure-material-button-contained">Download SDK For XCode 10.2 and 10.2.1</a>
 
  * Click `Source code (zip)` to download GreedyGame SDK.
  * Unzip and then add the `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.

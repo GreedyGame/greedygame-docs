@@ -278,7 +278,7 @@ if(unitPath.isNotEmpty()) {
 
 !!! warning
     
-    It's the publisher responsibility to call `getPath(unitId)` at relevant places to render the ads. For example, in `onAvailable()` callback of the `CampaignStateListener` and when you are changing the `Activity` or `Scene` calling `getPath(unitId)` at the start of the scene will help you resolve
+    It's the publisher responsibility to call `getPath(unitId)` at relevant places to render the ads. For example, in `onAvailable()` callback of the `CampaignStateListener` or when you are changing the `Activity`, calling `getPath(unitId)` at the start of the activity will help you display the ad correctly
 
 
 ## **AdMob Mediation support**
