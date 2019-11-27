@@ -29,26 +29,26 @@ Please create a square/rectangle transparent unit. While setting the unit up, do
 ##6. Do I need to create the frame of the ad-unit?
 No, do not provide a frame. Only create a square/rectangle transparent unit. The json (frame) is created dynamically. The assets for the frame are downloaded when an ad refresh is called. The frame is optimized and updated by our team basis the data collected to improve click-through-rates. A transparent unit helps us change the frame on the fly. If you provide a frame, we’d require to update the SDK every time any unit optimization needs to be done. 
 
-##7. Where properties of an ad-unit can I control?
+<!-- ##7. Where properties of an ad-unit can I control?
 After adding a unit, you can control the following properties - 
 
 * clickable/non-clickable property. Any units clickability can be changed anytime. 
 * On/off. Any unit can be removed from the app.
 
-These properties can be controlled through the integration panel.
+These properties can be controlled through the integration panel. -->
 
-##8. Can I create units which are non-clickable and show ads on them?
+##7. Can I create units which are non-clickable and show ads on them?
 Yes, you can but currently, the fill for it individually is very low. We’d recommend a small clickable unit be used in conjugation with it. This way, we can show multiple elements of the same ad across a set of units (clickable and a non-clickable) thus increasing the Click-through-rates on the ad impression.
 
 ![Image](img/bestPractices/gameplay.png)
 
-##9. How are impressions counted?
+##8. How are impressions counted?
 Impressions are counted when a user clicks on a native ad-unit and a window (User-initiated Interstitial) opens up which covers 75% of the screen. This is in policy with Admob Native Advanced policies.
 
-##10. How are clicks counted?
+##9. How are clicks counted?
 Clicks are counted when a user clicks on an element within User-Initiated interstitial.
 
-##11. Why do I need to add a unit nickname? 
+##10. Why do I need to add a unit nickname? 
 Setting the ad unit’s nickname will help you to recognize your units easily. For your reference units ids are also mentioned against each unit.
 
 

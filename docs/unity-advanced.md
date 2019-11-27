@@ -2,18 +2,60 @@
 
 We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin.
 
+## **Integration Video**
+Here is a sample video to help you by the whole integration process. We strongly recommend going through the whole documentation before using the video.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jRxXeSkYfg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### **Importing GreedyGame Native Ads SDK For Unity**
+
+Download the GreedyGame Unity SDK  
+
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
+
+
+**Import the Unity Package Inside current-sdk folder** 
+Open the downloaded SDK folder from Github. Go to 'current-sdk' folder and import the package to unity. 
+**Assets > Import > Import Custom Package**
+
+!!! note ""
+    Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
+
+### **Import Google Mobile Ads SDK for Unity**
+If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
+Import the package **Assets > Import > Import Custom Package**.
+Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK<br/>
+                            **OR**                                 
+Open the downloaded SDK folder from Github(GreedyGameSDK). Go to <br/>**"current-sdk->PlayServicesAAR"** folder.Copy all the **".aar"** files inside this folder and place them under **"Assets->Plugins->Android->libs"**. 
+
+
 ### **Update your AndroidManifest.xml**
 
 Add the following `<activity>` declaration inside `<application>` tag of the Manifest.
-```xml hl_lines="6"
+```xml 
 <activity
-    android:name="com.greedygame.android.core.campaign.uii.GreedyGameActivity"
-    android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|layoutDirection"
-    android:hardwareAccelerated="true"
-    android:launchMode="singleTask"
-    android:screenOrientation="portrait"
-    android:theme="@style/Theme.GGTransparent">
-</activity>
+  android:name="com.greedygame.android.core.campaign.uii.web.GGWebActivity"
+  android:screenOrientation="sensorLandscape"
+  android:configChanges="keyboardHidden|screenSize|screenLayout|layoutDirection|orientation"
+  android:hardwareAccelerated="true"
+  android:launchMode="singleTask"
+  android:theme="@style/Theme.GGTransparent"/>
+
+<activity
+  android:name="com.greedygame.android.core.mediation.admob.GGAdMobActivity"
+  android:screenOrientation="sensorLandscape"
+  android:configChanges="keyboardHidden|screenSize|screenLayout|layoutDirection|orientation"
+  android:hardwareAccelerated="true"
+  android:launchMode="singleTask"
+  android:theme="@style/Theme.GGTransparent"/>
+
+<activity
+  android:name="com.greedygame.android.core.mediation.greedygame.GGS2SActivity"
+  android:screenOrientation="sensorLandscape"
+  android:configChanges="keyboardHidden|screenSize|screenLayout|layoutDirection|orientation"
+  android:hardwareAccelerated="true"
+  android:launchMode="singleTask"
+  android:theme="@style/Theme.GGTransparent"/>
 ```
 
 Also, note the highlighted line where you can change the orientation of the `screenOrientation` property based on which orientation you want to open the engagment. All the allowed values can be found in <a target="_blank" rel="noopener noreferrer" href="https://developer.android.com/guide/topics/manifest/activity-element#screen">Android Documentation</a>
@@ -59,49 +101,38 @@ Follow the same procedure to create multiple Ad Units inside the app.
 
         
 
-### **Importing GreedyGame Native Ads SDK For Unity**
 
-Download the GreedyGame Unity SDK  
-
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
-
-**Import Unity Package Inside current-sdk folder** 
-Open the downloaded SDK folder from github. Go to 'current-sdk' folder and import the package to unity. 
-Assets > Import > Import Custom Package
-
-!!! note ""
-    Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
-
-### **Import Google Mobile Ads SDK for Unity**
-If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
-Import the package **Assets > Import > Import Custom Package**.
-Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK
 
 ### **Initializing GreedyGame SDK**
-Create a new C# Script and add the following code snippet inside Start() method
+Create a new C# Script and add the following code snippet inside Start(). Then add this script to the new "GameObject" in the scene where you want to initialize the SDK(Ideally it should be done in the first scene).
+
 ``` c
-DontDestroyOnLoad (this.gameObject);
-if (RuntimePlatform.Android == Application.platform || RuntimePlatform.IPhonePlayer == Application.platform) {
-    GGConfig adConfig = new GGConfig ();
-    adConfig.setGameId (AppId);
-    adConfig.setListener (new GreedyAgentListener ());
-    GGUnitConfig adUnitConfig = new GGUnitConfig ("slot-123", defaultTexture, true, false);
-    adConfig.addUnit (adUnitConfig);
-    adConfig.enableCoppa (enableCoppa);
-    GreedyGameAgent.Instance.Init (adConfig);
+public List<string> unitList = new List<string> {"unit-1234", "unit-1235",
+                                                 "float-2345"};
+void Awake(){
+    DontDestroyOnLoad(this.gameObject);
+    if (RuntimePlatform.Android == Application.platform)
+    {
+       GGAdConfig ggAdConfig = new GGAdConfig();
+       ggAdConfig.setGameId("YOUR GAME ID HERE");
+       ggAdConfig.addUnitList(unitList);
+       ggAdConfig.enableAdmob(true);
+       ggAdConfig.enableNpa(true);      //If you do not receive consent for Personalised Ads
+       ggAdConfig.setListener(new GreedyAgentListener());
+       GreedyGameAgent.Instance.init(ggAdConfig);
+    }
 }
 ```
 ### Create a GGConfig object
-* adConfig.setGameId (AppId) : AppId (string) is the id of the app that was created.
-* adConfig.addUnit (adUnitConfig) : create GGUnitConfig for each unit that you created and add it using addUnit API or addUnitList API.            
-* adConfig.enableCoppa(enable) : enable (boolean) to enforce COPPA regulations 
+* ggAdConfig.setGameId(AppId) : Game Id (string) is the id of the app that was created.          
+* ggAdConfig.enableCoppa(enable) : enable (boolean) to enforce COPPA regulations 
 
 ### **Setting Ad Listener**
 Create a class implementing GGAdListener and set it using the setListener API.
 
 | Methods      | Definition                                      |
 | ------------ | ----------------------------------------------- |
-| `onAvailable(adId)`  | SDK fetched an ad|
+| `onAvailable(campaignId)`  | SDK fetched an ad|
 | `onUnavailable()`    | Failed to fetch next ad                          |
 | `onError(error)`     | SDK not able to initialize. Check the `error` message.|
 
@@ -120,18 +151,168 @@ First step in rendering GreedyGame Ads is identifying which object needs to be u
     While selecting an object or creating an object for ad rendering, please keep in mind that GreedyGame SDK needs an object with mesh/canvas/sprite renderer to display ads.
 
 
-### Registering for Ad Rendering
-Once you have idenified/created a game object add a CS script to the object and add the following snippets to the script.
+### **Non Clickable Unit Integration**
+The non-clickable unit helps creating a branding experience without intruding the user. They should be designed to blend well in your gaming environment.
 
-### In Start() function
-```
-GreedyGameAgent.RegisterGameObject("slot-123", this.gameObject);
+### Script Integration
+You can attach supplied scripts in order to change GameObject textures at runtime.
+
+1. If your game object has mesh renderer or sprite renderer, then attach GGRenderer script to the
+GameObject.
+
+2. If you want to take care of the rendering yourself, then attach GGCustomRenderer script to the GameObject and add appropriate code for rendering in Step Delegate-A and Step Delegate-B specified inside the script. Refer to a snapshot of the script below
+
+```c#
+private RawImage rawImage;
+public Texture defaultTexture;
+public string unitId;
+
+// Use this for initialization
+void Start () {
+//Use this API to register delegates which will send you the branded texture
+//The below delegate is an example which uses raw image to render image
+//You should make sure that the actual rendering of the object
+//is done inside the delegate
+    GreedyGameAgent.Instance.registerGameObject(this.gameObject,
+        defaultTexture as Texture2D,
+        unitId,
+        delegate (string unitId, Texture2D assignedTexture, bool isBranded) {
+        // The assignedTexture returned by the delegate can be the branded
+        // texture, the default texture or a transparent texture. 
+        // A transparent texture is returned in case the default texture you
+        // pass to the registerGameObject API is null and there are no 
+        // branded textures. If you want to disable or enable a game object
+        //based on whether assignedTexture is branded or not you can use the
+        // isBranded boolean which would be true in case its a branded texture.
+        if (assignedTexture != null)
+        {
+            // Step Delegate-A
+            rawImage = GetComponent<RawImage>();
+            if(rawImage != null)
+            {
+                rawImage.texture = assignedTexture as Texture;
+            }
+        }
+
+        if(!isBranded) {
+            // Step Delegate-B
+            // Disable your game object here in case you want to.
+            // Based on whether the assignedTexture is branded or not
+        }
+    });
+}
+void OnDestroy()
+{
+    GreedyGameAgent.Instance.unregisterGameObject(this.gameObject);
+}
 ```
 
-### In Destroy() function
+#### Code Integration
+If you want to create your own script or prefer using the API directly, then refer to the Register GameObject documentation given below.
+
+1. If you have a Mesh or Sprite renderer, you can register the game object to receive texture updates. Make sure to unregister the Game Object when the `onDestroy` is called. Please refer to the sample below.
+
+```c#
+public Texture2D defaultTexture;// Default Texture for the Game Object
+public string unitId;           // Clickable or non-clickable unit ID
+public bool applyToAll = true;  // Change to false if you dont want all 
+                                // the objects to be updated that share the 
+                                // same material
+void Start()
+{
+    // Attach this script to an object that needs branding.
+    // Make sure that the object has mesh or sprite renderer attached to it.
+    GreedyGameAgent.Instance.registerGameObject(this.gameObject,
+    defaultTexture,
+    unitId,
+    applyToAll);
+}
+
+void OnDestroy()
+{
+    GreedyGameAgent.Instance.unregisterGameObject(this.gameObject);
+}
 ```
-GreedyGameAgent.UnregisterGameObject(this.gameObject);
+
+2. If you are rendering the GameObjects yourself, you can supply a delegate function to handle
+changes yourself.
+
+```c#
+private RawImage rawImage;
+public Texture defaultTexture;
+public string unitId;
+void Start () {
+    // Use this API to register delegates which will send you the branded texture.
+    // The below delegate is an example which uses raw image to render image.
+    // You should make sure that the actual rendering of the object
+    // is done inside the delegate
+    GreedyGameAgent.Instance.registerGameObject(this.gameObject,
+        defaultTexture as Texture2D,
+        unitId,
+        delegate (string unitId, Texture2D assignedTexture, bool isBranded) {
+            //The assignedTexture returned by the delegate can be the branded texture,
+            //the default texture or a transparent texture. A transparent texture is
+            //returned in case the default texture you pass to the registerGameObject
+            //API is null and there are no branded textures. If you want to disable or
+            //enable a game object based on whether assignedTexture is branded or not
+            //you can use the isBranded boolean which would be true in case its
+            //a branded texture.
+            if (assignedTexture!=null)
+            {
+                //Step Delegate-A
+                rawImage = GetComponent<RawImage>();
+                if(rawImage != null)
+                {
+                    rawImage.texture = assignedTexture as Texture;
+                }
+            }
+            
+            if(!isBranded) {
+                //Step Delegate-B
+                //Disable your game object here in case you want to.
+                //Based on whether the assignedTexture is branded or not
+            }
+        });
+}
+
+void OnDestroy()
+{
+    GreedyGameAgent.Instance.unregisterGameObject(this.gameObject);
+}
 ```
+
+### **Clickable Unit Integration**
+Clickable Units are used to collect user response for a particular ad campaign. They typically look like buttons, placed at strategic points, to have minimal gamer inconvenience. Clickable Units present an opportunity for the user to express their interest and know more about the ad that they are experiencing. We recommend placing clickable units in conjunction
+with non-clickable units. This is essential for advertisers to measure campaign effectiveness and reach their targets. Clicking on this unit will open an in-game browser, called the User-Initiated Interstitial (UII). This window will show the ad in detail and supports multiple formats of ads.
+
+1. Follow the same steps for non-clickable units to change the texture of the clickable unit.
+
+2. Modify the click property of your game object and call the following code block with the correct unit id.
+
+```c#
+GreedyGameAgent.Instance.showEngagementWindow("float-1234");
+```
+
+!!! tip
+    Like for non-clickable units, please get in touch with your Account Manager to get better ad spots.
+!!! tip
+    The methods listed for clickable and non-clickable unit integration will automatically update the texture of gameobject if that object is active in scene, you don't need to manually update the game object texture
+
+### **Refresh Ads**
+
+You should refresh the ads that are shown, during natural pauses in your gameflow. Typical examples would include the game pause menu, user trying to restart a level or move to another level, death of a character etc. This will help maximise your revenue and also blend in seamlessly to the gamer. GreedyGame SDK by default doesn’t refresh the ads in between a session. For this you need to call the following API.
+
+```c#
+GreedyGameAgent.Instance.startEventRefresh();
+```
+This will give a callback at the same CampaignStateListener set earlier and the flow would happen as earlier. The units should be properly updated on both `onAvailable()` and `onUnavailable()` callbacks.
+
+!!! warning
+
+    There is a 60 second minimum threshold applied to this API. This means that if this API gets called again within 60 seconds of the previous call, it is ignored.
+
+
+
 ## **Test Ads**
 
 Now you have successfully integrated with GreedyGame Native Ads now is the time to test the integration.
@@ -140,7 +321,7 @@ GreedyGame recommends an easy way to test the ads by following the below steps
 
 * Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration.greedygame.com">Integration Panel</a>**
 * Select an App in which you want to check the test ads.
-* Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.
+* Click `SCAN QR` under the test Ads section and follow the steps mentioned to get the test ads.
 
 
 ## **Going Live**
@@ -154,3 +335,12 @@ You have successfully integrated GreedyGame SDK and verified the testing flow wi
 
 !!! warning
     you have gone live do not click on the production ads for testing. Always go to the **Test Ads** section and Test your integration.
+
+## **FAQ**
+For Unity Specific <a target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/unity-faq/">here</a>.
+<br/>
+For General <a target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/general-faq/">here</a>.
+
+
+
+
