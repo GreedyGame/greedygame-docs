@@ -234,7 +234,7 @@ To fetch the Ad for a unit you need to call `getPath(unitId)` in `GreedyGameAgen
 ```Java tab=
 String unitId = "YOUR FLOAT UNIT HERE";
 ImageView iv = new ImageView(context);
-OnClickListener unitClick = new OnClickListener() {
+View.OnClickListener unitClick = new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         agent.showUII(unitId);

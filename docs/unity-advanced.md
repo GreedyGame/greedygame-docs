@@ -7,6 +7,24 @@ Here is a sample video to help you by the whole integration process. We strongly
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jRxXeSkYfg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### **Importing GreedyGame Native Ads SDK For Unity**
+
+Download the GreedyGame Unity SDK  
+
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
+
+**Import Unity Package Inside current-sdk folder** 
+Open the downloaded SDK folder from github. Go to 'current-sdk' folder and import the package to unity. 
+Assets > Import > Import Custom Package
+
+!!! note ""
+    Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
+
+### **Import Google Mobile Ads SDK for Unity**
+If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
+Import the package **Assets > Import > Import Custom Package**.
+Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK
+
 ### **Update your AndroidManifest.xml**
 
 Add the following `<activity>` declaration inside `<application>` tag of the Manifest.
@@ -79,23 +97,7 @@ Follow the same procedure to create multiple Ad Units inside the app.
 
         
 
-### **Importing GreedyGame Native Ads SDK For Unity**
 
-Download the GreedyGame Unity SDK  
-
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/unity-plugin/releases/" class="pure-material-button-contained">Download Plugin</a>
-
-**Import Unity Package Inside current-sdk folder** 
-Open the downloaded SDK folder from github. Go to 'current-sdk' folder and import the package to unity. 
-Assets > Import > Import Custom Package
-
-!!! note ""
-    Make sure you have atleast one scene added to your Build Settings before proceeding to the next step.
-
-### **Import Google Mobile Ads SDK for Unity**
-If you don't have Google Mobile Ads SDK for Unity already integrated download it <a target="_blank" rel="noopener noreferrer" href="https://github.com/googleads/googleads-mobile-unity/releases/latest">here</a>.
-Import the package **Assets > Import > Import Custom Package**.
-Google Mobile Ads SDK is a mandatory requirement for GreedyGame SDK
 
 ### **Initializing GreedyGame SDK**
 Create a new C# Script and add the following code snippet inside Start() method
@@ -156,7 +158,7 @@ GameObject.
 2. If you want to take care of the rendering yourself, then attach GGCustomRenderer script to the GameObject and add appropriate code for rendering in Step Delegate-A and Step Delegate-B specified inside the script. Refer to a snapshot of the script below
 
 ```c#
-RawImage rawImage;
+private RawImage rawImage;
 public Texture defaultTexture;
 public string unitId;
 
@@ -231,7 +233,7 @@ void OnDestroy()
 changes yourself.
 
 ```c#
-RawImage rawImage;
+private RawImage rawImage;
 public Texture defaultTexture;
 public string unitId;
 void Start () {
