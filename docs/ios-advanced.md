@@ -40,7 +40,6 @@ If you are building with `XCode 10.2`, `XCode 10.2.1`
 
   <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.1.zip" class="pure-material-button-contained">Download SDK For XCode 10.2 and 10.2.1</a>
 
- * Click `Source code (zip)` to download GreedyGame SDK.
  * Unzip and then add the `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
  * Add these 3 frameworks under `Embedded Binaries` section in General or Build Phases.
 
@@ -308,7 +307,7 @@ To enable `Admob Mediation` call `enableAdmob(true)` on the `GreedyGameAgent.Bui
 ```
 
 ## **Compliance with GDPR**
-To enable GDPR privacy settings for GreedyGame's Native iOS SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAgent` instance before calling `load()`.
+To enable GDPR privacy settings for GreedyGame's Native iOS SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAgent` instance before calling `initialize()`.
 
 ```Swift tab=
 let privacyOptions = PrivacyOptions()
