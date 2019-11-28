@@ -1,6 +1,6 @@
 ### **Android**
 
-To enable GDPR privacy settings for GreedyGame's Native Android SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAgent` insance before calling `init()`.
+To enable GDPR privacy settings for GreedyGame's Native Android SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAgent` instance before calling `init()`.
 
 ```Java tab=
 // Before calling init from the GreedyGameAgent instance you have to set the NPA.
@@ -24,7 +24,7 @@ greedyGame.load()
     AdMob's SDK will also receive the Consent passed from you in case if you are using `Admob Mediation`.
 
 ### **iOS**
-To enable GDPR privacy settings for GreedyGame's Native iOS SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAgent` instance before calling `load()`.
+To enable GDPR privacy settings for GreedyGame's Native iOS SDK you can create the instance of `PrivacyOptions` and passing it to `GreedyGameAgent` instance before calling `initialize()`.
 
 ```Swift tab=
 let privacyOptions = PrivacyOptions()
