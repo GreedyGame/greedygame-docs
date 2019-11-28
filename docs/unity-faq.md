@@ -23,3 +23,13 @@ GGConfig config = new GGConfig();
 config.EnableNpa (true);
 ```
 
+
+### **Where to find the Android manifest file??**
+Once you build the Unity project for Android(even a blank project) then go to "<ProjectName>\Temp\StagingArea\" copy the Android manifest file and import the Android Manifest file to the following location "Assets/Plugins/Android/AndroidManifest.xml" .
+Then make the Android manifest changes you want to make.
+<br/>
+To know more about Unity generation of Android manifest file and how it uses.<a target="_blank" rel="noopener noreferrer" href="https://docs.unity3d.com/Manual/android-manifest.html">here</a>.
+<br/>
+To know more about Android manifest file <a target="_blank" rel="noopener noreferrer" href="https://developer.android.com/guide/topics/manifest/manifest-intro.html">here</a>.
+
+
