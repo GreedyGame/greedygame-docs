@@ -82,6 +82,43 @@ GreedyGame SDK needs the following permissions to work with.
 !!! tip
     `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of doing better ad targetting. 
 
+None of the above permissions are mandatory. But for better targeting of ads and thereby better revenue possibilities you should include these permissions.<br/>
+
+#### **Android 9.0 requirements**
+Add the following code snippets to your manifest file. These are required as part of Android API level 9.0 compatibility. These are mandatory requirements for GreedyGame.<br/>
+##### **ClearText Support**
+Add the following code snippet to your network config file. This allows GreedyGame API's to work in Android 9.0 devices.<br/>
+
+Create an xml file and name it network_security_config.xml and add the following code snippet inside it.<br/>
+Add this file to **"Assets/Plugins/Android/res/xml/"**
+
+```xml
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="true">
+      <domain includeSubdomains="true">api.greedygame.com</domain>
+  </domain-config>
+</network-security-config>
+``` 
+Then Inside your Manifest's application tag
+
+```xml
+<application 
+  ... 
+  android:networkSecurityConfig="@xml/network_security_config">
+  ...
+</application>
+```
+##### **Apache Legacy Compatibility**
+Beginning with Android 9, HTTP library is removed from the bootclasspath and is not available to apps by default. To enable the usage add the following code snippet in manifest.
+
+```xml
+<application>
+  ...
+  <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+  ...
+</application>
+```
+
 ### **Creating Ad Units**
 Adunits are ad assets that are rendered as a native component to the app.
 
