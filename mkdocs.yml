@@ -15,6 +15,7 @@ nav:
     # - Unity: unity.md
     - GDPR: gdpr.md
     - COPPA: coppa.md
+    - iOS: ios-advanced.md
     - Best Practices: best_practices.md
     - Releases: releases.md
     - Release Notes: release-notes.md
@@ -27,10 +28,11 @@ nav:
     - Android: android-faq.md
     - iOS: ios-faq.md
     - Unity: unity-faq.md
+  - iOS:
+    - iOS: ios-advanced.md
   - Advanced:
     - Getting Started: getting-started-advanced.md
     - Android Advanced: android-advanced.md
-    - iOS Advanced: ios-advanced.md
     - Unity Advanced: unity-advanced.md
   - Migration:
     - Unity : unity-migration.md 
