@@ -1,5 +1,4 @@
-# Unity Advanced 
-
+# SDK-8 Series
 We will guide you through the steps involved in integrating GreedyGame SDK in Unity using the GreedyGame Plugin.
 
 ## **Integration Video**

@@ -30,6 +30,9 @@ nav:
   - iOS:
     - SDK-8 series: ios-advanced.md
     - SDK-9 Beta: iOS-9.0.md
+  - Unity:
+    - SDK-8 Series:  unity-advanced.md
+    - SDK-9 Beta: unity.md
   - Migration:
     - Unity : unity-migration.md 
   - Integration Panel: 
