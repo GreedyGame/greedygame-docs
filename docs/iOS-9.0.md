@@ -1,7 +1,7 @@
 # **iOS SDK 9**
 
 !!! warning
-    <font size="3" color="red">SDK 9.0 is currently experimental, use it on your own risk</font>
+    <font size="3" color="red">SDK 9.0 is currently experimental.</font>
 
 In this section we are going to see how to integrate GreedyGame Native Ads in iOS native projects.
 
