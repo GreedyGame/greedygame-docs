@@ -1,3 +1,7 @@
+# SDK-9 Beta
+
+!!! warning
+    <font size="3" color="red">SDK 9.0 is currently experimental.</font>
 
 Watch the 3 minute integration video which details the basic integration using GreedyGame Plugin to get started.
 

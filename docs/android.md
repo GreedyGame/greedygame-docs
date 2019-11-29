@@ -1,3 +1,9 @@
+# **Android SDK 9**
+
+!!! warning
+    <font size="3" color="red">SDK 9.0 is currently experimental.</font>
+
+
 In this section we are going to see how to integrate GreedyGame Native Ads in Android native projects.
 
 ### **Importing GreedyGame Native Ads SDK**
@@ -100,7 +106,7 @@ GreedyGameAds greedyGame = new GreedyGameAds.Builder(activity)
         }
 
         @Override
-        public void onAvailable(@NotNull String adId) {
+        public void onAvailable(@NotNull String campaignId) {
 
         }
 
@@ -123,7 +129,7 @@ val greedyGameAds = GreedyGameAds.Builder(activity)
 
         }
 
-        override fun onAvailable(advId: String) {
+        override fun onAvailable(campaignId: String) {
 
         }
 
@@ -138,7 +144,7 @@ val greedyGameAds = GreedyGameAds.Builder(activity)
 
 | Methods      | Definition                                      |
 | ------------ | ----------------------------------------------- |
-| `onAvailable(adId)`  | SDK fetched an ad|
+| `onAvailable(campaignId)`  | SDK fetched an ad|
 | `onUnavailable()`    | Failed to fetch next ad                          |
 | `onError(error)`     | SDK not able to initialize. Check the `error` message.|
 
