@@ -27,6 +27,9 @@ nav:
     - Android: android-faq.md
     - iOS: ios-faq.md
     - Unity: unity-faq.md
+  - Android:
+    - SDK-8 Series: android-advanced.md
+    - SDK-9 Beta: android.md
   - iOS:
     - SDK-8 series: ios-advanced.md
     - SDK-9 Beta: iOS-9.0.md
