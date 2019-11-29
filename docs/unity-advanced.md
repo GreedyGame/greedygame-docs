@@ -373,9 +373,9 @@ You have successfully integrated GreedyGame SDK and verified the testing flow wi
     you have gone live do not click on the production ads for testing. Always go to the **Test Ads** section and Test your integration.
 
 ## **FAQ**
-For Unity Specific <a target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/unity-faq/">here</a>.
+For Unity Specific <a target="_blank" rel="noopener noreferrer" href="https://docs.greedygame.com/unity-faq/">here</a>.
 <br/>
-For General <a target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/general-faq/">here</a>.
+For General <a target="_blank" rel="noopener noreferrer" href="https://docs.greedygame.com/general-faq/">here</a>.
 
 
 
