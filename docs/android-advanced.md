@@ -2,7 +2,7 @@ In this section we are going to see how to integrate GreedyGame Native Ads in An
 
 ### **Importing GreedyGame Native Ads SDK**
 
-Games built with Android Studio can easily integrate with <a target="_blank" rel="noopener noreferrer" href="https://gradle.org">Gradle</a>.
+Apps built with Android Studio can easily integrate with <a target="_blank" rel="noopener noreferrer" href="https://gradle.org">Gradle</a>.
 
 **Add the following to the app level** `build.gradle`. (excerpt)
 
@@ -71,7 +71,42 @@ GreedyGame SDK needs the following permissions to work with.
 
 !!! tip
     `ACCESS_COARSE_LOCATION` permission will help improving the revenue because of doing better ad targetting.
-    
+**ClearText Traffic Support**
+
+Add the following code snippets to your manifest file for cleartext traffic support. These are required as part of Android API level 9.0 compatibility. These are mandatory requirements for GreedyGame.
+
+* The steps to add this are
+    *  Create a `network_security_config.xml` file under `res/xml` in the project
+    *  Paste the following content into it.
+    ```xml
+    <network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+      <domain includeSubdomains="true">api.greedygame.com</domain>
+    </domain-config>
+    </network-security-config>
+    ```
+
+    * In your manifest file add this as  `networkSecurityConfig`
+
+    ```xml hl_lines="3"
+    <application 
+    ...
+    android:networkSecurityConfig="@xml/network_security_config">
+    ...
+    </application>
+    ```
+
+    * Beginning with Android 9, HTTP library is removed from the bootclasspath and is not available to apps by default. To enable the usage add the following code snippet in manifest.
+
+    ```xml hl_lines="3"
+    <application>
+    ...
+    <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    ...
+    </application>
+    ```
+
+
 ### **Creating Ad Units**
 Adunits are ad assets that are rendered as a native component to the app.
 
