@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide is for publishers who wants to have more control over the units by customizing the Ad slots.
+This is a sample guide is for publishers who wants to have more control over the units by customizing the Ad slots.
 
 GreedyGame help you to monetize your App with **Native Ads** that people love. Checkout the video below which shows one of the ideal integrations of GreedGame Ads.
 

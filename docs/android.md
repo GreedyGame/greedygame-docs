@@ -8,6 +8,7 @@ In this section we are going to see how to integrate GreedyGame Native Ads in An
 
 ### **Importing GreedyGame Native Ads SDK**
 
+
 Games built with Android Studio can easily integrate with <a target="_blank" rel="noopener noreferrer" href="https://gradle.org">Gradle</a>.
 
 **Add the following to the app level** `build.gradle`. (excerpt)
