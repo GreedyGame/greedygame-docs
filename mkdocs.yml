@@ -1,9 +1,9 @@
 # Project information
 site_name: 'Documentation - GreedyGame'
-site_author: 'Mathan raj'
+site_author: 'GreedyGame'
 site_url: 'https://docs.greedygame.com'
 google_analytics:
-  - UA-135337269-1
+  - UA-135337269-5
   - auto
 
 # Copyright
