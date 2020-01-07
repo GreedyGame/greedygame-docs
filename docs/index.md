@@ -1,21 +1,41 @@
-# Get Started
+# Getting Started
 
-This guide is for publishers who want to add GreedyGame Native Ads as a monetization strategy. 
+This guide is for developers who 
 
-GreedyGame helps you to monetize your App with **Native Ads** that people love. Checkout the video below which shows one of the ideal integrations of GreedGame Ads.
+1. Want to monetize an app or a game with Native Ads
+
+2. Want to add a single SDK to add multiple demand partners for Native Ads i.e. mediation platform for Native Ads
+
+3. Want to automate CTR optimization through GreedyGame’s Recommendation Engine.
+
+###What are native ads
+With Native Ads, a developer can determine the exact look, feel, size and location of ads. Native ads can be
+added in accordance with the app design and user journey. You can also decide how the user reacts to each ad on click. Since native ads do not look out-of-place or break the user journey unlike banner ads and interstitial ads,hence they yield better CTRs.
 
 <iframe width="640" height="400"
 src="https://www.youtube.com/embed/GtzdxjnuF4M">
 </iframe>
 
+<!-- New Content -->
+
+### What is Mediation?
+Ad mediation is an app monetization solution that lets app and game developers manage and optimize multiple ad networks in one place, with just one SDK integration. Ad mediation platforms give multiple ad networks access to an app’s inventory, creating an arena in which ad networks must compete for their ad to be served. Higher competition among ad networks means competitive CPMs and more ad revenue.
+
+###What is GreedyGame’s Recommendation Engine?
+Unlike other Native SDKs, GreedyGame does not require developers to hardcode the ad template. You need to create a transparent placeholder where GreedyGame’s Recommendation Engine supplies an ad-template and updates it Over-The-Air based on the ad performance to improve CTR over time.
+
+<img src="/img/gettingStarted/image1.gif" alt = "" style="align:center">
+
+### Prerequisites
+
+1. We support PlayServices V16 only
+
+2. Recommended: Create a [GreedyGame account](http://publisher.greedygame.com/) and register an app/game.
 
 
+<!-- New Content End -->
 
-###What are native ads
-With native ads you can determine the exact look, feel, size and location of your ads. Native ads do look out of place or 
-break the user journey unlike banner ads and interstitial ads. Native ads can be added in accordance with your app design and user journey. You can also decide how the ads react to help them better fit in your app.
-
-<img src="/img/bestPractices/screen1.png" alt="" style="margin-left: 200px" width="280" height="500">
+<!-- <img src="/img/bestPractices/screen1.png" alt="" style="margin-left: 200px" width="280" height="500">
 
 <img src="/img/bestPractices/level.png"   alt="" style="margin-left: 200px" width="280" height="500">
 
@@ -42,13 +62,13 @@ Please create a square/rectangle transparent unit. While setting the unit up, do
 ##6. Do I need to create the frame of the ad-unit?
 No, do not provide a frame. Only create a square/rectangle transparent unit. The json (frame) is created dynamically. The assets for the frame are downloaded when an ad refresh is called. The frame is optimized and updated by our team basis the data collected to improve click-through-rates. A transparent unit helps us change the frame on the fly. If you provide a frame, we’d require to update the SDK every time any unit optimization needs to be done. 
 
-<!-- ##7. Where properties of an ad-unit can I control?
+##7. Where properties of an ad-unit can I control?
 After adding a unit, you can control the following properties - 
 
 * clickable/non-clickable property. Any units clickability can be changed anytime. 
 * On/off. Any unit can be removed from the app.
 
-These properties can be controlled through the integration panel. -->
+These properties can be controlled through the integration panel.
 
 ##7. Can I create units which are non-clickable and show ads on them?
 Yes, you can but currently, the fill for it individually is very low. We’d recommend a small clickable unit be used in conjugation with it. This way, we can show multiple elements of the same ad across a set of units (clickable and a non-clickable) thus increasing the Click-through-rates on the ad impression.
@@ -122,7 +142,7 @@ Setting the ad unit’s nickname will help you to recognize your units easily. F
 ### Creating Units
 
 * Always try to create the units with the recommended ratios. 1:1, 2:1, 4:1, 4:3
-* Try to place multiple placements on all the scenes to help the users engage in the brand which will result into better click ratio.
+* Try to place multiple placements on all the scenes to help the users engage in the brand which will result into better click ratio. -->
 
 
 
