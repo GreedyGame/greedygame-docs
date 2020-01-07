@@ -1,4 +1,4 @@
-# **Demo**
+# **GreedyGame Documentation**
 
 This is the repository for the GreedyGame documentation site.
- The site is available at [https://docs.greedygame.com](https://docs.greedygame.com)
+The site is available at [https://docs.greedygame.com](https://docs.greedygame.com)
