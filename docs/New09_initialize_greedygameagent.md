@@ -13,23 +13,36 @@ GreedyGameAgent greedyGameAgent = new GreedyGameAgent.Builder(activity)
     .withAgentListener(new CampaignStateListener() {
         @Override
         public void onUnavailable() {
-            reloadAd(); // This function retries to get an ad when campaign is unvailable or onError.
+            reloadAd(); 
+            /*
+            This function retries to get an ad when campaign is unvailable or onError.
+            This will be defined in a later step.
+            */
         }
 
         @Override
         public void onAvailable(String campaignId) {
-            loadAd(); // This function will be used for rendering ads.
-                      // The code of this function can be found in the 'Rendering Native Ads' step.
+            loadAd();
+            /* 
+            This function will be used for rendering ads.
+            This will be defined in a later step .
+            */
         }
 
         @Override
         public void onError(String error) {
-            reloadAd(); // This function retries to get an ad when campaign is unvailable or onError.
+            reloadAd(); 
+            /*
+            This function retries to get an ad when campaign is unvailable or onError.
+            This will be defined in a later step.
+            */
         }
     })
     .build();
 ```
 
+!!! INFO
+    <font size="3">You can look at the definitions of  **[`loadAd()`](New11_rendering_ads.md#implementation-of-rendering-code)** , **[`reloadAd()`](New12_refresh_ads.md)** for a better understanding of the flow.</font>
 
 !!! WARNING
     * <font size="3" color="red">**Ensure that you mention the correct App ID and Unit IDs in the highlighted lines, and also for any other ad units.**</font>

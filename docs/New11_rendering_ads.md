@@ -35,7 +35,7 @@ To fetch the Ad for a unit you need to call `getPath(unitId)` in `GreedyGameAgen
 
 ```Java tab= hl_lines="2"
 
-void loadAds(){
+void loadAd(){
     String unitId = "YOUR FLOAT UNIT HERE";
     ImageView iv = (ImageView) findViewById(R.id.your_imageview_id);
     /*
