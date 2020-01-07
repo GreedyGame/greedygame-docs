@@ -1,4 +1,4 @@
-###What are native ads
+###What are native ads?
 With native ads you can determine the exact look, feel, size and location of your ads. Native ads do look out of place or 
 break the user journey unlike banner ads and interstitial ads. Native ads can be added in accordance with your app design and user journey. You can also decide how the ads react to help them better fit in your app.
 
