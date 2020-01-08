@@ -155,10 +155,13 @@ For apps, we do not recommend putting non-clickable units as most elements of th
 
 Units should not cover game elements/each other
 
+<center><img src="/img/new/app_ad_unit_overlap.png" alt="" style="margin-left: 0px" width="250" height="450"></center>
+
+<center><img src="/img/new/app_ad_unit_no_overlap.png" alt="" style="margin-left: 0px" width="250" height="450"></center>
+
+
 
 Ad size should match other elements
-
-
 
   <center><img src="/img/new/appBrowzer_main_screen.jpg" alt="" style="margin-left: 0px" width="250" height="450"></center>
 
