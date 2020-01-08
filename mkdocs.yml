@@ -13,6 +13,7 @@ copyright: 'Copyright &copy; 2019 GreedyGame Media Pvt Ltd'
 nav:
   - Get Started: 
     - index.md
+    - New17_best_practices.md
     # - iOS: ios.md
     # - Unity: unity.md
   - FAQs:
