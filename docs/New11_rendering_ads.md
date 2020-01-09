@@ -21,7 +21,7 @@ Please note that the final design of the ad unit template will be done by the Gr
 
 
 !!! note
-    More information about unit design can be found under **<a target="_blank" rel="noopener noreferrer" href="/best_practices/#creating-units">Best Practices</a>** section.
+    More information about unit design can be found under **<a target="_blank" rel="noopener noreferrer" href="/New17_best_practices">Best Practices</a>** section.
 
 
 ### **Implementation of Rendering Code**
