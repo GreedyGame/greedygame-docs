@@ -72,16 +72,16 @@ This streamlined format looks better, performs better, and induces users to enga
    
    Yes, you can but currently, the fill for it individually is very low. We’d recommend a small clickable unit be used in conjugation with it. This way, we can show multiple elements of the same ad across a set of units (clickable and a non-clickable) thus increasing the Click-through-rates on the ad impression.
 
-### Do’s and Don’ts
+## Do’s and Don’ts
  
-## Unit too small
+### Unit too small
 
  <center><img src="/img/new/small_unit.png" alt="" style="margin-left: 0px" width="400" height="200"></center>
 
  <center><img src="/img/new/large_unit.png" alt="" style="margin-left: 0px" width="400" height="200"></center>
 
 
-Units should not cover game elements/ each other
+### Units should not cover game elements/ each other
 
 
  <center><img src="/img/new/overlapping.png" alt="" style="margin-left: 0px" width="400" height="200"></center>
@@ -95,7 +95,7 @@ Units should not cover game elements/ each other
 <a target="_blank" rel="noopener noreferrer" href="https://greedygame.com/native-ad-examples-gallery/
 ">https://greedygame.com/native-ad-examples-gallery/
 </a>
-### Best Practices - For Apps
+# Best Practices - For Apps
 
 1) Where should I add units in my app?
   
@@ -144,28 +144,29 @@ No, do not provide an ad-template. Only create a square/rectangle transparent Im
 
 For apps, we do not recommend putting non-clickable units as most elements of the apps are clickable and the user expects a response on click on these elements. The introduction of the non-clickable unit might give an impression to the users off a faulty application.
 
-### Do’s and Don’ts
+## Do’s and Don’ts
 
-## Unit too small
+### Unit too small
 
 <center><img src="/img/new/App_small_nit copy.png" alt="" style="margin-left: 0px" width="250" height="450"></center>
 
 <center><img src="/img/new/App_large_unit copy.png" alt="" style="margin-left: 0px" width="250" height="450"></center>
 
 
-Units should not cover game elements/each other
+### Units should not cover game elements/each other
 
-<center><img src="/img/new/app_ad_unit_overlap.png" alt="" style="margin-left: 0px" width="250" height="450"></center>
+<center><img src="/img/new/app_ad_unit_overlap.png" alt="" style="margin-left: 0px" width="250" height="450;align:left"></center>
 
-<center><img src="/img/new/app_ad_unit_no_overlap.png" alt="" style="margin-left: 0px" width="250" height="450"></center>
+<center><img src="/img/new/app_ad_unit_no_overlap.png" alt="" style="margin-left: 0px" width="250" height="450;align:right"></center>
 
 
 
-Ad size should match other elements
+## Ad size should match other elements
 
   <center><img src="/img/new/appBrowzer_main_screen.jpg" alt="" style="margin-left: 0px" width="250" height="450"></center>
 
 
+Here are some inspirations for native ads - 
 
 <a target="_blank" rel="noopener noreferrer" href="https://greedygame.com/native-ad-examples-gallery/
 ">https://greedygame.com/native-ad-examples-gallery/
