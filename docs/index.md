@@ -13,7 +13,7 @@ With Native Ads, a developer can determine the exact look, feel, size and locati
 added in accordance with the app design and user journey. You can also decide how the user reacts to each ad on click. Since native ads do not look out-of-place or break the user journey unlike banner ads and interstitial ads,hence they yield better CTRs.
 
 <iframe width="640" height="400"
-src="https://www.youtube.com/embed/GtzdxjnuF4M">
+src="https://www.youtube.com/embed/el6S5jNA2sY">
 </iframe>
 
 <!-- New Content -->
