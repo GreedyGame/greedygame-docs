@@ -72,7 +72,7 @@ Adunits are ad assets that are rendered as a native component to the app.
 
 **Follow the below steps to create an Ad Unit ID.**
 
-* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration.greedygame.com">Integration Panel</a>**
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Select an App you have created previously.
 * Click on **`Create Unit`** inside the **`Ad units in app`** Card.
 * Enter all the fields and click **`Save`**.
@@ -82,7 +82,7 @@ Adunits are ad assets that are rendered as a native component to the app.
 Follow the same procedure to create multiple Ad Units inside the app.
 
 !!! note ""
-    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/New17_best_practices">Best Practices</a>** section.
+    Best practices about the Unit Dimensions can be found under **<a target="_blank" rel="noopener noreferrer" href="/best-practices">Best Practices</a>** section.
     
 
 ### **Import GreedyGame Framework**
@@ -359,7 +359,7 @@ Now you have successfully integrated with GreedyGame Native Ads now is the time 
 
 GreedyGame recommends an easy way to test the ads by following the below steps
 
-* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration.greedygame.com">Integration Panel</a>**
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Select an App in which you want to check the test ads.
 * Click `SCAN QR` under the test Ads section and follow the stpes mentioned to get the test ads.
 
@@ -367,7 +367,7 @@ GreedyGame recommends an easy way to test the ads by following the below steps
 
 You have successfully integrated GreedyGame SDK and verified the testing flow with Test Ads section. Now follow the below steps to start earning revenue.
 
-* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration.greedygame.com">Integration Panel</a>**
+* Goto **<a target="_blank" rel="noopener noreferrer" href="https://integration-v2.greedygame.com">Integration Panel</a>**
 * Select the App which you want to make `Live`.
 * Click  `GO LIVE` under Publish section and you will get a message  `Your request has been received and live traffic will be started in 48 hours`.
 * You will start making money once the status changes to `APP IS LIVE` under publish section.

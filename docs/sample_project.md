@@ -1,7 +1,10 @@
 # Download Sample Project Examples
 
 
-* <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/gg-android-sample">Sample Android Project</a>
+* <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/gg-android-sample">Sample Android Project</a> - **Kotlin**
+
+* <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/gg-android-sample-java">Sample Android Project</a> - **Java**
+
 
 * <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/gg-ios-sample">Sample iOS Project</a>
 

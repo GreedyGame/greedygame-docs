@@ -13,7 +13,10 @@ copyright: 'Copyright &copy; 2019 GreedyGame Media Pvt Ltd'
 nav:
   - Get Started: 
     - index.md
-    - New17_best_practices.md
+  - Best Practices:
+    - best-practices.md
+    - Best Practices - Apps : apps-best-practices.md
+    - Best Practices - Games : games-best-practices.md
     # - iOS: ios.md
     # - Unity: unity.md
   - FAQs:
@@ -26,20 +29,20 @@ nav:
     - iOS: ios-faq.md
     - Unity: unity-faq.md
   - Android:
-    - Add New App : New01_add_app.md
-    - Add Ad Unit : New08_add_ad_unit.md
-    - Import SDK : New03_import_sdk.md
-    - Add Dependencies : New04_add_dependencies.md
-    - Update Android Manifest : New05_update_manifest.md
-    - Add Permissions : New06_add_permissions.md
-    - Add ClearText Traffic Support : New07_cleartext_traffic_support.md
-    - Initialize GreedyGameAgent : New09_initialize_greedygameagent.md
-    - Enable Admob : New13_admob.md
-    - Rendering Native Ads : New11_rendering_ads.md
-    - Refresh Ads : New12_refresh_ads.md
-    - Enable GDPR Compliance : New14_gdpr_compliance.md
-    - Enable COPPA Compliance : New15_coppa_compliance.md
-    - Test Ads : New16_test_ads.md
+    - Add New App : android-start.md
+    - Add Ad Unit : android-add-ad-unit.md
+    - Import SDK : android-import-sdk.md
+    - Add Dependencies : android-add-dependencies.md
+    - Update Android Manifest : android-update-manifest.md
+    - Add Permissions : android-add-permissions.md
+    - Add ClearText Traffic Support : android-cleartext-traffic.md
+    - Initialize GreedyGameAgent : android-initialize-greedygameagent.md
+    - Enable Admob : android-admob.md
+    - Rendering Native Ads : android-rendering-ads.md
+    - Refresh Ads : android-refresh-ads.md
+    - Enable GDPR Compliance : android-gdpr-compliance.md
+    - Enable COPPA Compliance : android-coppa-compliance.md
+    - Test Ads : android-test-ads.md
   - iOS:
     - SDK-8 series : ios-advanced.md
   - Unity:
