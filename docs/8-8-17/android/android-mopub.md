@@ -1,8 +1,8 @@
-## **Enable Mopub Ads**
+## **Enable MoPub Ads**
 
 GreedyGame SDK sources Ads from multiple Ad Demand Partners using GreedyGame's Mediation Platform  directly which requires no additional setup.
 
-But to serve Mopub ads, GreedyGame requires you to enable Mopub in the initialization script.
+But to serve MoPub ads, GreedyGame requires you to enable MoPub in the initialization script.
 
 ### Update your Manifest.xml
 Add the following `<activity>` declaration inside `<application>` tag of the Manifest.
@@ -26,9 +26,9 @@ Add the following `<activity>` declaration inside `<application>` tag of the Man
 ```
 ### Add Dependency
 Follow the guide [here from Mopub](https://developers.mopub.com/publishers/android/integrate/).
-Our SDK is tested against Mopub SDK Version 5.3. You can use Support for any future versions is experimental
+Our SDK is tested against MoPub SDK Version 5.3. You can use Support for any future versions is experimental
 ### Enable Facebook Mediation in `GreedyGameAgent`
-In your app level `build.gradle` add the mopub library.
+In your app level `build.gradle` add the MoPub library.
 
 ```gradle 
 compile('com.mopub:mopub-sdk-native-static:5.3.0@aar') {
