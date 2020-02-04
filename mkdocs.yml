@@ -29,9 +29,25 @@ nav:
     - iOS: ios-faq.md
     - Unity: unity-faq.md
   - Android:
+    - Add New App : android-start.md
+    - Add Ad Unit : android-add-ad-unit.md
+    - SDK Version 8.8.17:
+      - Import SDK : 8-8-17/android/android-import-sdk.md
+      - Add Dependencies : 8-8-17/android/android-add-dependencies.md
+      - Update Android Manifest : 8-8-17/android/android-update-manifest.md
+      - Add Permissions : 8-8-17/android/android-add-permissions.md
+      - Add ClearText Traffic Support : 8-8-17/android/android-cleartext-traffic.md
+      - Initialize GreedyGameAgent : 8-8-17/android/android-initialize-greedygameagent.md
+      - Enable Admob : 8-8-17/android/android-admob.md
+      - Enable Facebook : 8-8-17/android/android-fan.md
+      - Enable MoPub : 8-8-17/android/android-mopub.md
+      - Rendering Native Ads : 8-8-17/android/android-rendering-ads.md
+      - Refresh Ads : 8-8-17/android/android-refresh-ads.md
+      - Enable GDPR Compliance : 8-8-17/android/android-gdpr-compliance.md
+      - Enable COPPA Compliance : 8-8-17/android/android-coppa-compliance.md
+      - Enable CCPA Compliance : 8-8-17/android/android-ccpa-compliance.md
+      - Test Ads : 8-8-17/android/android-test-ads.md
     - SDK Version 8.8.16:
-      - Add New App : android-start.md
-      - Add Ad Unit : android-add-ad-unit.md
       - Import SDK : android-import-sdk.md
       - Add Dependencies : android-add-dependencies.md
       - Update Android Manifest : android-update-manifest.md
@@ -44,24 +60,7 @@ nav:
       - Enable GDPR Compliance : android-gdpr-compliance.md
       - Enable COPPA Compliance : android-coppa-compliance.md
       - Test Ads : android-test-ads.md
-    - SDK Version 8.8.17:
-      - Add New App : android-start.md
-      - Add Ad Unit : android-add-ad-unit.md
-      - Import SDK : 8-8-17/android/android-import-sdk.md
-      - Add Dependencies : 8-8-17/android/android-add-dependencies.md
-      - Update Android Manifest : 8-8-17/android/android-update-manifest.md
-      - Add Permissions : 8-8-17/android/android-add-permissions.md
-      - Add ClearText Traffic Support : 8-8-17/android/android-cleartext-traffic.md
-      - Initialize GreedyGameAgent : 8-8-17/android/android-initialize-greedygameagent.md
-      - Enable Admob : 8-8-17/android/android-admob.md
-      - Enable Facebook : 8-8-17/android/android-fan.md
-      - Enable Mopub : 8-8-17/android/android-mopub.md
-      - Rendering Native Ads : 8-8-17/android/android-rendering-ads.md
-      - Refresh Ads : 8-8-17/android/android-refresh-ads.md
-      - Enable GDPR Compliance : 8-8-17/android/android-gdpr-compliance.md
-      - Enable COPPA Compliance : 8-8-17/android/android-coppa-compliance.md
-      - Enable CCPA Compliance : 8-8-17/android/android-ccpa-compliance.md
-      - Test Ads : 8-8-17/android/android-test-ads.md
+    
   - iOS:
     - SDK-8 series : ios-advanced.md
   - Unity:
