@@ -4,7 +4,7 @@ You should refresh the ads to maximize your revenue potential.
 
 Refreshing of ads can be of 2 types:
 
-* **Time Based Refresh**: The most common way to refresh ads is based on regular intervals of time. Time based refresh can be used in both apps and games.
+* **Time Based Refresh**: The most common way to refresh ads is based on regular intervals of time. Time based refresh can be used in both apps and games. The countdown timer to call refresh should be started when the first unit is displayed.
 
 * **Event Based Refresh**: More suited to games, ads can be refreshed during natural pauses in your gameflow. Typical examples would be to include the game pause menu, user trying to restart a level or move to another level, death of a character etc. 
 
