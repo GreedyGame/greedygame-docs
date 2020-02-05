@@ -1,0 +1,3 @@
+Date | Version | Release notes
+--- | --- | ---
+<b>20 Feb 2019</b> | <b><a href="/sdk9.0/">9.0</a></b> | Improved Ad Delivery.<br> `<activity>` declaration changes in the manifest.<br> Added `NativeAdView` that takes care of rendering click.<br> Register for `setImpressionListener` in the `NativeAdView` to listen for impression callbacks on `onImpression` method.<br> `Moshi` library dependency added.<br> Out of the box `kotlin` support.<br> Controllable clickable behaviour of units from the [Integration panel](https://integration.greedygame.com).<br> Gradle repository support.<br> Fixed crutial bugs in Ad rendering.
