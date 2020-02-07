@@ -36,7 +36,7 @@ nav:
       - Add Dependencies : 8-8-17/android/android-add-dependencies.md
       - Update Android Manifest : 8-8-17/android/android-update-manifest.md
       - Add Permissions : 8-8-17/android/android-add-permissions.md
-      - Add ClearText Traffic Support : 8-8-17/android/android-cleartext-traffic.md
+      - Support for User Certificates : 8-8-17/android/android-cleartext-traffic.md
       - Initialize GreedyGameAgent : 8-8-17/android/android-initialize-greedygameagent.md
       - Enable Admob : 8-8-17/android/android-admob.md
       - Enable Facebook : 8-8-17/android/android-fan.md

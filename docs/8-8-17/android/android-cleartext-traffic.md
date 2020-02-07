@@ -1,5 +1,3 @@
-**Support for User Certificates**
-
 To verify the build we need to inpect the  requests coming from the SDK. Add the following configuration,this will only trust the certificates in debug release.
 
 * The steps to add this are
@@ -21,7 +19,9 @@ To verify the build we need to inpect the  requests coming from the SDK. Add the
     ```xml hl_lines="3"
     <application 
     ...
-    android:networkSecurityConfig="@xml/network_security_config">
+    android:networkSecurityConfig="@xml/network_security_config"
+    ...
+    >
     ...
     </application>
     ```
