@@ -60,9 +60,31 @@ nav:
       - Enable GDPR Compliance : android-gdpr-compliance.md
       - Enable COPPA Compliance : android-coppa-compliance.md
       - Test Ads : android-test-ads.md
-    
   - iOS:
-    - SDK-8 series : ios-advanced.md
+    - Add New App : ios-start.md
+    - Add Ad unit : ios-add-ad-unit.md
+    - SDK Version 8.8.17:
+      - Import SDK : 8-8-17/iOS/ios-import-sdk.md
+      - Add Permissions : 8-8-17/iOS/add-ios-permissions.md
+      - Initialize GreedyGameAgent : 8-8-17/iOS/ios-initialize-greedygameagent.md
+      - Enable Admob : 8-8-17/iOS/ios-admob.md
+      - Enable MoPub : 8-8-17/iOS/ios-moPub.md
+      - Rendering Native Ads : 8-8-17/iOS/ios-rendering-ads.md
+      - Refresh Ads : 8-8-17/iOS/ios-refresh-ads.md
+      - Enable GDPR Compliance : 8-8-17/iOS/ios-gdpr-compliance.md
+      - Enable COPPA Compliance : 8-8-17/iOS/ios-coppa-compliance.md
+      - Enable CCPA Compliance : 8-8-17/iOS/ios-ccpa-compliance.md
+      - Test Ads : 8-8-17/iOS/ios-test-ads.md
+    - SDK Version 8.8.16:
+      - Import SDK : ios-import-sdk.md
+      - Add Permissions : 8-8-17/iOS/add-ios-permissions.md
+      - Initialize GreedyGameAgent : ios-initialize-greedygameagent.md
+      - Enable Admob : ios-admob.md
+      - Rendering Native Ads : ios-rendering-ads.md
+      - Refresh Ads : ios-refresh-ads.md
+      - Enable GDPR Compliance : ios-gdpr-compliance.md
+      - Enable COPPA Compliance : ios-coppa-compliance.md
+      - Test Ads : ios-test-ads.md
   - Unity:
     - SDK-8 Series:  unity-advanced.md
   - Sample Projects:

@@ -1,0 +1,33 @@
+
+To start the integration, add your app on the Integration Panel, by clicking on the **Add New App** button.
+
+<center><img src="/img/new/1a_add_app1.png" alt="" style="margin-left: 0px" width="680" height="400"></center>
+ 
+
+### Add App Details
+
+1. Select the Platform, you have used to develop your app
+2. Enter the name of your app
+3. Enter your app's Package Name and/or Bundle ID
+4. Click on **Save**
+
+
+<center><img src="/img/new/1b_add_app2.png" alt="" style="margin-left: 0px" width="680" height="400"></center>
+
+
+### App ID
+
+Once your app is added, you will find a unique **App ID** for your app. Please note it as this App ID will be required during integration
+
+<center><img src="/img/new/1c_app_added.png" alt="" style="margin-left: 0px" width="680" height="400"></center>
+
+
+!!! note
+    
+    We help you in understanding the best possible placements of Native ads in your app.
+
+    If you haven't already received mock-ups of our **recommendations for native ad placements**, ask your Account Manager or write to us at **publisher@greedygame.com**
+
+
+!!! WARNING
+    <font size="3" color="red">**Ensure that you have noted the App ID**</font>
