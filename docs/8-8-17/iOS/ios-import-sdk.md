@@ -71,13 +71,13 @@ For `XCode 11.2`, `XCode 11.2.1` and `XCode 11.3`,
 
   <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.5.3.zip" class="pure-material-button-contained">Download GreedyGame SDK For XCode 11.2, 11.2.1 and 11.3</a>
 
- * Unzip and then add the `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
+ * Unzip the downloaded SDK file and then add `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
 
-*For Xcode series 10,*
+For Xcode series 10,
 
    * Add these 3 frameworks under `Embedded Binaries` section in General or Build Phases
 
-*For XCode series 11,*
+For XCode series 11,
 
    * Add these 3 frameworks under `Frameworks, Libraries and Embedded Content` section in General and set `Embed&Sign` like below
 

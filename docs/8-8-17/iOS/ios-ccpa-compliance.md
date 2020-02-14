@@ -12,7 +12,7 @@ To enable CCPA filter in GreedyGame's Native iOS SDK you can call the method `se
                         .setCCPAFilter(true)
                         ---"other builder methods"---
                         .build()
-  greedyGameAgent.load()
+  greedyGameAgent.initialize()
 ```
 
 ```Objective-C tab="Objective-C" hl_lines="4"

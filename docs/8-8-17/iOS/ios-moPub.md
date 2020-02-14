@@ -1,4 +1,4 @@
-## **Enable AdMob Ads**
+## **Enable MoPub Ads**
 
 GreedyGame SDK can source Ads from GreedyGame directly or it can also fetch demand from `MoPub` also.
 

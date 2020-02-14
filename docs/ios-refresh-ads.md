@@ -21,7 +21,7 @@ func reloadAd(){
 ```Objective-C tab=
 -(void)reloadAd{
     [NSTimer scheduledTimerWithTimeInterval:70 repeats:NO block:^(NSTimer * _Nonnull timer) {
-        [self.greedyGameAgent refresh];
+        [greedyGameAgent refresh];
         [timer invalidate];
     }];
 }

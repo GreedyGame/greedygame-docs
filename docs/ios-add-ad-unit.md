@@ -24,7 +24,7 @@ Native Ad Units are of two types:
 
 ** Once the Ad Unit is created, note the App ID and Ad Unit ID and proceed for integration **
 
-<center><img src="/img/newiOS/3c_proceed_to_integrate.png" alt="" style="margin-left: 0px" width="650" height="400"></center>
+<center><img src="/img/newiOS/3c_proceed_to_integrate.png" alt="" style="margin-left: 0px" width="650" height="420"></center>
 
 Follow the same procedure to create multiple Ad Units inside the app.
 

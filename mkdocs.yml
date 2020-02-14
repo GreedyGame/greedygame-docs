@@ -65,6 +65,7 @@ nav:
     - Add Ad unit : ios-add-ad-unit.md
     - SDK Version 8.8.17:
       - Import SDK : 8-8-17/iOS/ios-import-sdk.md
+      - Add Dependencies : 8-8-17/iOS/ios-add-dependencies.md
       - Add Permissions : 8-8-17/iOS/add-ios-permissions.md
       - Initialize GreedyGameAgent : 8-8-17/iOS/ios-initialize-greedygameagent.md
       - Enable Admob : 8-8-17/iOS/ios-admob.md
@@ -77,6 +78,7 @@ nav:
       - Test Ads : 8-8-17/iOS/ios-test-ads.md
     - SDK Version 8.8.16:
       - Import SDK : ios-import-sdk.md
+      - Add Dependencies : ios-add-dependencies.md
       - Add Permissions : add-ios-permissions.md
       - Initialize GreedyGameAgent : ios-initialize-greedygameagent.md
       - Enable Admob : ios-admob.md

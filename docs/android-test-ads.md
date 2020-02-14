@@ -12,13 +12,13 @@ If you are testing for the first time, you will have to add a test device. Click
 
 <img src="/img/new/16b_test_ads.png" alt="" style="margin-left: 50px" width="600" height="330">
 
-Select the app you want to test by clicking on **App ID** and enter the **Advertising ID** of the Android device you want to get test ads on
+Enter the **Advertising ID** of the Android device you want to get test ads on
    
    * The Advertising ID can be found on your device in **Settings > Google > Ads**
 
    * Please make sure that the app you are testing should be on the device you have added for testing.
 
-<img src="/img/new/16c_test_ads.png" alt="" style="margin-left: 50px" width="600" height="330">
+<img src="/img/newiOS/c_test_ads.png" alt="" style="margin-left: 50px" width="600" height="335">
 
 Once your device is added it will be shown on the Panel
 

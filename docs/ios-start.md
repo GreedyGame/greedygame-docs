@@ -19,7 +19,7 @@ To start the integration, add your app on the Integration Panel, by clicking on 
 
 Once your app is added, you will find a unique **App ID** for your app. Please note it as this App ID will be required during integration
 
-<center><img src="/img/new/1c_app_added.png" alt="" style="margin-left: 0px" width="680" height="400"></center>
+<center><img src="/img/newiOS/1c_app_added.png" alt="" style="margin-left: 0px" width="650" height="380"></center>
 
 
 !!! note
