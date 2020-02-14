@@ -21,7 +21,11 @@ Create `GreedyGameAgent` instance in the `viewDidLoad` of the ViewController or 
 ### **Creating GreedyGameAgent**
 
 ```Swift tab=
-  let greedyGameAgent = GreedyGameAgent.Builder()
+  // Create the greedyGameAgent variable globally
+  var greedyGameAgent : GreedyGameAgent?
+
+  // Add the below code in ViewDidLoad of ViewController or didFinishLaunchingWithOptions in AppDelegate
+  greedyGameAgent = GreedyGameAgent.Builder()
                         .setGameId(App_ID_CREATED) //e.g 00100100
                         .addUnit(ADUNIT_CREATED) //e.g unit-1000
                         .addUnit(ADUNIT_CREATED) //e.g float-1000
@@ -32,12 +36,10 @@ Create `GreedyGameAgent` instance in the `viewDidLoad` of the ViewController or 
 ```Objective-c tab="Objective - C"
 
  // Create GreedyGameAgent property in .h file
-
   @property(nonatomic, strong)GreedyGameAgent *greedyGameAgent;
 
 
- // Add the below code under ViewDidLoad function in .m file
-
+ // Add the below code in .m file
   Builder *builder = [[Builder alloc]init];
   [builder setGameId:APP_ID_CREATED]; //e.g 00100100
   [builder addUnit:ADUNIT_CREATED]; //e.g unit-1000

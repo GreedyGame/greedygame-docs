@@ -1,8 +1,8 @@
 ## **Enable AdMob Ads**
 
-GreedyGame SDK can source Ads from GreedyGame directly or it can also fetch demand from `Admob` also.
+GreedyGame SDK can source Ads from GreedyGame directly or it can also fetch demand from `MoPub` also.
 
-To enable `Admob Mediation` call `enableMoPub(true)` on the `GreedyGameAgent.Builder` instance.
+To enable `MoPub Mediation` call `enableMoPub(true)` on the `GreedyGameAgent.Builder` instance.
 
 ```Swift tab= hl_lines="4"
   let greedyGameAgent = GreedyGameAgent.Builder()

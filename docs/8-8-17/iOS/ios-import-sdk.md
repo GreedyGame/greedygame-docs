@@ -71,7 +71,6 @@ For `XCode 11.2`, `XCode 11.2.1` and `XCode 11.3`,
 
   <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.5.3.zip" class="pure-material-button-contained">Download GreedyGame SDK For XCode 11.2, 11.2.1 and 11.3</a>
 
- * Click `Source code (zip)` to download GreedyGame SDK.
  * Unzip and then add the `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
 
 *For Xcode series 10,*

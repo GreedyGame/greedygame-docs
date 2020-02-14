@@ -77,7 +77,7 @@ nav:
       - Test Ads : 8-8-17/iOS/ios-test-ads.md
     - SDK Version 8.8.16:
       - Import SDK : ios-import-sdk.md
-      - Add Permissions : 8-8-17/iOS/add-ios-permissions.md
+      - Add Permissions : add-ios-permissions.md
       - Initialize GreedyGameAgent : ios-initialize-greedygameagent.md
       - Enable Admob : ios-admob.md
       - Rendering Native Ads : ios-rendering-ads.md

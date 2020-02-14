@@ -39,7 +39,7 @@ To fetch the Ad for a unit you need to call `getPath(unitId)` in `GreedyGameAgen
 let nativeAdImageView = UIImageView(frame: IMAGE_SIZE)
 
 /*
-Setting up click listener for the ad unit. 
+Setting up Tap Gesture for the ad unit. 
 This will launch an intersitial window when user clicks on the ad unit.
 */
 let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showUII(tapGesture:)))
@@ -52,9 +52,6 @@ nativeAdImageView.addGestureRecognizer(tapGesture)
 
 /*call this method when you get the onAvailable callback method*/
 func loadAd(){
-	let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showUII(tapGesture:)))
-	templateImage.addGestureRecognizer(tapGesture)
-
 	if let path = greedyGameAgent?.getPath(unitId: ADUNIT_CREATED) { 
 		// GreedyGameAgent has an ad that can be rendered for this Unit id. 
 		nativeAdImageView.image = UIImage(contentsOfFile: path)
@@ -72,7 +69,7 @@ func loadAd(){
 UIImageView *nativeAdImageView = [[UIImageView alloc]initWithFrame: IMAGE_SIZE]; 
 
 /*
-Setting up click listener for the ad unit. 
+Setting up Tap Gesture for the ad unit. 
 This will launch an intersitial window when user clicks on the ad unit.
 */
 UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showUII:)];
@@ -80,12 +77,12 @@ UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarg
 
 /* tapGesture selector method.you can create your own method also*/
 -(void)showUII:(UITapGestureRecognizer*)tapGesture{
-   [self.greedyGameAgent showUIIWithUnitId:@"FLOAT_ADUNIT_CREATED"];
+   [greedyGameAgent showUIIWithUnitId:@"FLOAT_ADUNIT_CREATED"];
 }
 
 /*call this method when you get the onAvailable callback method*/
 -(void)loadAd{
-	NSString *path = [self.greedyGameAgent getPathWithUnitId:ADUNIT_CREATED];
+	NSString *path = [greedyGameAgent getPathWithUnitId:ADUNIT_CREATED];
 	    
 	if (path.length != 0){
 		// GreedyGameAgent has an ad that can be rendered for this Unit id. 

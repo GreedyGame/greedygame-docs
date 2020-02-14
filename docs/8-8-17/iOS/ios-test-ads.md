@@ -29,9 +29,12 @@ Click on **Get Test Ads** to start getting test ads. Open your app in the testin
 
 <center><img src="/img/newiOS/e_test_ads.png" alt="" style="margin-left: 50px" width="650" height="296"></center>
 
+!!! Important "Remove simulator architecture from GreedyGame SDK"
+    Greedygame SDK has simulator architecture.You need to remove this architecture by <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin">add the script</a> under `Note` section as run script in build phases.
+
 ## **Build Verification**
 
-Once your integration is complete, share your app via TestFlight, so that our quality team can verify the integration.
+Once your integration is complete, share your app via TestFlight to `arpit@greedygame.com`, so that our quality team can verify the integration.
 
 
 !!! Warning

@@ -3,7 +3,7 @@
 **This is not mandatory, but only if your app has to be CCPA Compliant**
 
 
-To enable COPPA filter in GreedyGame's Native iOS SDK you can call the method `setCCPAFilter(true)` in `GreedyGameAgent.Builder` instance.
+To enable CCPA filter in GreedyGame's Native iOS SDK you can call the method `setCCPAFilter(true)` in `GreedyGameAgent.Builder` instance.
 
 ```Swift tab= hl_lines="4"
   let greedyGameAgent = GreedyGameAgent.Builder()
