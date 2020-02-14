@@ -87,11 +87,11 @@ UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarg
 	if (path.length != 0){
 		// GreedyGameAgent has an ad that can be rendered for this Unit id. 
 	    nativeAdImageView.image = [UIImage imageWithContentsOfFile:path];
-	    nativeAdImageView.userInteractionEnabled = YES
+	    nativeAdImageView.userInteractionEnabled = YES;
 	}else{
 		// GreedyGame does not have a valid Ad for this Unit id at the moment
 	    nativeAdImageView.image = [UIImage imageNamed:@"Default_Image_Name"];
-		nativeAdImageView.userInteractionEnabled = YES
+		nativeAdImageView.userInteractionEnabled = NO;
 	}
 }
 ```
@@ -100,7 +100,7 @@ UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarg
 
 !!! warning
     
-    It's the publisher responsibility to call `getPath(unitId)` at relevant places to render the ads. For example, in `onAvailable()` callback of the `CampaignStateListener` or when you are changing the `Activity`, calling `getPath(unitId)` at the start of the activity will help you display the ad correctly
+    It's the publisher responsibility to call `getPath(unitId)` at relevant places to render the ads. For example, in `onAvailable()` callback of the `CampaignStateListener` or when you are changing the `ViewController`, calling `getPath(unitId)` at the start of the ViewController will help you display the ad correctly
 
 
 **NOTE:** When the Campaign state is `onUnavailable()` or `onError(error)`, ensure that you replace the ad unit by the default texture of your app.

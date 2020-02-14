@@ -38,5 +38,5 @@ If you are building with `XCode 10.2`, `XCode 10.2.1`
 
   <a target="_blank" rel="noopener noreferrer" href="https://github.com/GreedyGame/ios-native-plugin/archive/1.0.4.1.zip" class="pure-material-button-contained">Download SDK For XCode 10.2 and 10.2.1</a>
 
- * Unzip and then add the `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
+ * Unzip the downloaded SDK file and then add `greedygame.framework`, `commons.framework` and `imageProcessing.framework` into your project.
  * Add these 3 frameworks under `Embedded Binaries` section in General or Build Phases.
