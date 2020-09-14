@@ -113,10 +113,10 @@ theme:
   palette:
     primary: 'Teal'
     accent: 'Amber'
-  logo:
-    icon: 'cloud'
+  icon:
+    logo: material/cloud  
   feature:
-    tabs: true
+    - tabs
 
 extra_css: 
   [
