@@ -1,5 +1,5 @@
 !!! Warning
-    * <font size="3" color="red">**This documentation is for the legacy SDK v8.8.x and will be deprecated soon. The updated docs for the new sdk SDKX is available at [https://console.greedygame.com/docs](https://console.greedygame.com/docs).**</font>
+    * <font size="3" color="red">**This documentation is for the legacy SDK v8.8.x and will be sunset in the future. The updated docs for the SDKX is available at  [https://console.greedygame.com/docs](https://console.greedygame.com/docs).**</font>
 
 # Getting Started
 
